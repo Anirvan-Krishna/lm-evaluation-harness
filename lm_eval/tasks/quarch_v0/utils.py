@@ -4,7 +4,7 @@ from datasets import Dataset
 
 
 def process_docs(dataset, set_answer_type="bool"):
-    FEATURES = ["title", "abstract", "question", "answer", "answer_type"]
+    FEATURES = ["title", "context", "question", "answer", "answer_type"]
 
     def _categorise_answer(answer_blob):
         if answer_blob["unanswerable"]:

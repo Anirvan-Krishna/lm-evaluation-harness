@@ -36,19 +36,19 @@ def process_docs(dataset, set_answer_type="bool"):
         """
         obs_list = {
             "title": [],
-            "abstract": [],
+            "context": [],
             "question": [],
             "answer": [],
             "answer_type": [],
         }
         title = doc.pop("title")
-        abstract = doc.pop("abstract")
+        abstract = doc.pop("context")
         for question, answer_list in zip(doc["qas"]["question"], doc["qas"]["answers"]):
             for answer_blob in answer_list["answer"]:
                 answer, answer_type = _categorise_answer(answer_blob)
                 if answer_type == set_answer_type:
                     obs_list["title"].append(title)
-                    obs_list["abstract"].append(abstract)
+                    obs_list["context"].append(abstract)
                     obs_list["question"].append(question)
                     obs_list["answer_type"].append(answer_type)
                     if isinstance(answer, list):

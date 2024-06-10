@@ -1,14 +1,15 @@
-group: qasper
-task: qasper_bool
-dataset_path: allenai/qasper
-output_type: multiple_choice
-training_split: train
-validation_split: validation
-process_docs: !function utils.process_docs_bool
-doc_to_text: "TITLE: {{title}}\nABSTRACT: {{abstract}}\n\nQ: {{question}}\n\nA:"
-doc_to_target: 1
-doc_to_choice: ["no", "yes"]
+group: quarch
+task: quarchv2
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    train: train
+    validation: validation
+description: "This is a question answering dataset.\n\n"
+output_type: generate_until
+doc_to_text: "Title: {{title}}\nContext:{{context}}\nQuestion: {{question}}\nAnswer:"
+doc_to_target: answers[0]
+doc_to_choice: ["NO", "YES"]
 metric_list:
-  - metric: f1
-metadata:
-  version: 1.0
+  - metric: acc
+    higher_is_better: true
