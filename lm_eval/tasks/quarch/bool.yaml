@@ -5,6 +5,7 @@ dataset_kwargs:
   data_files:
     train: train
     validation: validation
+process_docs: !function utils.process_docs_bool
 description: "This is a question answering dataset.\n\n"
 output_type: generate_until
 doc_to_text: "Title: {{title}}\nContext:{{context}}\nQuestion: {{question}}\nAnswer:"
