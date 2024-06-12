@@ -1,5 +1,5 @@
 group: quarch
-task: quarchv2
+task: quarch_bool
 dataset_path: json
 dataset_kwargs:
   data_files:
