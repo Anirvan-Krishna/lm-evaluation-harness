@@ -3,8 +3,8 @@ task: quarch_bool
 dataset_path: json
 dataset_kwargs:
   data_files: /content
-    train: train.json
-    validation: test.json
+    train: /content/train.json
+    validation: /content/test.json
 process_docs: !function utils.process_docs_bool
 description: "This is a question answering dataset.\n\n"
 output_type: generate_until
