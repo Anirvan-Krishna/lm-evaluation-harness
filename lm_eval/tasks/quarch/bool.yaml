@@ -1,6 +1,6 @@
 group: quarch
 task: quarch_bool
-dataset_path: quarch.json
+dataset_path: json
 output_type: multiple_choice
 training_split: quarch.json
 validation_split: quarch.json
