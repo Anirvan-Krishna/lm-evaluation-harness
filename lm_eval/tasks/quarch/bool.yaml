@@ -1,16 +1,16 @@
 group: quarch
 task: quarch_bool
-dataset_path: json
-dataset_kwargs:
-  data_files: /content
-    train: /content/train.json
-    validation: /content/test.json
-process_docs: !function utils.process_docs_bool
-description: "This is a question answering dataset.\n\n"
-output_type: generate_until
-doc_to_text: "Title: {{title}}\nContext:{{context}}\nQuestion: {{question}}\nAnswer:"
-doc_to_target: answers[0]
-doc_to_choice: ["NO", "YES"]
+dataset_path: quarch.json
+output_type: multiple_choice
+training_split: quarch.json
+validation_split: quarch.json
+process_docs: !function utils.process_docs_multitask
+doc_to_text: "{Title: {title}\n{context}}\n\nQuestion: {{question}}\nAnswer:"
+doc_to_target: "{{answer_index}}"
+doc_to_choice: !function utils.doc_to_choice_multitask
 metric_list:
-  - metric: acc
-    higher_is_better: true
+  - metric: accuracy
+  - metric: f1
+metadata:
+  version: 1.0
+

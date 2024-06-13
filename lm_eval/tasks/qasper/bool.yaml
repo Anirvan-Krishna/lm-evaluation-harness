@@ -1,15 +1,14 @@
-group: quarch
-task: quarch_bool
-dataset_path: quarch_v1.json
+group: qasper
+task: qasper_bool
+dataset_path: allenai/qasper
 output_type: multiple_choice
-training_split: quarch_v1.json
-validation_split: quarch_v1.json
-process_docs: !function utils.process_docs_multitask
-doc_to_text: "{Title:{title}\nContext: {context}}\n\nQuestion: {{question}}\nAnswer: {{options}}"
-doc_to_target: "{{answer_index}}"
-doc_to_choice: !function utils.doc_to_choice_multitask
+training_split: train
+validation_split: validation
+process_docs: !function utils.process_docs_bool
+doc_to_text: "TITLE: {{title}}\nABSTRACT: {{abstract}}\n\nQ: {{question}}\n\nA:"
+doc_to_target: 1
+doc_to_choice: ["no", "yes"]
 metric_list:
-  - metric: accuracy
   - metric: f1
 metadata:
   version: 1.0
