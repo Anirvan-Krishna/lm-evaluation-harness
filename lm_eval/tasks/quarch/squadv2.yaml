@@ -1,2 +1,2 @@
 task: quarch
-class: !function task.SQuAD2s
+class: !function task.SQuAD2
