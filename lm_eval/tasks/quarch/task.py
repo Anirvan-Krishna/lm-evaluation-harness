@@ -55,7 +55,8 @@ class SQuAD2(ConfigurableTask):
 
     def __init__(self):
         super().__init__(config={"metadata": {"version": self.VERSION}, 
-                                 "dataset_kwargs": ['./train.json', './test.json']})
+                                 "dataset_kwargs": {'train': './train.json', 'test': './test.json'}})
+        
         self.dataset = self.load_local_dataset(".")
         
 
