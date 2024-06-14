@@ -49,13 +49,12 @@ def _squad_agg(key, items):
 
 
 class SQuAD2(ConfigurableTask):
-    VERSION = 3
-    DATASET_PATH = "squad_v2"
+    VERSION = 1
+    # DATASET_PATH = "squad_v2"
     DATASET_NAME = None
 
     def __init__(self):
-        #config={"metadata": {"version": self.VERSION}}
-        super().__init__()
+        super().__init__(config={"metadata": {"version": self.VERSION}})
         self.dataset = self.load_local_dataset(".")
         
 
