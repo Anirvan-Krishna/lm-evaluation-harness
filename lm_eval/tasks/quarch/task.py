@@ -15,6 +15,8 @@ Homepage: https://rajpurkar.github.io/SQuAD-explorer/
 """
 from functools import partial
 from math import exp
+import os
+import json
 
 import datasets
 from packaging import version
@@ -54,11 +56,30 @@ class SQuAD2(ConfigurableTask):
     def __init__(self):
         #config={"metadata": {"version": self.VERSION}}
         super().__init__()
+        self.dataset = self.load_local_dataset(".")
+        
 
     # HF changed squad on us so we have to make sure we aren't running the old one
     # assert version.parse(datasets.__version__) >= version.parse(
     #     "1.11.0"
     # ), "datasets v1.11.0 or later required for SQuAD"
+
+    def load_local_dataset(self, data_dir="."):
+
+        train_path = os.path.join(data_dir, "train.json")
+        test_path = os.path.join(data_dir, "test.json")
+
+        with open(train_path, "r") as train_file:
+            train_data = json.load(train_file)
+
+        with open(test_path, "r") as test_file:
+            test_data = json.load(test_file)
+
+        return {
+            "train": train_data,
+            "validation": test_data
+        }
+
 
     def has_training_docs(self):
         return True
