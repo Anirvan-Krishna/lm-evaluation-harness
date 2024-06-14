@@ -1,0 +1,2 @@
+task: quarch
+class: !function task.SQuAD2s

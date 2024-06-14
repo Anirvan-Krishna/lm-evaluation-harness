@@ -52,12 +52,13 @@ class SQuAD2(ConfigurableTask):
     DATASET_NAME = None
 
     def __init__(self):
-        super().__init__(config={"metadata": {"version": self.VERSION}})
+        #config={"metadata": {"version": self.VERSION}}
+        super().__init__()
 
     # HF changed squad on us so we have to make sure we aren't running the old one
-    assert version.parse(datasets.__version__) >= version.parse(
-        "1.11.0"
-    ), "datasets v1.11.0 or later required for SQuAD"
+    # assert version.parse(datasets.__version__) >= version.parse(
+    #     "1.11.0"
+    # ), "datasets v1.11.0 or later required for SQuAD"
 
     def has_training_docs(self):
         return True
@@ -95,7 +96,7 @@ class SQuAD2(ConfigurableTask):
         return doc["context"]
 
     def doc_to_target(self, doc):
-        answer_list = doc["answers"][0]
+        answer_list = doc["answers"]["text"]
         if len(answer_list) > 0:
             answer = answer_list[0]
         else:
