@@ -190,6 +190,8 @@ class Task(abc.ABC):
 
     # The name of a subset within `DATASET_PATH`.
     DATASET_NAME: Optional[str] = None
+    # The name of a subset within `DATASET_PATH`.
+    DATA_FILES: Optional[str] = None
 
     OUTPUT_TYPE: Optional[OutputType] = None
 
@@ -266,6 +268,7 @@ class Task(abc.ABC):
         self.dataset = datasets.load_dataset(
             path=self.DATASET_PATH,
             name=self.DATASET_NAME,
+            data_files= self.DATA_FILES
             data_dir=data_dir,
             cache_dir=cache_dir,
             download_mode=download_mode,
@@ -900,6 +903,7 @@ class ConfigurableTask(Task):
         self.dataset = datasets.load_dataset(
             path=self.DATASET_PATH,
             name=self.DATASET_NAME,
+            data_files = self.DATA_FILES
             **dataset_kwargs if dataset_kwargs is not None else {},
         )
 

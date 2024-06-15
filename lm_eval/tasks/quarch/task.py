@@ -50,13 +50,14 @@ def _squad_agg(key, items):
 
 class SQuAD2(ConfigurableTask):
     VERSION = 1
-    # DATASET_PATH = "squad_v2"
+    DATASET_PATH = "json"
     DATASET_NAME = None
+    DATA_FILES = "./train.json"
 
     def __init__(self):
-        super().__init__(config={"metadata": {"version": self.VERSION}, "dataset_kwargs": {'train': './train.json', 'test': './test.json'}})
+        super().__init__(config={"metadata": {"version": self.VERSION}})
         
-        self.dataset = self.load_local_dataset(".")
+        # self.dataset = self.load_local_dataset(".")
         
 
     # HF changed squad on us so we have to make sure we aren't running the old one
@@ -64,21 +65,21 @@ class SQuAD2(ConfigurableTask):
     #     "1.11.0"
     # ), "datasets v1.11.0 or later required for SQuAD"
 
-    def load_local_dataset(self, data_dir="."):
+    # def load_local_dataset(self, data_dir="."):
 
-        train_path = os.path.join(data_dir, "train.json")
-        test_path = os.path.join(data_dir, "test.json")
+    #     train_path = os.path.join(data_dir, "train.json")
+    #     test_path = os.path.join(data_dir, "test.json")
 
-        with open(train_path, "r") as train_file:
-            train_data = json.load(train_file)
+    #     with open(train_path, "r") as train_file:
+    #         train_data = json.load(train_file)
 
-        with open(test_path, "r") as test_file:
-            test_data = json.load(test_file)
+    #     with open(test_path, "r") as test_file:
+    #         test_data = json.load(test_file)
 
-        return {
-            "train": train_data,
-            "validation": test_data
-        }
+    #     return {
+    #         "train": train_data,
+    #         "validation": test_data
+    #     }
 
 
     def has_training_docs(self):
