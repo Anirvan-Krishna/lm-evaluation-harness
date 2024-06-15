@@ -939,7 +939,7 @@ class ConfigurableTask(Task):
                 return self.config.process_docs(
                     self.dataset[self.config.validation_split]
                 )
-            return self.dataset[self.config.validation_split]
+            return self.dataset['train'] # self.config.validation_split
 
     def test_docs(self) -> datasets.Dataset:
         if self.has_test_docs():
