@@ -191,7 +191,7 @@ class Task(abc.ABC):
     # The name of a subset within `DATASET_PATH`.
     DATASET_NAME: Optional[str] = None
    
-    DATA_FILES: Optional[str] = "./quarch/train.json"
+    DATA_FILES: Optional[str] = None
 
     OUTPUT_TYPE: Optional[OutputType] = None
 
