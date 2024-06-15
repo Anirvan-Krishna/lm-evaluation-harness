@@ -2,7 +2,9 @@ task: quarch
 class: !function task.SQuAD2
 dataset_path: json
 dataset_kwargs:
-  data_files: ./train.json
+  data_files: 
+    train: train
+    validation: validation
 
 description: "This is a question answering dataset.\n\n"
 output_type: generate_until
