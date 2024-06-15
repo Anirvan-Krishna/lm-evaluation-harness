@@ -268,7 +268,7 @@ class Task(abc.ABC):
         self.dataset = datasets.load_dataset(
             path=self.DATASET_PATH,
             name=self.DATASET_NAME,
-            data_files= self.DATA_FILES
+            data_files= self.DATA_FILES,
             data_dir=data_dir,
             cache_dir=cache_dir,
             download_mode=download_mode,
