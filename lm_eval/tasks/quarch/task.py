@@ -118,7 +118,7 @@ class SQuAD2(ConfigurableTask):
         return doc["context"]
 
     def doc_to_target(self, doc):
-        answer_list = doc["answers"]["text"]
+        answer_list = doc["answers"]["justification"]
         if len(answer_list) > 0:
             answer = answer_list[0]
         else:
@@ -178,7 +178,7 @@ class SQuAD2(ConfigurableTask):
         references = {
             "id": doc["id"],
             "answers": {
-                "text": doc["answers"]["justification"],
+                "justification": doc["answers"]["justification"],
                 "answer_start": doc["answers"]["answer_start"]
             }
         }
