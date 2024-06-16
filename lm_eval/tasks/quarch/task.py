@@ -52,7 +52,7 @@ class SQuAD2(ConfigurableTask):
     VERSION = 1
     DATASET_PATH = "json"
     DATASET_NAME = None
-    DATA_FILES = "./train.json"
+    DATA_FILES = {"train": "./train.json", "validation": "./test.json"}
 
     def __init__(self):
         super().__init__(config={"metadata": {"version": self.VERSION}})
@@ -95,7 +95,7 @@ class SQuAD2(ConfigurableTask):
         return self.dataset["train"]
 
     def validation_docs(self):
-        return self.dataset["train"]
+        return self.dataset["validation"]
 
     def doc_to_text(self, doc):
         return (
