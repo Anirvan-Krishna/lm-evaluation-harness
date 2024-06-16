@@ -95,7 +95,7 @@ class SQuAD2(ConfigurableTask):
         return self.dataset["train"]
 
     def validation_docs(self):
-        return self.dataset["validation"]
+        return self.dataset["train"]
 
     def doc_to_text(self, doc):
         return (
