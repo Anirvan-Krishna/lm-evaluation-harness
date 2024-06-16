@@ -100,13 +100,13 @@ class SQuAD2(ConfigurableTask):
     def doc_to_text(self, doc):
         return (
             "Title: "
-            + doc["title"]
+            + doc['train']["title"]
             + "\n\n"
             + "Background: "
-            + doc["context"]
+            + doc['train']["context"]
             + "\n\n"
             + "Question: "
-            + doc["question"]
+            + doc['train']["question"]
             + "\n\n"
             + "Answer:"
         )
@@ -115,10 +115,10 @@ class SQuAD2(ConfigurableTask):
         return True
 
     def doc_to_decontamination_query(self, doc):
-        return doc["context"]
+        return doc['train']["context"]
 
     def doc_to_target(self, doc):
-        answer_list = doc["answers"]["text"]
+        answer_list = doc['train']["answers"]["text"]
         if len(answer_list) > 0:
             answer = answer_list[0]
         else:
