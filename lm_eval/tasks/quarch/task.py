@@ -178,7 +178,7 @@ class SQuAD2(ConfigurableTask):
         references = {
             "id": doc["id"],
             "answers": {
-                "text": doc["answers"]["text"],
+                "text": doc["answers"]["justification"],
                 "answer_start": doc["answers"]["answer_start"]
             }
         }

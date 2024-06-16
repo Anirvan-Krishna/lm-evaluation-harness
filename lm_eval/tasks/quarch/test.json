@@ -6,7 +6,7 @@
         "question": "Is an OU-based architecture primarily responsible for exploiting DNN sparsity?",
         "answers": {
             "answer_start": 577,
-            "text": "YES"
+            "justification": "An OU-based architecture creates a new opportunity to exploit DNN sparsity."
         }
     },
     {
@@ -16,7 +16,7 @@
         "question": "Is the Sparse ReRAM Engine a practical architecture for exploiting both weight and activation sparsity?",
         "answers": {
             "answer_start": 653,
-            "text": "YES"
+            "justification": "In this paper, we propose the first practical Sparse ReRAM Engine that exploits both weight and activation sparsity."
         }
     },
     {
@@ -26,7 +26,7 @@
         "question": "In matrix-vector computation process, must Operation Unit (OU) always occur before inference accuracy considerations?",
         "answers": {
             "answer_start": 416,
-            "text": "NO"
+            "justification": "However, due to inference accuracy considerations, matrix-vector computation must be conducted in a smaller granularity in practice, called Operation Unit (OU)."
         }
     },
     {
@@ -36,7 +36,7 @@
         "question": "Does increasing the use of sparsity lead to significant performance improvement and energy savings?",
         "answers": {
             "answer_start": 770,
-            "text": "YES"
+            "justification": "Our evaluation shows that the proposed method is effective in eliminating ineffectual computation, and delivers significant performance improvement and energy savings."
         }
     },
     {
@@ -46,7 +46,7 @@
         "question": "Does the Origin 2000 provide scalability to both small and large processor counts without any bandwidth, latency, or cost cliffs?",
         "answers": {
             "answer_start": 142,
-            "text": "YES"
+            "justification": "The Origin system was designed from the ground up as a multiprocessor capable of scaling to both small and large processor counts without any bandwidth, latency, or cost cliffs."
         }
     },
     {
@@ -56,7 +56,7 @@
         "question": "Are the R10000 processors primarily responsible for the computational power of the Origin 2000 system?",
         "answers": {
             "answer_start": 413,
-            "text": "YES"
+            "justification": "Each node consists of one or two R10000 processors, up to 4 GB of coherent memory, and a connection to a portion of the XIO IO subsystem."
         }
     },
     {
@@ -66,7 +66,7 @@
         "question": "Is the Origin 2000 a commercial ccNUMA system?",
         "answers": {
             "answer_start": 786,
-            "text": "YES"
+            "justification": "Finally, the Origin system is compared to other contemporary commercial ccNUMA systems."
         }
     },
     {
@@ -76,7 +76,7 @@
         "question": "In the Origin 2000 process, must performance results be presented for the NAS Parallel Benchmarks V2.2 before the SPLASH2 applications?",
         "answers": {
             "answer_start": 672,
-            "text": "NO"
+            "justification": "In addition, performance results are presented for the NAS Parallel Benchmarks V2.2 and the SPLASH2 applications."
         }
     },
     {
@@ -86,7 +86,7 @@
         "question": "Does increasing the number of nodes in the Origin system lead to a larger Craylink network?",
         "answers": {
             "answer_start": 320,
-            "text": "YES"
+            "justification": "The Origin system consists of up to 512 nodes interconnected by a scalable Craylink network."
         }
     },
     {
@@ -96,7 +96,7 @@
         "question": "Does a microarchitecture that simplifies wakeup and selection logic provide benefits over a completely flexible issue window?",
         "answers": {
             "answer_start": 810,
-            "text": "YES"
+            "justification": "Simulation shows little slowdown as compared with a completely flexible issue window when performance is measured in clock cycles."
         }
     },
     {
@@ -106,7 +106,7 @@
         "question": "Is issue logic primarily responsible for the overall performance improvement in the proposed microarchitecture?",
         "answers": {
             "answer_start": 1135,
-            "text": "NO"
+            "justification": "By grouping dependent instructions together, the proposed microarchitecture will help minimize performance degradation due to slow bypasses in future wide-issue machines."
         }
     },
     {
@@ -116,7 +116,7 @@
         "question": "Is operand bypass logic a critical component according to the analysis?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our analysis indicates that operand bypass logic are likely to be the most critical in the future."
         }
     },
     {
@@ -126,7 +126,7 @@
         "question": "In the proposed microarchitecture process, must instructions at queue heads must always be awakened and selected before issuing instructions from multiple queues in parallel?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Furthermore, because only instructions at queue heads need to be awakened and selected, issue logic is simplified and the clock cycle is faster."
         }
     },
     {
@@ -136,7 +136,7 @@
         "question": "Does increasing issue width lead to performance degradation due to slow bypasses in future wide-issue machines?",
         "answers": {
             "answer_start": 1135,
-            "text": "NO"
+            "justification": "By grouping dependent instructions together, the proposed microarchitecture will help minimize performance degradation due to slow bypasses in future wide-issue machines."
         }
     },
     {
@@ -146,7 +146,7 @@
         "question": "Does CEASER-S provide enhanced robustness over CEASER?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "This design significantly improves the robustness of CEASER-S, as the attacker must form an eviction set that can dislodge the line from multiple possible locations."
         }
     },
     {
@@ -156,7 +156,7 @@
         "question": "Is the first attack primarily responsible for reducing time required to form the eviction set?",
         "answers": {
             "answer_start": 700,
-            "text": "YES"
+            "justification": "Our first attack reduces the time required to form the eviction set from O(L2) to O(L), where L is the number of lines in the attack."
         }
     },
     {
@@ -166,7 +166,7 @@
         "question": "Is CEASER an effective countermeasure against cache attacks?",
         "answers": {
             "answer_start": 402,
-            "text": "YES"
+            "justification": "CEASER was analyzed with the state-of-the-art algorithm on forming eviction sets, and the analysis showed that CEASER with a Remap-Rate of 1% is sufficient to tolerate years of attack."
         }
     },
     {
@@ -176,7 +176,7 @@
         "question": "In the Skewed-CEASER design process, must cache line mapping occur differently in each partition?",
         "answers": {
             "answer_start": 1265,
-            "text": "YES"
+            "justification": "Skewed-CEASER (CEASER-S), which divides the cache ways into multiple partitions and maps the cache line to be resident in a different set in each partition."
         }
     },
     {
@@ -186,7 +186,7 @@
         "question": "Does increasing the Remap-Rate of CEASER lead to impractical overheads in the second attack?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our second attack exploits the replacement policy to form eviction set quickly and requires that the Remap-Rate of CEASER be increased to more than 100%, incurring impractical overheads."
         }
     },
     {
@@ -196,7 +196,7 @@
         "question": "Does HeteroOS provide performance improvement over VMM-exclusive approach?",
         "answers": {
             "answer_start": 988,
-            "text": "YES"
+            "justification": "Evaluation of HeteroOS with memory, storage, and network-intensive datacenter applications shows up to 2x performance improvement compared to the state-of-the-art VMM-exclusive approach."
         }
     },
     {
@@ -206,7 +206,7 @@
         "question": "Is the VMM primarily responsible for expensive page hotness tracking and migrations?",
         "answers": {
             "answer_start": 150,
-            "text": "YES"
+            "justification": "State-of-the-art solutions rely exclusively on the hypervisor (VMM) for expensive page hotness tracking and migrations, limiting the benefits from heterogeneity."
         }
     },
     {
@@ -216,7 +216,7 @@
         "question": "Is HeteroOS a novel application-transparent OS-level solution?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "To address this, we design HeteroOS, a novel application-transparent OS-level solution for managing memory heterogeneity in a virtualized system."
         }
     },
     {
@@ -226,7 +226,7 @@
         "question": "In the HeteroOS process, must pro-active placements occur before page migrations?",
         "answers": {
             "answer_start": 662,
-            "text": "YES"
+            "justification": "When such pro-active placements are not possible, HeteroOS combines the power of the guest-OSes' information about applications with the VMM's hardware control to track for hotness and migrate only performance-critical pages."
         }
     },
     {
@@ -236,7 +236,7 @@
         "question": "Does increasing memory heterogeneity sharing lead to performance improvement in HeteroOS?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "HeteroOS designs an efficient heterogeneous memory sharing across multiple guest-VMs."
         }
     },
     {
@@ -246,7 +246,7 @@
         "question": "Does weight sharing in EIE provide energy benefits over direct fetching from DRAM?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Weight sharing gives 8x energy saving in EIE (Eyeriss) compared to direct fetching from DRAM."
         }
     },
     {
@@ -256,7 +256,7 @@
         "question": "Is EIE primarily responsible for the significant energy efficiency improvement over CPU and GPU implementations?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "EIE is 24,000x and 3,400x more energy efficient than a CPU and GPU respectively."
         }
     },
     {
@@ -266,7 +266,7 @@
         "question": "Is EIE an inference engine for performing computation on compressed network models?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We propose an energy efficient inference engine (EIE) that performs inference on compressed network model."
         }
     },
     {
@@ -276,7 +276,7 @@
         "question": "In processing FC layers of AlexNet with EIE, must skipping zero activations from ReLU always occur before exploiting sparsity?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "Skipping zero activations from ReLU saves another 3x in EIE, but does not have to occur before exploiting sparsity."
         }
     },
     {
@@ -286,7 +286,7 @@
         "question": "Does increasing the processing power of EIE lead to a proportional increase in energy efficiency?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "EIE has a processing power of 102 GOPS working directly on compressed network, corresponding to 3 TOPS, but is 24,000x more energy efficient than a CPU."
         }
     },
     {
@@ -296,7 +296,7 @@
         "question": "Does accurate criticality prediction provide benefits over inaccurate prediction in parallel applications?",
         "answers": {
             "answer_start": 754,
-            "text": "YES"
+            "justification": "We show that accurate predictors can be built using counters that are typically already available on-chip. Our predictor, based on memory hierarchy statistics, identifies thread criticality with an average accuracy of 93% across a range of architectures."
         }
     },
     {
@@ -306,7 +306,7 @@
         "question": "Is accurately predicting critical threads primarily responsible for improving performance in parallel programs?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "If one can accurately predict critical threads in a parallel program, then one can respond in a variety of ways. ... criticality prediction to guide TBB's task-stealing decisions improves performance by 13-32% for TBB-based PARSEC benchmarks running on a 32-core CMP."
         }
     },
     {
@@ -316,7 +316,7 @@
         "question": "Is a criticality predictor a tool used for enhancing parallel applications?",
         "answers": {
             "answer_start": 642,
-            "text": "YES"
+            "justification": "This paper proposes and evaluates simple but effective thread criticality predictors for parallel applications."
         }
     },
     {
@@ -326,7 +326,7 @@
         "question": "In dynamic energy optimizations, must the predicted critical thread always run at the full clock rate before frequency-scaling non-critical threads?",
         "answers": {
             "answer_start": 1522,
-            "text": "NO"
+            "justification": "By running the predicted critical thread at the full clock rate and frequency-scaling non-critical threads, this approach achieves average energy savings of 15% while negligibly degrading performance for SPLASH-2 and PARSEC benchmarks."
         }
     },
     {
@@ -336,7 +336,7 @@
         "question": "Does increasing the accuracy of thread criticality prediction always lead to better performance in TBB-based parallel applications?",
         "answers": {
             "answer_start": 1250,
-            "text": "YES"
+            "justification": "Using criticality prediction to guide TBB's task-stealing decisions improves performance by 13-32% for TBB-based PARSEC benchmarks running on a 32-core CMP."
         }
     },
     {
@@ -346,7 +346,7 @@
         "question": "Does LIP provide close to optimal hitrate for applications that have a cyclic reference pattern over LRU?",
         "answers": {
             "answer_start": 757,
-            "text": "YES"
+            "justification": "LIP protects the cache from thrashing and results in close to optimal hitrate for applications that have a cyclic reference pattern."
         }
     },
     {
@@ -356,7 +356,7 @@
         "question": "Is BIP an enhancement of LIP that adapts to changes in the working set while maintaining thrashing protection?",
         "answers": {
             "answer_start": 890,
-            "text": "YES"
+            "justification": "We also propose the Bimodal Insertion Policy (BIP) as an enhancement of LIP that adapts to changes in the working set while maintaining the thrashing protection of LIP."
         }
     },
     {
@@ -366,7 +366,7 @@
         "question": "Is DIP considered a choice between BIP and the traditional LRU policy depending on which policy incurs fewer misses?",
         "answers": {
             "answer_start": 1059,
-            "text": "YES"
+            "justification": "We finally propose a Dynamic Insertion Policy (DIP) to choose between BIP and the traditional LRU policy depending on which policy incurs fewer misses."
         }
     },
     {
@@ -376,7 +376,7 @@
         "question": "In the DIP process, must BIP always occur before the traditional LRU policy?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "We finally propose a Dynamic Insertion Policy (DIP) to choose between BIP and the traditional LRU policy..."
         }
     },
     {
@@ -386,7 +386,7 @@
         "question": "Does increasing the usage of DIP lead to a reduction in the average MPKI of the baseline 1MB 16-way L2 cache?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We show that DIP reduces the average MPKI of the baseline 1MB 16-way L2 cache by 21%..."
         }
     },
     {
@@ -396,7 +396,7 @@
         "question": "Does the proposed analytical model provide insights into the performance bottlenecks of parallel applications on GPU architectures?",
         "answers": {
             "answer_start": 557,
-            "text": "YES"
+            "justification": "To provide insights into the performance bottlenecks of parallel applications on GPU architectures, we propose a simple analytical model that estimates the execution time of massively parallel programs."
         }
     },
     {
@@ -406,7 +406,7 @@
         "question": "Is estimating the number of parallel memory requests a key component of the proposed analytical model?",
         "answers": {
             "answer_start": 760,
-            "text": "YES"
+            "justification": "The key component of our model is estimating the number of parallel memory requests (we call this the memory warp parallelism) by considering the number of running threads and memory bandwidth."
         }
     },
     {
@@ -416,7 +416,7 @@
         "question": "Is the outcome of the model always accurate in estimating the execution time of applications on GPUs?",
         "answers": {
             "answer_start": 1111,
-            "text": "NO"
+            "justification": "Comparisons between the outcome of the model and the actual execution time in several GPUs show that the geometric mean of absolute error of our model on micro-benchmarks is 5.4% and on GPU computing applications is 13.3%."
         }
     },
     {
@@ -426,7 +426,7 @@
         "question": "In the proposed model, must the cost of memory requests be estimated before the overall execution time of a program?",
         "answers": {
             "answer_start": 954,
-            "text": "YES"
+            "justification": "Based on the degree of memory warp parallelism, the model estimates the cost of memory requests, thereby estimating the overall execution time of a program."
         }
     },
     {
@@ -436,7 +436,7 @@
         "question": "Does increasing memory warp parallelism lead to a reduction in execution time for programs?",
         "answers": {
             "answer_start": 760,
-            "text": "NO"
+            "justification": "The key component of our model is estimating the number of parallel memory requests (we call this the memory warp parallelism) by considering the number of running threads and memory bandwidth."
         }
     },
     {
@@ -446,7 +446,7 @@
         "question": "Does the RL-based memory controller provide better performance over a state-of-the-art controller?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our results show that an RL-based memory controller improves the performance of a set of parallel applications run on a 4-core CMP by 19% on average (up to 33%), and it improves DRAM bandwidth utilization by 22% compared to a state-of-the-art controller."
         }
     },
     {
@@ -456,7 +456,7 @@
         "question": "Is the RL-based memory controller primarily responsible for optimizing scheduling policies on the fly?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our RL-based memory controller observes the system state and estimates the long-term performance impact of each action it can take. In this way, the controller learns to optimize its scheduling policy on the fly to maximize long-term performance."
         }
     },
     {
@@ -466,7 +466,7 @@
         "question": "Is the RL-based memory controller an adaptive controller?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We propose a new, self-optimizing memory controller design that operates using the principles of reinforcement learning (RL) to overcome these limitations. As a result, they cannot learn and optimize the long-term performance impact of their scheduling decisions, and cannot adapt their scheduling policies to dynamic workload behavior."
         }
     },
     {
@@ -476,7 +476,7 @@
         "question": "In the RL-based memory controller process, must the controller always estimate the long-term performance impact before taking an action?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our RL-based memory controller observes the system state and estimates the long-term performance impact of each action it can take."
         }
     },
     {
@@ -486,7 +486,7 @@
         "question": "Does increasing the use of reinforcement learning in the memory controller lead to improved DRAM bandwidth utilization?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our results show that an RL-based memory controller improves the performance of a set of parallel applications run on a 4-core CMP by 19% on average (up to 33%), and it improves DRAM bandwidth utilization by 22% compared to a state-of-the-art controller."
         }
     },
     {
@@ -496,7 +496,7 @@
         "question": "Does FireSim provide elasticity, improved usability, and lower cost over prior FPGA-accelerated simulation tools?",
         "answers": {
             "answer_start": 306,
-            "text": "YES"
+            "justification": "FireSim runs on Amazon EC2 F1, a public cloud FPGA platform, which greatly improves usability, provides elasticity, and lowers the cost of large-scale FPGA-based experiments."
         }
     },
     {
@@ -506,7 +506,7 @@
         "question": "Is FireSim responsible for simulating at a 3.4 MHz processor clock rate?",
         "answers": {
             "answer_start": 979,
-            "text": "YES"
+            "justification": "In aggregate, this FireSim instantiation simulates 4,096 cores and 16 TB of memory, runs ~14 billion instructions per second, and harnesses 12.8 million dollars worth of FPGAs\u2014at a total cost of only ~$100 per simulation hour to the user."
         }
     },
     {
@@ -516,7 +516,7 @@
         "question": "Is FireSim a cycle-exact microarchitectural simulation platform for large scale-out clusters?",
         "answers": {
             "answer_start": 0,
-            "text": "YES"
+            "justification": "We present FireSim, an open-source simulation platform that enables cycle-exact microarchitectural simulation of large scale-out clusters by combining FPGA-accelerated simulation of silicon-proven RTL designs with a scalable, distributed network simulation."
         }
     },
     {
@@ -526,7 +526,7 @@
         "question": "In the FireSim process, must a target cluster of 1,024 3.2 GHz quad-core server nodes be deployed before demonstrating it?",
         "answers": {
             "answer_start": 666,
-            "text": "NO"
+            "justification": "As an example, we demonstrate automatically generating and deploying a target cluster of 1,024 3.2 GHz quad-core server nodes, each with 16 GB of DRAM, interconnected by a 200 Gbit/s network with 2 microsecond latency, which simulates at a 3.4 MHz processor clock rate (less than 1,000x slowdown over real-time)."
         }
     },
     {
@@ -536,7 +536,7 @@
         "question": "Does increasing the number of cores FireSim simulates lead to a decrease in cost per simulation hour?",
         "answers": {
             "answer_start": 979,
-            "text": "NO"
+            "justification": "In aggregate, this FireSim instantiation simulates 4,096 cores and 16 TB of memory, runs ~14 billion instructions per second, and harnesses 12.8 million dollars worth of FPGAs\u2014at a total cost of only ~$100 per simulation hour to the user."
         }
     },
     {
@@ -546,7 +546,7 @@
         "question": "Does Plasticine provide an improvement of up to 76.9x in performance-per-Watt over a conventional FPGA?",
         "answers": {
             "answer_start": 1777,
-            "text": "YES"
+            "justification": "Using a cycle-accurate simulator, we demonstrate that Plasticine provides an improvement of up to 76.9x in performance-per-Watt over a conventional FPGA over a wide range of dense and sparse applications."
         }
     },
     {
@@ -556,7 +556,7 @@
         "question": "Are Pattern Compute Units primarily responsible for executing nested patterns efficiently?",
         "answers": {
             "answer_start": 1191,
-            "text": "YES"
+            "justification": "Pattern Compute Units are multi-stage pipelines of reconfigurable SIMD functional units that can efficiently execute nested patterns."
         }
     },
     {
@@ -566,7 +566,7 @@
         "question": "Is Plasticine a collection of Pattern Compute Units and Pattern Memory Units?",
         "answers": {
             "answer_start": 1071,
-            "text": "YES"
+            "justification": "Based on these observations, we architect Plasticine as a collection of Pattern Compute Units and Pattern Memory Units."
         }
     },
     {
@@ -576,7 +576,7 @@
         "question": "In Plasticine process, must memory coalescing always occur before burst mode?",
         "answers": {
             "answer_start": 1444,
-            "text": "NO"
+            "justification": "Multiple on-chip address generators and scatter-gather engines make efficient use of DRAM bandwidth by supporting a large number of outstanding memory requests, memory coalescing, and burst mode for dense accesses."
         }
     },
     {
@@ -586,7 +586,7 @@
         "question": "Does increasing the clock speed of Plasticine lead to a decrease in power consumption?",
         "answers": {
             "answer_start": 1659,
-            "text": "NO"
+            "justification": "Plasticine has an area footprint of 113 mm2 in a 28nm process, and consumes a maximum power of 49 W at a 1 GHz clock."
         }
     },
     {
@@ -596,7 +596,7 @@
         "question": "Does the Markov prefetcher provide good coverage, accuracy, and timely results over a demand-fetch cache organization?",
         "answers": {
             "answer_start": 459,
-            "text": "YES"
+            "justification": "This design results in a prefetching system that provides good coverage, is accurate and produces timely results that can be effectively used by the processor."
         }
     },
     {
@@ -606,7 +606,7 @@
         "question": "Is the Markov prefetcher primarily responsible for reducing the overall execution stalls due to instruction and data memory operations?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "In our cycle-level simulations, the Markov Prefetcher reduces the overall execution stalls due to instruction and data memory operations by an average of 54% for various commercial benchmarks."
         }
     },
     {
@@ -616,7 +616,7 @@
         "question": "Is the Markov prefetcher an interface between the on-chip and off-chip cache in modern computer systems?",
         "answers": {
             "answer_start": 151,
-            "text": "YES"
+            "justification": "This prefetcher acts as an interface between the on-chip and off-chip cache, and can be added to existing computer designs."
         }
     },
     {
@@ -626,7 +626,7 @@
         "question": "In the Markov prefetcher process, must prefetching multiple reference predictions from the memory subsystem always occur before prioritizing the delivery of those references to the processor?",
         "answers": {
             "answer_start": 275,
-            "text": "YES"
+            "justification": "The Markov prefetcher is distinguished by prefetching multiple reference predictions from the memory subsystem, and then prioritizing the delivery of those references to the processor."
         }
     },
     {
@@ -636,7 +636,7 @@
         "question": "Does increasing the memory usage of the Markov prefetcher lead to a proportional increase in its efficiency compared to a demand-fetch cache organization?",
         "answers": {
             "answer_start": 811,
-            "text": "NO"
+            "justification": "while only using two thirds the memory of a demand-fetch cache organization."
         }
     },
     {
@@ -646,7 +646,7 @@
         "question": "Does DAISY provide compatibility benefits over existing architectures?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "DAISY is specifically intended to emulate existing architectures, so that all existing software for an old architecture runs without changes on the VLIW."
         }
     },
     {
@@ -656,7 +656,7 @@
         "question": "Is the Virtual Machine Monitor primarily responsible for translating code to VLIW primitives?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "...the code is translated to VLIW primitives, parallelized and saved in a portion of main memory not visible to the old architecture, by a Virtual Machine Monitor (software) residing in read only memory."
         }
     },
     {
@@ -666,7 +666,7 @@
         "question": "Is DAISY considered a VLIW machine?",
         "answers": {
             "answer_start": 192,
-            "text": "YES"
+            "justification": "We describe new simple hardware features for a VLIW machine we call DAISY (Dynamically Architected Instruction Set from Yorktown)."
         }
     },
     {
@@ -676,7 +676,7 @@
         "question": "In the dynamic parallelization process, must code translation always occur before execution?",
         "answers": {
             "answer_start": 784,
-            "text": "NO"
+            "justification": "Subsequent executions of the same fragment do not require a translation (unless cast out)."
         }
     },
     {
@@ -686,7 +686,7 @@
         "question": "Does increasing instruction level parallelism lead to higher translation overhead?",
         "answers": {
             "answer_start": 1205,
-            "text": "YES"
+            "justification": "The initial results show high degrees of instruction level parallelism with reasonable translation overhead and memory usage."
         }
     },
     {
@@ -696,7 +696,7 @@
         "question": "Does Clank provide correct and efficient execution of long-running applications on harvested energy?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "This paper presents Clank: lightweight architectural support for correct and efficient execution of long-running applications on harvested energy."
         }
     },
     {
@@ -706,7 +706,7 @@
         "question": "Is Clank primarily responsible for maintaining idempotency dynamically?",
         "answers": {
             "answer_start": 760,
-            "text": "YES"
+            "justification": "Clank is a set of hardware buffers and memory-access monitors that dynamically maintain idempotency."
         }
     },
     {
@@ -716,7 +716,7 @@
         "question": "Is Clank a program?",
         "answers": {
             "answer_start": 760,
-            "text": "NO"
+            "justification": "Clank is a set of hardware buffers and memory-access monitors that dynamically maintain idempotency."
         }
     },
     {
@@ -726,7 +726,7 @@
         "question": "In Clank process, must program re-execution always occur before adding hardware checkpoints?",
         "answers": {
             "answer_start": 1461,
-            "text": "NO"
+            "justification": "Clank minimizes checkpoints so much that re-execution time becomes the dominate contributor to run-time overhead."
         }
     },
     {
@@ -736,7 +736,7 @@
         "question": "Does increasing hardware lead to a decrease in Clank run-time overheads?",
         "answers": {
             "answer_start": 1461,
-            "text": "YES"
+            "justification": "Clank minimizes checkpoints so much that re-execution time becomes the dominate contributor to run-time overhead."
         }
     },
     {
@@ -746,7 +746,7 @@
         "question": "Does the Brainwave NPU provide more than an order of magnitude improvement in latency and throughput over state-of-the-art GPUs on large RNNs at a batch size of 1?",
         "answers": {
             "answer_start": 723,
-            "text": "YES"
+            "justification": "The Brainwave NPU achieves more than an order of magnitude improvement in latency and throughput over state-of-the-art GPUs on large RNNs at a batch size of 1."
         }
     },
     {
@@ -756,7 +756,7 @@
         "question": "Is the single-threaded SIMD ISA primarily responsible for achieving more than an order of magnitude improvement in latency and throughput over state-of-the-art GPUs?",
         "answers": {
             "answer_start": 883,
-            "text": "NO"
+            "justification": "The NPU attains this performance using a single-threaded SIMD ISA paired with a distributed microarchitecture capable of dispatching over 7M operations from a single instruction."
         }
     },
     {
@@ -766,7 +766,7 @@
         "question": "Is the Brainwave NPU a production-scale system for real-time AI?",
         "answers": {
             "answer_start": 614,
-            "text": "YES"
+            "justification": "This paper describes the NPU architecture for Project Brainwave, a production-scale system for real-time AI."
         }
     },
     {
@@ -776,7 +776,7 @@
         "question": "In the Brainwave NPU process, must hierarchical instruction decoders and schedulers always occur before thousands of independently addressable high-bandwidth on-chip memories?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "The spatially distributed microarchitecture, scaled up to 96,000 multiply-accumulate units, is supported by hierarchical instruction decoders and schedulers coupled with thousands of independently addressable high-bandwidth on-chip memories."
         }
     },
     {
@@ -786,7 +786,7 @@
         "question": "Does increasing microarchitectural parameters such as native datapaths and numerical precision lead to atypically high FPGA performance competitive with hardened NPUs?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "When targeting an FPGA, microarchitectural parameters such as native datapaths and numerical precision can be 'synthesis specialized' to models at compile time, enabling atypically high FPGA performance competitive with hardened NPUs."
         }
     },
     {
@@ -796,7 +796,7 @@
         "question": "Does effective power provisioning provide opportunities for maximizing the use of deployed power capacity?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Effective power provisioning strategies are needed to determine how much computing equipment can be safely and efficiently hosted within a given power budget. In this paper we present the aggregate power usage characteristics of large collections of servers for different classes of applications over a period of approximately six months. Those observations allow us to evaluate opportunities for maximizing the use of the deployed power capacity of datacenters..."
         }
     },
     {
@@ -806,7 +806,7 @@
         "question": "Is power saving potential greater at the cluster-level than at the rack-level?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We find that the opportunities for power and energy savings are significant, but greater at the cluster-level (thousands of servers) than at the rack-level (tens)."
         }
     },
     {
@@ -816,7 +816,7 @@
         "question": "Is the gap between achieved and theoretical aggregate peak power usage at cluster-level significant?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We find that even in well-tuned applications there is a noticeable gap (7 - 16%) between achieved and theoretical aggregate peak power usage at the cluster level. The gap grows to almost 40% in whole datacenters."
         }
     },
     {
@@ -826,7 +826,7 @@
         "question": "In power management schemes, must peak power and energy usage always be reduced?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "We use our modeling framework to estimate the potential of power management schemes to reduce peak power and energy usage. We find that the opportunities for power and energy savings are significant..."
         }
     },
     {
@@ -836,7 +836,7 @@
         "question": "Does computing equipment tend to exhibit significant power consumption variations based on computing activity?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "...power consumption tends to vary significantly with the actual computing activity."
         }
     },
     {
@@ -846,7 +846,7 @@
         "question": "Does PCM offer more density relative to DRAM?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Phase Change Memory (PCM) devices offer more density relative to DRAM."
         }
     },
     {
@@ -856,7 +856,7 @@
         "question": "Is PCM projected to have limited write endurance?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "As PCM is projected to have limited write endurance..."
         }
     },
     {
@@ -866,7 +866,7 @@
         "question": "Is DRAM primarily responsible for the latency benefits in the proposed architecture?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Such an architecture has the latency benefits of DRAM..."
         }
     },
     {
@@ -876,7 +876,7 @@
         "question": "In hybrid memory system, must write traffic reduction to PCM occur before boosting its lifetime?",
         "answers": {
             "answer_start": 1016,
-            "text": "YES"
+            "justification": "we also propose simple organizational and management solutions of the hybrid memory that reduces the write traffic to PCM, boosting its lifetime from 3 years to 9.7 years."
         }
     },
     {
@@ -886,7 +886,7 @@
         "question": "Does increasing the size of the DRAM buffer lead to a decrease in page faults on average?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "Our evaluations for a baseline system of 16-cores with 8GB DRAM show that, on average, PCM can reduce page faults by 5X..."
         }
     }
 ]

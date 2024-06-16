@@ -6,7 +6,7 @@
         "question": "Does the row-stationary (RS) dataflow provide benefits over existing dataflows in reducing all types of data movement?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Unlike dataflows used in existing designs, which only reduce certain types of data movement, the proposed RS dataflow can adapt to different CNN shape configurations and reduces all types of data movement."
         }
     },
     {
@@ -16,7 +16,7 @@
         "question": "Is data movement more expensive than computation in deep convolutional neural networks (CNNs)?",
         "answers": {
             "answer_start": 481,
-            "text": "YES"
+            "justification": "Energy consumption still remains high as data movement can be more expensive than computation."
         }
     },
     {
@@ -26,7 +26,7 @@
         "question": "Is the proposed row-stationary (RS) dataflow a way to achieve energy-efficient CNN processing without compromising accuracy?",
         "answers": {
             "answer_start": 576,
-            "text": "YES"
+            "justification": "Accordingly, finding a dataflow that supports parallel processing with minimal data movement cost is crucial to achieving energy-efficient CNN processing without compromising accuracy. In this paper, we present a novel dataflow, called row-stationary (RS), that minimizes data movement energy consumption on a spatial architecture."
         }
     },
     {
@@ -36,7 +36,7 @@
         "question": "In the row-stationary (RS) dataflow process, must partial sum accumulations always be minimized?",
         "answers": {
             "answer_start": 908,
-            "text": "YES"
+            "justification": "This is realized by exploiting local data reuse of filter weights and feature map pixels, i.e., activations, in the high-dimensional convolutions, and minimizing data movement of partial sum accumulations."
         }
     },
     {
@@ -46,7 +46,7 @@
         "question": "Does increasing the batch size lead to at least a 1.3\u00d7 improvement in energy efficiency of the row-stationary (RS) dataflow in fully-connected layers?",
         "answers": {
             "answer_start": 1634,
-            "text": "YES"
+            "justification": "Experiments using the CNN configurations of AlexNet show that the proposed RS dataflow is more energy efficient than existing dataflows in both convolutional (1.4\u00d7 to 2.5\u00d7) and fully-connected layers (at least 1.3\u00d7 for batch size larger than 16)."
         }
     },
     {
@@ -56,7 +56,7 @@
         "question": "Does RAIDR provide benefits over existing systems?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "RAIDR achieves a 74.6% refresh reduction, an average DRAM power reduction of 16.1%, and an average system performance improvement of 8.6% over existing systems."
         }
     },
     {
@@ -66,7 +66,7 @@
         "question": "Is RAIDR primarily responsible for identifying and skipping unnecessary refreshes?",
         "answers": {
             "answer_start": 585,
-            "text": "YES"
+            "justification": "RAIDR (Retention-Aware Intelligent DRAM Refresh), a low-cost mechanism that can identify and skip unnecessary refreshes using knowledge of cell retention times."
         }
     },
     {
@@ -76,7 +76,7 @@
         "question": "Is RAIDR a modification to DRAM?",
         "answers": {
             "answer_start": 1052,
-            "text": "NO"
+            "justification": "RAIDR requires no modification to DRAM and minimal modification to the memory controller."
         }
     },
     {
@@ -86,7 +86,7 @@
         "question": "In RAIDR process, must rows containing leaky cells be refreshed as frequently as normal rows?",
         "answers": {
             "answer_start": 854,
-            "text": "YES"
+            "justification": "As a result, rows containing leaky cells are refreshed as frequently as normal, while most rows are refreshed less frequently."
         }
     },
     {
@@ -96,7 +96,7 @@
         "question": "Does increasing memory capacity lead to increased benefits from RAIDR?",
         "answers": {
             "answer_start": 1406,
-            "text": "YES"
+            "justification": "RAIDR's benefits are robust to variation in DRAM system configuration, and increase as memory capacity increases."
         }
     },
     {
@@ -106,7 +106,7 @@
         "question": "Does GraFBoost provide high performance with very large graphs that no other system can handle?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We demonstrate that despite the relatively small amount of DRAM, GraFBoost achieves high performance with very large graphs no other system can handle."
         }
     },
     {
@@ -116,7 +116,7 @@
         "question": "Is the sort-reduce accelerator primarily responsible for achieving high performance in GraFBoost?",
         "answers": {
             "answer_start": 905,
-            "text": "YES"
+            "justification": "The key component of GraFBoost is the sort-reduce accelerator, which implements a novel method to sequentialize fine-grained random accesses to flash storage."
         }
     },
     {
@@ -126,7 +126,7 @@
         "question": "Is GraFBoost a system that uses a constant amount of memory for all problems?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Unlike in-memory and semi-external systems, GraFBoost uses a constant amount of memory for all problems."
         }
     },
     {
@@ -136,7 +136,7 @@
         "question": "In the GraFBoost process, must vertex values always be stored lazily with the old values to reduce I/O traffic?",
         "answers": {
             "answer_start": 1210,
-            "text": "YES"
+            "justification": "GraFBoost also stores newly updated vertex values generated in each superstep of the algorithm lazily with the old vertex values to further reduce I/O traffic."
         }
     },
     {
@@ -146,7 +146,7 @@
         "question": "Does increasing the graph size lead to a decrease in performance for GraFBoost?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "GraFBoost achieves high performance with very large graphs no other system can handle, and its performance decreases very slowly as graph sizes increase."
         }
     },
     {
@@ -156,7 +156,7 @@
         "question": "Does pipeline gating provide benefits in reducing power consumption over rampant speculation?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "In particular we introduce a hardware mechanism called pipeline gating to control rampant speculation in the pipeline. Results show up to a 38% reduction in wrong-path instructions with a negligible performance loss (/spl ap/1%)."
         }
     },
     {
@@ -166,7 +166,7 @@
         "question": "Is branch prediction primarily responsible for increasing instruction level parallelism in microprocessors?",
         "answers": {
             "answer_start": 0,
-            "text": "YES"
+            "justification": "Branch prediction has enabled microprocessors to increase instruction level parallelism (ILP) by allowing programs to speculatively execute beyond control boundaries."
         }
     },
     {
@@ -176,7 +176,7 @@
         "question": "Is pipeline gating a mechanism for controlling rampant speculation in microprocessors?",
         "answers": {
             "answer_start": 934,
-            "text": "YES"
+            "justification": "In particular we introduce a hardware mechanism called pipeline gating to control rampant speculation in the pipeline."
         }
     },
     {
@@ -186,7 +186,7 @@
         "question": "In the pipeline gating process, must a branch be likely to mispredict before stopping wrong-path instructions from entering the pipeline?",
         "answers": {
             "answer_start": 1053,
-            "text": "YES"
+            "justification": "We present inexpensive mechanisms for determining when a branch is likely to mispredict, and for stopping wrong-path instructions from entering the pipeline."
         }
     },
     {
@@ -196,7 +196,7 @@
         "question": "Does increasing the aggressiveness of speculation lead to a higher percentage of wrong-path instructions in microprocessors?",
         "answers": {
             "answer_start": 592,
-            "text": "YES"
+            "justification": "The instruction overhead will increase in the future as processors use more aggressive speculation and wider issue widths."
         }
     },
     {
@@ -206,7 +206,7 @@
         "question": "Does memory system design have a critical impact on the performance of commercial workloads over scientific and engineering workloads?",
         "answers": {
             "answer_start": 151,
-            "text": "YES"
+            "justification": "Ongoing innovations in disk subsystems, along with the ever increasing gap between processor and memory speeds, have elevated memory system design as the critical performance factor for such workloads."
         }
     },
     {
@@ -216,7 +216,7 @@
         "question": "Is the lack of information on the performance requirements of commercial workloads a challenge for optimizing server designs?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "The above problem is exacerbated by the lack of information on the performance requirements of commercial workloads."
         }
     },
     {
@@ -226,7 +226,7 @@
         "question": "Are representative applications for evaluating trade-offs in processor and server design usually large and complex?",
         "answers": {
             "answer_start": 747,
-            "text": "YES"
+            "justification": "Most representative applications are too large and complex to serve as suitable benchmarks for evaluating trade-offs in the design of processors and servers."
         }
     },
     {
@@ -236,7 +236,7 @@
         "question": "In the process of monitoring OLTP, must a set of simplifications be identified to make the workload more amenable to monitoring and simulation?",
         "answers": {
             "answer_start": 1477,
-            "text": "YES"
+            "justification": "We also identify a set of simplifications that make these workloads more amenable to monitoring and simulation without affecting representative memory system behavior."
         }
     },
     {
@@ -246,7 +246,7 @@
         "question": "Does designing systems optimized for OLTP versus DSS and index search workloads lead to diverging choices in the size and speed requirements for off-chip caches?",
         "answers": {
             "answer_start": 1645,
-            "text": "YES"
+            "justification": "We observe that systems optimized for OLTP versus DSS and index search workloads may lead to diverging designs, specifically in the size and speed requirements for off-chip caches."
         }
     },
     {
@@ -256,7 +256,7 @@
         "question": "Does the Neural Cache architecture provide benefits over state-of-the-art multi-core CPU (Xeon E5)?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our experimental results show that the proposed architecture can improve inference latency by 8.3\u00d7 over state-of-art multi-core CPU (Xeon E5)."
         }
     },
     {
@@ -266,7 +266,7 @@
         "question": "Is efficient data mapping primarily responsible for reducing data movement in the Neural Cache architecture?",
         "answers": {
             "answer_start": 198,
-            "text": "YES"
+            "justification": "Techniques to do in-situ arithmetic in SRAM arrays, create efficient data mapping and reducing data movement are proposed."
         }
     },
     {
@@ -276,7 +276,7 @@
         "question": "Is the Neural Cache architecture capable of executing convolutional, fully connected, and pooling layers in-cache?",
         "answers": {
             "answer_start": 321,
-            "text": "YES"
+            "justification": "The Neural Cache architecture is capable of fully executing convolutional, fully connected, and pooling layers in-cache."
         }
     },
     {
@@ -286,7 +286,7 @@
         "question": "In the Neural Cache architecture process, must quantization always occur in-cache before executing convolutional, fully connected, and pooling layers?",
         "answers": {
             "answer_start": 442,
-            "text": "NO"
+            "justification": "The proposed architecture also supports quantization in-cache."
         }
     },
     {
@@ -296,7 +296,7 @@
         "question": "Does reducing power consumption lead to better inference throughput in the Neural Cache architecture?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Neural Cache improves inference throughput by 12.4\u00d7 over CPU, while reducing power consumption by 50% over CPU."
         }
     },
     {
@@ -306,7 +306,7 @@
         "question": "Does small cores achieve good performance if the workload inherently has high levels of ILP?",
         "answers": {
             "answer_start": 305,
-            "text": "YES"
+            "justification": "In general, small cores can achieve good performance if the workload inherently has high levels of ILP."
         }
     },
     {
@@ -316,7 +316,7 @@
         "question": "Is big cores provide good performance if the workload requires the ILP to be extracted dynamically?",
         "answers": {
             "answer_start": 409,
-            "text": "YES"
+            "justification": "On the other hand, big cores provide good performance if the workload exhibits high levels of MLP or requires the ILP to be extracted dynamically."
         }
     },
     {
@@ -326,7 +326,7 @@
         "question": "Is Performance Impact Estimation (PIE) a mechanism to predict which workload-to-core mapping is likely to provide the best performance?",
         "answers": {
             "answer_start": 556,
-            "text": "YES"
+            "justification": "This paper proposes Performance Impact Estimation (PIE) as a mechanism to predict which workload-to-core mapping is likely to provide the best performance."
         }
     },
     {
@@ -336,7 +336,7 @@
         "question": "In Dynamic PIE process, must the scheduling be adjusted at runtime?",
         "answers": {
             "answer_start": 849,
-            "text": "YES"
+            "justification": "Dynamic PIE adjusts the scheduling at runtime and thereby exploits fine-grained time-varying execution behavior."
         }
     },
     {
@@ -346,7 +346,7 @@
         "question": "Does PIE require extensive hardware support?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "We show that PIE requires limited hardware support and can improve system performance by an average of 5.5% over recent state-of-the-art scheduling proposals."
         }
     },
     {
@@ -356,7 +356,7 @@
         "question": "Does increasing the size of ASIC Clouds lead to better total cost of ownership (TCO) over CPU and GPU?",
         "answers": {
             "answer_start": 1073,
-            "text": "YES"
+            "justification": "and show 2-3 orders of magnitude better TCO versus CPU and GPU."
         }
     },
     {
@@ -366,7 +366,7 @@
         "question": "Is data center parameters responsible for determining which of the many Pareto-optimal points is TCO-optimal?",
         "answers": {
             "answer_start": 1553,
-            "text": "YES"
+            "justification": "Moreover, we show how data center parameters determine which of the many Pareto-optimal points is TCO-optimal."
         }
     },
     {
@@ -376,7 +376,7 @@
         "question": "Is ASIC Cloud a deployment model adopted by commercial entities for certain computational tasks?",
         "answers": {
             "answer_start": 617,
-            "text": "YES"
+            "justification": "Surprisingly, however, large-scale ASIC Clouds have already been deployed by a large number of commercial entities, to implement the distributed Bitcoin cryptocurrency system."
         }
     },
     {
@@ -386,7 +386,7 @@
         "question": "In the creation of ASIC Clouds, must clever but brute-force search always be employed to optimize various components?",
         "answers": {
             "answer_start": 1221,
-            "text": "YES"
+            "justification": "derives Pareto-optimal ASIC Cloud Servers, by extracting data from place-and-routed circuits and computational fluid dynamic simulations, and then employing clever but brute-force search to find the best jointly-optimized ASIC, DRAM subsystem, motherboard, power delivery system, cooling system, operating voltage, and case design."
         }
     },
     {
@@ -396,7 +396,7 @@
         "question": "Does the inflexibility of ASICs hinder the creation of ASIC Clouds?",
         "answers": {
             "answer_start": 617,
-            "text": "NO"
+            "justification": "Surprisingly, however, large-scale ASIC Clouds have already been deployed by a large number of commercial entities, to implement the distributed Bitcoin cryptocurrency system."
         }
     },
     {
@@ -406,7 +406,7 @@
         "question": "Does 3D integration provide benefits over 2D DRAM organizations?",
         "answers": {
             "answer_start": 150,
-            "text": "YES"
+            "justification": "Previous studies have examined the performance benefits of such an approach, but all of these works only consider commodity 2D DRAM organizations."
         }
     },
     {
@@ -416,7 +416,7 @@
         "question": "Is the L2 miss handling architecture primarily responsible for a performance bottleneck?",
         "answers": {
             "answer_start": 729,
-            "text": "YES"
+            "justification": "The significant increase in memory system performance makes the L2 miss handling architecture (MHA) a new bottleneck, which we address by combining a novel data structure called the Vector Bloom Filter with dynamic MSHR capacity tuning."
         }
     },
     {
@@ -426,7 +426,7 @@
         "question": "Is the Vector Bloom Filter a novel data structure?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We address the L2 miss handling architecture bottleneck by combining a novel data structure called the Vector Bloom Filter with dynamic MSHR capacity tuning."
         }
     },
     {
@@ -436,7 +436,7 @@
         "question": "In the memory system performance improvement process, must dynamic MSHR capacity tuning always occur before using the Vector Bloom Filter?",
         "answers": {
             "answer_start": 966,
-            "text": "NO"
+            "justification": "Our scalable L2 MHA yields an additional 17.8% performance improvement over our 3D-stacked memory architecture."
         }
     },
     {
@@ -446,7 +446,7 @@
         "question": "Does increasing die-to-die bandwidth lead to a 1.75x speedup over previously proposed 3D-DRAM approaches?",
         "answers": {
             "answer_start": 489,
-            "text": "YES"
+            "justification": "Our simulation results show that with a few simple changes to the 3D-DRAM organization, we can achieve a 1.75x speedup over previously proposed 3D-DRAM approaches on our memory-intensive multi-programmed workloads on a quad-core processor."
         }
     },
     {
@@ -456,7 +456,7 @@
         "question": "Does active low-power mode provide energy-proportionality with acceptable query latency for Online Data-Intensive (OLDI) workloads like Web search?",
         "answers": {
             "answer_start": 1773,
-            "text": "YES"
+            "justification": "In contrast to other server workloads, for which idle low-power modes have shown great promise, for OLDI workloads we find that energy-proportionality with acceptable query latency can only be achieved using coordinated, full-system active low-power modes."
         }
     },
     {
@@ -466,7 +466,7 @@
         "question": "Is the lack of energy proportionality a challenge for the power management of Online Data-Intensive (OLDI) workloads?",
         "answers": {
             "answer_start": 510,
-            "text": "YES"
+            "justification": "Although the load in OLDI services can vary widely during the day, their energy consumption sees little variance due to the lack of energy proportionality of the underlying machinery."
         }
     },
     {
@@ -476,7 +476,7 @@
         "question": "Is Web search a representative example of Online Data-Intensive (OLDI) workload?",
         "answers": {
             "answer_start": 1172,
-            "text": "YES"
+            "justification": "Using Web search as a representative example of this workload class, we first characterize a production Web search workload at cluster-wide scale."
         }
     },
     {
@@ -486,7 +486,7 @@
         "question": "In the process of power management for OLDI workloads, must active low-power modes occur coordinated and full-system active low-power modes before achieving energy-proportionality with acceptable query latency?",
         "answers": {
             "answer_start": 1869,
-            "text": "YES"
+            "justification": "for OLDI workloads we find that energy-proportionality with acceptable query latency can only be achieved using coordinated, full-system active low-power modes."
         }
     },
     {
@@ -496,7 +496,7 @@
         "question": "Does increasing use of low-power modes lead to reduced power consumption in the primary server components for OLDI systems?",
         "answers": {
             "answer_start": 1461,
-            "text": "YES"
+            "justification": "Second, we develop and validate a performance model to evaluate the impact of processor- and memory-based low-power modes on the search latency distribution and consider the benefit of current and foreseeable low-power modes."
         }
     },
     {
@@ -506,7 +506,7 @@
         "question": "Does placing the CNN accelerator next to the image sensor provide benefits over traditional setups?",
         "answers": {
             "answer_start": 802,
-            "text": "YES"
+            "justification": "By further hoisting this accelerator next to the image sensor, it is possible to eliminate all remaining DRAM accesses, i.e., for inputs and outputs."
         }
     },
     {
@@ -516,7 +516,7 @@
         "question": "Is the shared weights property primarily responsible for reducing the neural network memory footprint?",
         "answers": {
             "answer_start": 602,
-            "text": "YES"
+            "justification": "weights are shared among many neurons, considerably reducing the neural network memory footprint."
         }
     },
     {
@@ -526,7 +526,7 @@
         "question": "Is the proposed CNN accelerator a spatial architecture?",
         "answers": {
             "answer_start": 967,
-            "text": "YES"
+            "justification": "we propose such a CNN accelerator, placed next to a CMOS or CCD sensor."
         }
     },
     {
@@ -536,7 +536,7 @@
         "question": "In the design process of the CNN accelerator, must careful exploitation of specific data access patterns within CNNs always occur before the elimination of DRAM accesses?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "By further hoisting this accelerator next to the image sensor, it is possible to eliminate all remaining DRAM accesses through careful exploitation of the specific data access patterns within CNNs."
         }
     },
     {
@@ -546,7 +546,7 @@
         "question": "Does increasing energy efficiency lead to a decrease in memory accesses for the CNN accelerator?",
         "answers": {
             "answer_start": 228,
-            "text": "NO"
+            "justification": "both the energy efficiency and performance of such accelerators remain limited by memory accesses."
         }
     },
     {
@@ -556,7 +556,7 @@
         "question": "Does application variability breed the need for architectures that can tolerate without performance loss?",
         "answers": {
             "answer_start": 495,
-            "text": "YES"
+            "justification": "We first find that WSC workloads are extremely diverse, breeding the need for architectures that can tolerate application variability without performance loss."
         }
     },
     {
@@ -566,7 +566,7 @@
         "question": "Is memory latency preferred over bandwidth in typical workloads?",
         "answers": {
             "answer_start": 1178,
-            "text": "YES"
+            "justification": "Typical workloads place significant stress on instruction caches and prefer memory latency over bandwidth."
         }
     },
     {
@@ -576,7 +576,7 @@
         "question": "Is 'datacenter tax' a prime candidate for hardware specialization in future server systems-on-chips?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "This 'datacenter tax' can comprise nearly 30% of cycles across jobs running in the fleet, which makes its constituents prime candidates for hardware specialization in future server systems-on-chips."
         }
     },
     {
@@ -586,7 +586,7 @@
         "question": "In the cache hierarchy optimization process, must instruction caches experience significant stress?",
         "answers": {
             "answer_start": 1178,
-            "text": "YES"
+            "justification": "Typical workloads place significant stress on instruction caches and prefer memory latency over bandwidth."
         }
     },
     {
@@ -596,7 +596,7 @@
         "question": "Does increasing the need for architectures that can tolerate application variability lead to decreased performance?",
         "answers": {
             "answer_start": 495,
-            "text": "NO"
+            "justification": "We first find that WSC workloads are extremely diverse, breeding the need for architectures that can tolerate application variability without performance loss."
         }
     },
     {
@@ -606,7 +606,7 @@
         "question": "Does multicore scaling provide significant speedup potential over single-core scaling?",
         "answers": {
             "answer_start": 1124,
-            "text": "NO"
+            "justification": "The study shows that regardless of chip organization and topology, multicore scaling is power limited to a degree not widely appreciated by the computing community."
         }
     },
     {
@@ -616,7 +616,7 @@
         "question": "Is the failure of Dennard scaling primarily responsible for the shift to multicore parts?",
         "answers": {
             "answer_start": 140,
-            "text": "YES"
+            "justification": "The failure of Dennard scaling, to which the shift to multicore parts is partially a response, may soon limit multicore scaling just as single-core scaling has been curtailed."
         }
     },
     {
@@ -626,7 +626,7 @@
         "question": "Is a multicore CPU-like chip organization a type of multicore design studied in the paper?",
         "answers": {
             "answer_start": 937,
-            "text": "YES"
+            "justification": "The multicore designs we study include single-threaded CPU-like and massively threaded GPU-like multicore chip organizations with symmetric, asymmetric, dynamic, and composed topologies."
         }
     },
     {
@@ -636,7 +636,7 @@
         "question": "In the device scaling process, must a set of more conservative device scaling parameters always be used?",
         "answers": {
             "answer_start": 538,
-            "text": "NO"
+            "justification": "For device scaling, we use both the ITRS projections and a set of more conservative device scaling parameters."
         }
     },
     {
@@ -646,7 +646,7 @@
         "question": "Does increasing the technology generation lead to a linear increase in speedup potential for parallel workloads?",
         "answers": {
             "answer_start": 1424,
-            "text": "NO"
+            "justification": "Through 2024, only 7.9\u00d7 average speedup is possible across commonly used parallel workloads, leaving a nearly 24-fold gap from a target of doubled performance per generation."
         }
     },
     {
@@ -656,7 +656,7 @@
         "question": "Does a dragonfly reduce cost by 20% compared to a flattened butterfly?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "By reducing global channels, a dragonfly reduces cost by 20% compared to a flattened butterfly."
         }
     },
     {
@@ -666,7 +666,7 @@
         "question": "Is each router in a dragonfly responsible for making an adaptive routing decision?",
         "answers": {
             "answer_start": 950,
-            "text": "YES"
+            "justification": "Each router in a dragonfly must make an adaptive routing decision based on the state of a global channel connected to a different router."
         }
     },
     {
@@ -676,7 +676,7 @@
         "question": "Is the dragonfly topology a configuration with \u2265 16K nodes?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "A dragonfly reduces cost by 52% compared to a folded Clos network in configurations with \u2265 16K nodes."
         }
     },
     {
@@ -686,7 +686,7 @@
         "question": "In dragonfly networks, must selective virtual-channel discrimination always occur before using credit round-trip latency?",
         "answers": {
             "answer_start": 1213,
-            "text": "NO"
+            "justification": "We introduce the use of selective virtual-channel discrimination and the use of credit round-trip latency to both sense and signal channel congestion."
         }
     },
     {
@@ -696,7 +696,7 @@
         "question": "Does increasing the number of cables in a high-radix network lead to longer cables than low-radix networks?",
         "answers": {
             "answer_start": 159,
-            "text": "YES"
+            "justification": "High-radix networks, however, require longer cables than their low-radix counterparts."
         }
     },
     {
@@ -706,7 +706,7 @@
         "question": "Does DRAM refresh operations waste energy and also degrade system performance?",
         "answers": {
             "answer_start": 214,
-            "text": "YES"
+            "justification": "Unfortunately, DRAM refresh operations waste energy and also degrade system performance by interfering with memory requests."
         }
     },
     {
@@ -716,7 +716,7 @@
         "question": "Is data pattern dependence significant in modern DRAMs?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We observe two significant phenomena: data pattern dependence, where the retention time of each DRAM cell is significantly affected by the data stored in other DRAM cells."
         }
     },
     {
@@ -726,7 +726,7 @@
         "question": "Is DRAM cell's retention time variable over time?",
         "answers": {
             "answer_start": 1368,
-            "text": "YES"
+            "justification": "and variable retention time, where the retention time of some DRAM cells changes unpredictably over time."
         }
     },
     {
@@ -736,7 +736,7 @@
         "question": "In DRAM refresh operations, must all DRAM cells be refreshed at the same rate?",
         "answers": {
             "answer_start": 524,
-            "text": "NO"
+            "justification": "In current systems, all DRAM cells are refreshed at the rate required to guarantee the integrity of the cell with the shortest retention time, resulting in unnecessary refreshes for cells with longer retention times."
         }
     },
     {
@@ -746,7 +746,7 @@
         "question": "Does increasing DRAM density lead to worsening problems with DRAM retention time profiling mechanisms?",
         "answers": {
             "answer_start": 339,
-            "text": "YES"
+            "justification": "These problems are expected to worsen as DRAM density increases."
         }
     },
     {
@@ -756,7 +756,7 @@
         "question": "Does the composable, reconfigurable fabric provide energy-efficient dataflow for convolutional neural networks?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "To advance datacenter capabilities beyond what commodity server designs can provide, we have designed and built a composable, reconfigurable fabric to accelerate portions of large-scale software services."
         }
     },
     {
@@ -766,7 +766,7 @@
         "question": "Is the fabric primarily responsible for improving the ranking throughput of each server by a factor of 95% for a fixed latency distribution?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Under high load, the large-scale reconfigurable fabric improves the ranking throughput of each server by a factor of 95% for a fixed latency distribution."
         }
     },
     {
@@ -776,7 +776,7 @@
         "question": "Is the large-scale reconfigurable fabric a system to accelerate portions of large-scale software services?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "To advance datacenter capabilities beyond what commodity server designs can provide, we have designed and built a composable, reconfigurable fabric to accelerate portions of large-scale software services."
         }
     },
     {
@@ -786,7 +786,7 @@
         "question": "In the deployment of the fabric, must critical engineering challenges and solutions always occur before measuring its efficacy in accelerating the Bing web search engine?",
         "answers": {
             "answer_start": 799,
-            "text": "NO"
+            "justification": "We describe the requirements and architecture of the system, detail the critical engineering challenges and solutions needed to make the system robust in the presence of failures, and measure the performance, power, and resilience of the system when ranking candidate documents."
         }
     },
     {
@@ -796,7 +796,7 @@
         "question": "Does increasing load lead to a reduction in tail latency by 29% while maintaining equivalent throughput?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Under high load, the large-scale reconfigurable fabric improves the ranking throughput of each server by a factor of 95% for a fixed latency distribution--- or, while maintaining equivalent throughput, reduces the tail latency by 29%."
         }
     },
     {
@@ -806,7 +806,7 @@
         "question": "Does RRIP provide benefits over LRU in cache replacement?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our evaluations using PC games, multimedia, server and SPEC CPU2006 workloads show that both SRRIP and DRRIP outperform LRU replacement on the throughput metric by an average of 4% and 10% respectively."
         }
     },
     {
@@ -816,7 +816,7 @@
         "question": "Is LRU primarily responsible for poor performance in applications with distant re-reference intervals?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Applications that exhibit a distant re-reference interval perform badly under LRU. Such applications usually have a working-set larger than the cache or have frequent bursts of references to non-temporal data."
         }
     },
     {
@@ -826,7 +826,7 @@
         "question": "Is DRRIP a both scan-resistant and thrash-resistant cache replacement policy?",
         "answers": {
             "answer_start": 670,
-            "text": "YES"
+            "justification": "Dynamic RRIP (DRRIP) that is both scan-resistant and thrash-resistant."
         }
     },
     {
@@ -836,7 +836,7 @@
         "question": "In cache replacement process, must a re-reference interval prediction always occur before cache block replacement?",
         "answers": {
             "answer_start": 134,
-            "text": "NO"
+            "justification": "The commonly used LRU replacement policy always predicts a near-immediate re-reference interval on cache hits and misses."
         }
     },
     {
@@ -846,7 +846,7 @@
         "question": "Does increasing cache block prediction bits lead to reduced hardware requirements?",
         "answers": {
             "answer_start": 1465,
-            "text": "YES"
+            "justification": "For the cache configurations under study, RRIP requires 2X less hardware than LRU and 2.5X less hardware than LFU."
         }
     },
     {
@@ -856,7 +856,7 @@
         "question": "Does CNN workloads exhibit a widely varying mix of three types of parallelism provide benefits over a fixed mix?",
         "answers": {
             "answer_start": 961,
-            "text": "YES"
+            "justification": "Based on these two observations, we show that for a given number of processing elements and off-chip memory bandwidth, a new CNN hardware architecture that dynamically configures the hardware on-the-fly to match the specific mix of parallelism in a given workload gives the best throughput performance."
         }
     },
     {
@@ -866,7 +866,7 @@
         "question": "Is the number of processing elements scaling much faster than off-chip memory bandwidth?",
         "answers": {
             "answer_start": 792,
-            "text": "YES"
+            "justification": "Second, the number of processing elements in an architecture continues to scale (as per Moore's law) much faster than off-chip memory bandwidth (or pin-count) of chips."
         }
     },
     {
@@ -876,7 +876,7 @@
         "question": "Is the new CNN hardware architecture a dynamically configurable architecture?",
         "answers": {
             "answer_start": 1264,
-            "text": "YES"
+            "justification": "Our CNN compiler automatically translates high abstraction network specification into a parallel microprogram (a sequence of low-level VLIW instructions) that is mapped, scheduled and executed by the coprocessor."
         }
     },
     {
@@ -886,7 +886,7 @@
         "question": "In the CNN compiler process, must high abstraction network specification always be translated into a parallel microprogram before mapping and execution?",
         "answers": {
             "answer_start": 1264,
-            "text": "NO"
+            "justification": "Our CNN compiler automatically translates high abstraction network specification into a parallel microprogram (a sequence of low-level VLIW instructions) that is mapped, scheduled and executed by the coprocessor."
         }
     },
     {
@@ -896,7 +896,7 @@
         "question": "Does increasing the processing elements lead to faster performance in the dynamically configurable architecture?",
         "answers": {
             "answer_start": 1477,
-            "text": "NO"
+            "justification": "Compared to a 2.3 GHz quad-core, dual socket Intel Xeon, 1.35 GHz C870 GPU, and a 200 MHz FPGA implementation, our 120 MHz dynamically configurable architecture is 4x to 8x faster."
         }
     },
     {
@@ -906,7 +906,7 @@
         "question": "Does memory consistency provide benefits over memory persistency?",
         "answers": {
             "answer_start": 643,
-            "text": "YES"
+            "justification": "We introduce memory persistency, a new approach to designing persistent memory interfaces, building on memory consistency."
         }
     },
     {
@@ -916,7 +916,7 @@
         "question": "Is memory persistency primarily responsible for reducing NVRAM write constraints?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our results show that relaxed persistency models accelerate system throughput 30-fold by reducing NVRAM write constraints."
         }
     },
     {
@@ -926,7 +926,7 @@
         "question": "Is NVRAM considered a type of DRAM?",
         "answers": {
             "answer_start": 0,
-            "text": "NO"
+            "justification": "Emerging nonvolatile memory technologies (NVRAM) promise the performance of DRAM with the persistence of disk."
         }
     },
     {
@@ -936,7 +936,7 @@
         "question": "In memory persistency process, must writes always occur with respect to failure?",
         "answers": {
             "answer_start": 250,
-            "text": "YES"
+            "justification": "We require new memory interfaces to minimally describe write constraints and allow high performance and high concurrency data structures."
         }
     },
     {
@@ -946,7 +946,7 @@
         "question": "Does increasing write concurrency lead to higher system throughput?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our results show that relaxed persistency models accelerate system throughput 30-fold by reducing NVRAM write constraints."
         }
     },
     {
@@ -956,7 +956,7 @@
         "question": "Does replicating the pod to fill the die area yield processors which have optimal performance density?",
         "answers": {
             "answer_start": 949,
-            "text": "YES"
+            "justification": "Replicating the pod to fill the die area yields processors which have optimal performance density, leading to maximum per-chip throughput."
         }
     },
     {
@@ -966,7 +966,7 @@
         "question": "Is each pod a stand-alone server in scale-out processors?",
         "answers": {
             "answer_start": 1088,
-            "text": "YES"
+            "justification": "Moreover, as each pod is a stand-alone server, scale-out processors avoid the expense of global (i.e., inter-pod) interconnect and coherence."
         }
     },
     {
@@ -976,7 +976,7 @@
         "question": "Is a complete server that tightly couples a number of cores to a small last-level cache using a fast interconnect known as a pod?",
         "answers": {
             "answer_start": 707,
-            "text": "YES"
+            "justification": "Based on a metric of performance-density, we facilitate the design of optimal multi-core configurations, called pods."
         }
     },
     {
@@ -986,7 +986,7 @@
         "question": "In scale-out processors, must the last-level cache capture the instruction footprint at the lowest possible access latency before fetching instructions?",
         "answers": {
             "answer_start": 431,
-            "text": "NO"
+            "justification": "Performance on scale-out workloads is maximized through a modestly-sized last-level cache that captures the instruction footprint at the lowest possible access latency."
         }
     },
     {
@@ -996,7 +996,7 @@
         "question": "Does increasing the die area of scale-out chips lead to lower design complexity?",
         "answers": {
             "answer_start": 1088,
-            "text": "NO"
+            "justification": "Moreover, as each pod is a stand-alone server, scale-out processors avoid the expense of global (i.e., inter-pod) interconnect and coherence."
         }
     },
     {
@@ -1006,7 +1006,7 @@
         "question": "Does hardware specialization provide energy advantages over traditional architectures?",
         "answers": {
             "answer_start": 0,
-            "text": "YES"
+            "justification": "Hardware specialization, in the form of accelerators that provide custom datapath and control for specific algorithms and applications, promises impressive performance and energy advantages compared to traditional architectures."
         }
     },
     {
@@ -1016,7 +1016,7 @@
         "question": "Is Aladdin primarily responsible for estimating performance, power, and area of accelerators?",
         "answers": {
             "answer_start": 515,
-            "text": "YES"
+            "justification": "To overcome this problem, we present Aladdin, a pre-RTL, power-performance accelerator modeling framework and demonstrate its application to system-on-chip (SoC) simulation."
         }
     },
     {
@@ -1026,7 +1026,7 @@
         "question": "Is Aladdin a pre-RTL, power-performance accelerator modeling framework?",
         "answers": {
             "answer_start": 515,
-            "text": "YES"
+            "justification": "To overcome this problem, we present Aladdin, a pre-RTL, power-performance accelerator modeling framework and demonstrate its application to system-on-chip (SoC) simulation."
         }
     },
     {
@@ -1036,7 +1036,7 @@
         "question": "In RTL-based synthesis flows, must significant effort and expertise be required?",
         "answers": {
             "answer_start": 361,
-            "text": "YES"
+            "justification": "Such techniques not only require significant effort and expertise but are also slow and tedious to use, making large design space exploration infeasible."
         }
     },
     {
@@ -1046,7 +1046,7 @@
         "question": "Does integrating with architecture-level core and memory hierarchy simulators lead to power and performance modeling?",
         "answers": {
             "answer_start": 817,
-            "text": "YES"
+            "justification": "Integrated with architecture-level core and memory hierarchy simulators, Aladdin provides researchers an approach to model the power and performance of accelerators in an SoC environment."
         }
     },
     {
@@ -1056,7 +1056,7 @@
         "question": "Does Bubble-Flux provide accurate QoS control and maximize server utilization over static profiling?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Bubble-Flux...to provide accurate QoS control and maximize server utilization."
         }
     },
     {
@@ -1066,7 +1066,7 @@
         "question": "Is Bubble-Flux primarily responsible for measuring the instantaneous pressure on shared hardware resources?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Bubble-Flux uses a Dynamic Bubble to probe servers in real time to measure the instantaneous pressure on the shared hardware resources."
         }
     },
     {
@@ -1076,7 +1076,7 @@
         "question": "Is Bubble-Flux a mechanism to continuously monitor the QoS of a latency-sensitive application?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Bubble-Flux uses an Online Flux Engine to continuously monitor the QoS of the latency-sensitive application."
         }
     },
     {
@@ -1086,7 +1086,7 @@
         "question": "In the Bubble-Flux process, must 'safe' batch jobs be selected before mapping to a server?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Once 'safe' batch jobs are selected and mapped to a server, Bubble-Flux uses an Online Flux Engine to...adapt to dynamic input, phase, and load changes."
         }
     },
     {
@@ -1096,7 +1096,7 @@
         "question": "Does increasing the utilization improvement achieved by Bubble-Flux lead to up to 2.2x better results than the prior static approach?",
         "answers": {
             "answer_start": 1570,
-            "text": "YES"
+            "justification": "Our results show that the utilization improvement achieved by Bubble-Flux is up to 2.2x better than the prior static approach."
         }
     },
     {
@@ -1106,7 +1106,7 @@
         "question": "Does Accel-Sim decrease cycle error percentage points over a wide range of workloads?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We use these three new mechanisms to build Accel-Sim, a detailed simulation framework that decreases cycle error 79 percentage points, over a wide range of workloads."
         }
     },
     {
@@ -1116,7 +1116,7 @@
         "question": "Is a comprehensive set of microbenchmarks used to ease the modeling process in Accel-Sim?",
         "answers": {
             "answer_start": 808,
-            "text": "YES"
+            "justification": "Second, we extensively update GPGPU-Sim's performance model to increase its level of detail, configurability and accuracy. Finally, surrounding the new frontend and flexible performance model is an infrastructure that enables quick, detailed validation. A comprehensive set of microbenchmarks and automated correlation plotting ease the modeling process."
         }
     },
     {
@@ -1126,7 +1126,7 @@
         "question": "Is Deepbench a machine learning benchmark suite that uses closed-source kernels?",
         "answers": {
             "answer_start": 1370,
-            "text": "YES"
+            "justification": "We further demonstrate that Accel-Sim is able to simulate benchmark suites that no other open-source simulator can. In particular, we use Accel-sim to simulate an additional 60 workloads, comprised of 11,440 kernel instances, from the machine learning benchmark suite Deepbench. Deepbench makes use of closed-source, hand-tuned kernels with no virtual ISA implementation."
         }
     },
     {
@@ -1136,7 +1136,7 @@
         "question": "In the Accel-Sim process, does validation occur through a counter-by-counter analysis?",
         "answers": {
             "answer_start": 1742,
-            "text": "YES"
+            "justification": "Using a rigorous counter-by-counter analysis, we validate Accel-Sim against contemporary GPUs."
         }
     },
     {
@@ -1146,7 +1146,7 @@
         "question": "Does falling behind industry highlight new areas of opportunity according to the paper?",
         "answers": {
             "answer_start": 1836,
-            "text": "NO"
+            "justification": "Finally, to highlight the effects of falling behind industry, this paper presents two case-studies that demonstrate how incorrect baseline assumptions can hide new areas of opportunity and lead to potentially incorrect design decisions."
         }
     },
     {
@@ -1156,7 +1156,7 @@
         "question": "Does DNA strand displacement provide more easily designed DNA-based circuits over stochastic interaction of freely diffusing components?",
         "answers": {
             "answer_start": 600,
-            "text": "YES"
+            "justification": "This paper proposes practical spatial isolation of components, leading to more easily designed DNA-based circuits."
         }
     },
     {
@@ -1166,7 +1166,7 @@
         "question": "Is DNA nanotechnology at a turning point with many proposed applications being realized?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "DNA nanotechnology is currently at a turning point, with many proposed applications being realized."
         }
     },
     {
@@ -1176,7 +1176,7 @@
         "question": "Is DNA strand displacement a practical approach for in-vivo computation?",
         "answers": {
             "answer_start": 159,
-            "text": "YES"
+            "justification": "Due to its bio-compatibility and ease of engineering, one promising approach for performing in-vivo computation is DNA strand displacement."
         }
     },
     {
@@ -1186,7 +1186,7 @@
         "question": "In DNA strand displacement process, must stochastic interaction of freely diffusing components always occur before spatial isolation of components?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "This paper proposes practical spatial isolation of components, leading to more easily designed DNA-based circuits, whereas prior approaches rely mostly on stochastic interaction of freely diffusing components."
         }
     },
     {
@@ -1196,7 +1196,7 @@
         "question": "Does increasing practical spatial isolation of components lead to more efficiently designed DNA-based circuits?",
         "answers": {
             "answer_start": 600,
-            "text": "YES"
+            "justification": "This paper proposes practical spatial isolation of components, leading to more easily designed DNA-based circuits."
         }
     },
     {
@@ -1206,7 +1206,7 @@
         "question": "Does processing-in-memory (PIM) provide benefits over conventional systems for large-scale graph processing?",
         "answers": {
             "answer_start": 717,
-            "text": "YES"
+            "justification": "In this work, we argue that the conventional concept of processing-in-memory (PIM) can be a viable solution to achieve such an objective."
         }
     },
     {
@@ -1216,7 +1216,7 @@
         "question": "Is the recent advancement of 3D integration technology primarily responsible for enabling memory-capacity-proportional performance in Tesseract?",
         "answers": {
             "answer_start": 1084,
-            "text": "YES"
+            "justification": "In order to take advantage of such a new technology to enable memory-capacity-proportional performance, we design a programmable PIM accelerator for large-scale graph processing called Tesseract."
         }
     },
     {
@@ -1226,7 +1226,7 @@
         "question": "Is Tesseract always a programmable PIM accelerator for large-scale graph processing?",
         "answers": {
             "answer_start": 1188,
-            "text": "YES"
+            "justification": "we design a programmable PIM accelerator for large-scale graph processing called Tesseract."
         }
     },
     {
@@ -1236,7 +1236,7 @@
         "question": "In the Tesseract process, must hints always be provided by the programming model for the hardware prefetchers specialized for memory access patterns of graph processing?",
         "answers": {
             "answer_start": 1656,
-            "text": "YES"
+            "justification": "which operate based on the hints provided by our programming model."
         }
     },
     {
@@ -1246,7 +1246,7 @@
         "question": "Does increasing memory bandwidth lead to average energy reduction in the proposed architecture for large-scale graph processing?",
         "answers": {
             "answer_start": 1848,
-            "text": "NO"
+            "justification": "the proposed architecture improves average system performance by a factor of ten and achieves 87% average energy reduction over conventional systems."
         }
     },
     {
@@ -1256,7 +1256,7 @@
         "question": "Does HotSpot provide an accurate thermal model for architectural studies?",
         "answers": {
             "answer_start": 385,
-            "text": "YES"
+            "justification": "This paper describes HotSpot, an accurate yet fast model based on an equivalent circuit of thermal resistances and capacitances that correspond to microarchitecture blocks and essential aspects of the thermal package."
         }
     },
     {
@@ -1266,7 +1266,7 @@
         "question": "Is temperature-tracking frequency scaling an effective method for dynamic thermal management?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "The paper also introduces several effective methods for dynamic thermal management (DTM): 'temperature-tracking' frequency scaling, localized toggling, and migrating computation to spare hardware units."
         }
     },
     {
@@ -1276,7 +1276,7 @@
         "question": "Is power a good predictor of temperature?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "Modeling temperature at the microarchitecture level also shows that power metrics are poor predictors of temperature."
         }
     },
     {
@@ -1286,7 +1286,7 @@
         "question": "In dynamic thermal management, must migrating computation to spare hardware units always occur before localized toggling?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "The paper also introduces several effective methods for dynamic thermal management (DTM): 'temperature-tracking' frequency scaling, localized toggling, and migrating computation to spare hardware units."
         }
     },
     {
@@ -1296,7 +1296,7 @@
         "question": "Does sensor imprecision have a substantial impact on the performance of dynamic thermal management?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Modeling temperature at the microarchitecture level also shows that sensor imprecision has a substantial impact on the performance of DTM."
         }
     },
     {
@@ -1306,7 +1306,7 @@
         "question": "Does Smart Memories provide flexibility over general purpose designs?",
         "answers": {
             "answer_start": 233,
-            "text": "YES"
+            "justification": "To address these conflicting requirements, we propose a modular reconfigurable architecture called Smart Memories, targeted at computing needs in the 0.1 /spl mu/m technology generation."
         }
     },
     {
@@ -1316,7 +1316,7 @@
         "question": "Is the Smart Memories chip primarily composed of processing tiles?",
         "answers": {
             "answer_start": 420,
-            "text": "YES"
+            "justification": "A Smart Memories chip is made up of many processing tiles, each containing local memory, local interconnect, and a processor core."
         }
     },
     {
@@ -1326,7 +1326,7 @@
         "question": "Is the Smart Memories architecture a reconfigurable architecture?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "To address these conflicting requirements, we propose a modular reconfigurable architecture called Smart Memories."
         }
     },
     {
@@ -1336,7 +1336,7 @@
         "question": "In mapping architectures onto the Smart Memories computing substrate, must performance always degrade significantly?",
         "answers": {
             "answer_start": 966,
-            "text": "NO"
+            "justification": "Simulations of the mappings show that the Smart Memories architecture can successfully map these architectures with only modest performance degradation."
         }
     },
     {
@@ -1346,7 +1346,7 @@
         "question": "Does altering the computational model lead to application matching within Smart Memories architecture?",
         "answers": {
             "answer_start": 551,
-            "text": "YES"
+            "justification": "For efficient computation under a wide class of possible applications, the memories, the wires, and the computational model can all be altered to match the applications."
         }
     },
     {
@@ -1356,7 +1356,7 @@
         "question": "Does memory access scheduling provide benefits over traditional memory access methods?",
         "answers": {
             "answer_start": 859,
-            "text": "YES"
+            "justification": "Memory access scheduling is particularly important for media processors where it enables the processor to make the most efficient use of scarce memory bandwidth."
         }
     },
     {
@@ -1366,7 +1366,7 @@
         "question": "Is memory bandwidth primarily responsible for the performance improvement achieved through memory access scheduling?",
         "answers": {
             "answer_start": 559,
-            "text": "YES"
+            "justification": "Conservative reordering, in which the first ready reference in a sequence is performed, improves bandwidth by 40% for traces from five media benchmarks."
         }
     },
     {
@@ -1376,7 +1376,7 @@
         "question": "Is memory access scheduling considered a crucial technique for efficient memory usage?",
         "answers": {
             "answer_start": 859,
-            "text": "YES"
+            "justification": "Memory access scheduling is particularly important for media processors where it enables the processor to make the most efficient use of scarce memory bandwidth."
         }
     },
     {
@@ -1386,7 +1386,7 @@
         "question": "In a memory access scheduling process, must conservative reordering always occur before aggressive reordering?",
         "answers": {
             "answer_start": 712,
-            "text": "NO"
+            "justification": "Aggressive reordering, in which operations are scheduled to optimize memory bandwidth, improves bandwidth by 93% for the same set of applications."
         }
     },
     {
@@ -1396,7 +1396,7 @@
         "question": "Does increasing memory access scheduling lead to a proportional increase in memory bandwidth?",
         "answers": {
             "answer_start": 712,
-            "text": "NO"
+            "justification": "Aggressive reordering, in which operations are scheduled to optimize memory bandwidth, improves bandwidth by 93% for the same set of applications."
         }
     },
     {
@@ -1406,7 +1406,7 @@
         "question": "Does the proposed performance model provide insights into the workings of superscalar processors?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "The model also provides insights into the workings of superscalar processors and long-term microarchitecture trends such as pipeline depths and issue widths."
         }
     },
     {
@@ -1416,7 +1416,7 @@
         "question": "Is the component that models the relationship between instructions issued per cycle and the size of the instruction window primarily responsible for transient performance penalties?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "methods for calculating transient performance penalties due to branch mispredictions, instruction cache misses, and data cache misses."
         }
     },
     {
@@ -1426,7 +1426,7 @@
         "question": "Is the model based on trace-derived data dependency information a performance estimation technique?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Using trace-derived data dependence information, data and instruction cache miss rates, and branch miss-prediction rates as inputs, the model can arrive at performance estimates for a typical superscalar processor."
         }
     },
     {
@@ -1436,7 +1436,7 @@
         "question": "In the proposed performance model, must data cache misses always occur before branch mispredictions?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "methods for calculating transient performance penalties due to branch mispredictions, instruction cache misses, and data cache misses."
         }
     },
     {
@@ -1446,7 +1446,7 @@
         "question": "Does increasing the instruction cache miss rates lead to worsening performance estimates from the model?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Using trace-derived data dependence information, data and instruction cache miss rates, and branch miss-prediction rates as inputs, the model can arrive at performance estimates for a typical superscalar processor that are within 5.8% of detailed simulation on average and within 13% in the worst case."
         }
     },
     {
@@ -1456,7 +1456,7 @@
         "question": "Does dead-block prediction enhance prefetching lookahead significantly compared to previous techniques?",
         "answers": {
             "answer_start": 295,
-            "text": "YES"
+            "justification": "Predicting a dead block significantly enhances prefetching lookahead and opportunity, and enables placing data directly into Ll, obviating the need for auxiliary prefetch buffers."
         }
     },
     {
@@ -1466,7 +1466,7 @@
         "question": "Are Dead-Block Correlating Prefetchers primarily responsible for improving performance in a wide spectrum of applications?",
         "answers": {
             "answer_start": 653,
-            "text": "YES"
+            "justification": "A DBCP enables effective data prefetching in a wide spectrum of pointer-intensive, integer, and floating-point applications."
         }
     },
     {
@@ -1476,7 +1476,7 @@
         "question": "Is a Dead-Block Predictor a trace-based predictor?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "This paper proposes the Dead-Block Predictors (DBPs), trace-based predictors that accurately identify 'when' an Ll data cache block becomes evictable or 'dead'."
         }
     },
     {
@@ -1486,7 +1486,7 @@
         "question": "In the dead-block prediction process, must a dead block always be predicted with a coverage of 90%?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "A DBP can predict dead blocks on average with a coverage of 90% only mispredicting 4% of the time."
         }
     },
     {
@@ -1496,7 +1496,7 @@
         "question": "Does increasing the use of Dead-Block Correlating Prefetchers lead to a performance improvement in the benchmarks studied?",
         "answers": {
             "answer_start": 1227,
-            "text": "YES"
+            "justification": "DBCPs improve performance by 62% on average and 282% at best in the benchmarks we studied."
         }
     },
     {
@@ -1506,7 +1506,7 @@
         "question": "Does Wattch provide benefits over existing layout-level power tools?",
         "answers": {
             "answer_start": 714,
-            "text": "YES"
+            "justification": "Wattch is 1000X or more faster than existing layout-level power tools, and yet maintains accuracy within 10% of their estimates as verified using industry tools on leading-edge designs."
         }
     },
     {
@@ -1516,7 +1516,7 @@
         "question": "Is power dissipation primarily significant in modern processors?",
         "answers": {
             "answer_start": 0,
-            "text": "YES"
+            "justification": "Power dissipation and thermal issues are increasingly significant in modern processors."
         }
     },
     {
@@ -1526,7 +1526,7 @@
         "question": "Is Wattch an architecture-level framework?",
         "answers": {
             "answer_start": 585,
-            "text": "YES"
+            "justification": "This paper presents Wattch, a framework for analyzing and optimizing microprocessor power dissipation at the architecture-level."
         }
     },
     {
@@ -1536,7 +1536,7 @@
         "question": "In the design process, must power estimates only be calculated after layout or floorplanning is complete?",
         "answers": {
             "answer_start": 249,
-            "text": "NO"
+            "justification": "Most existing power analysis tools achieve high accuracy by calculating power estimates for designs only after layout or floorplanning are complete."
         }
     },
     {
@@ -1546,7 +1546,7 @@
         "question": "Does increasing the use of Wattch open up the field of power-efficient computing to wider range of researchers?",
         "answers": {
             "answer_start": 1288,
-            "text": "YES"
+            "justification": "It also opens up the field of power-efficient computing to a wider range of researchers by providing a power evaluation methodology within the portable and familiar SimpleScalar framework."
         }
     },
     {
@@ -1556,7 +1556,7 @@
         "question": "Does using instruction filtering provide benefits over not using it?",
         "answers": {
             "answer_start": 518,
-            "text": "YES"
+            "justification": "We minimize capacity conflicts through instruction filtering."
         }
     },
     {
@@ -1566,7 +1566,7 @@
         "question": "Is the prioritization of instructions belonging to the longest data dependence path primarily responsible for minimizing capacity conflicts?",
         "answers": {
             "answer_start": 672,
-            "text": "NO"
+            "justification": "We examine filtering techniques based on instruction type, as well as giving priority to instructions belonging to the longest data dependence path in the processor's active instruction window."
         }
     },
     {
@@ -1576,7 +1576,7 @@
         "question": "Is instruction filtering a step in the value prediction process?",
         "answers": {
             "answer_start": 580,
-            "text": "YES"
+            "justification": "The latter technique filters which instructions put values into the value prediction table."
         }
     },
     {
@@ -1586,7 +1586,7 @@
         "question": "In the value prediction process, must instruction filtering always occur after prediction and confidence mechanisms?",
         "answers": {
             "answer_start": 672,
-            "text": "NO"
+            "justification": "We examine filtering techniques based on instruction type, as well as giving priority to instructions belonging to the longest data dependence path in the processor's active instruction window."
         }
     },
     {
@@ -1596,7 +1596,7 @@
         "question": "Does increasing confidence levels for instructions using predicted values on the longest dependence path lead to better performance?",
         "answers": {
             "answer_start": 946,
-            "text": "YES"
+            "justification": "In addition, we examine the benefit of using different confidence levels for instructions using predicted values on the longest dependence path."
         }
     },
     {
@@ -1606,7 +1606,7 @@
         "question": "Does PipeRench enable fast, robust compilers and support forward compatibility?",
         "answers": {
             "answer_start": 282,
-            "text": "YES"
+            "justification": "PipeRench enables fast, robust compilers, supports forward compatibility, and virtualizes configurations, thus removing the fixed size constraint present in other fabrics."
         }
     },
     {
@@ -1616,7 +1616,7 @@
         "question": "Is the bit-width of processing elements in PipeRench responsible for affecting performance?",
         "answers": {
             "answer_start": 454,
-            "text": "YES"
+            "justification": "For the first time we explore how the bit-width of processing elements affects performance and show how the PipeRench architecture has been optimized to balance the needs of the compiler against the realities of silicon."
         }
     },
     {
@@ -1626,7 +1626,7 @@
         "question": "Is PipeRench an architecture optimized to accelerate computations on mixed-width data?",
         "answers": {
             "answer_start": 153,
-            "text": "YES"
+            "justification": "This paper describes a novel reconfigurable fabric architecture, PipeRench, optimized to accelerate these types of computations."
         }
     },
     {
@@ -1636,7 +1636,7 @@
         "question": "In the PipeRench process, must virtualizing configurations always occur before supporting forward compatibility?",
         "answers": {
             "answer_start": 282,
-            "text": "NO"
+            "justification": "PipeRench enables fast, robust compilers, supports forward compatibility, and virtualizes configurations, thus removing the fixed size constraint present in other fabrics."
         }
     },
     {
@@ -1646,7 +1646,7 @@
         "question": "Does increasing the performance of PipeRench lead to extreme speedup on certain computing kernels?",
         "answers": {
             "answer_start": 675,
-            "text": "YES"
+            "justification": "Finally, we demonstrate extreme performance speedup on certain computing kernels (up to 190x versus a modern RISC processor), and analyze how this acceleration translates to application speedup."
         }
     },
     {
@@ -1656,7 +1656,7 @@
         "question": "Does increasing the cache size always lead to performance benefits in the image processing benchmarks?",
         "answers": {
             "answer_start": 879,
-            "text": "NO"
+            "justification": "Increasing the cache size has no impact on 8 of the benchmarks."
         }
     },
     {
@@ -1666,7 +1666,7 @@
         "question": "Is software prefetching primarily responsible for performance improvement in the image processing benchmarks where memory is a significant problem?",
         "answers": {
             "answer_start": 1133,
-            "text": "YES"
+            "justification": "Software prefetching provides 1.4 X to 2.5 X performance improvement in the image processing benchmarks where memory is a significant problem."
         }
     },
     {
@@ -1676,7 +1676,7 @@
         "question": "Is ILP a media ISA extension?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "The ILP features and media ISA extensions significantly reduce the CPU component of execution time."
         }
     },
     {
@@ -1686,7 +1686,7 @@
         "question": "In the image processing benchmarks, must increasing cache size always occur before exploiting data reuse?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "The remaining benchmarks require relatively large cache sizes to exploit data reuse, but derive less than 1.2 X performance benefits with the larger caches."
         }
     },
     {
@@ -1696,7 +1696,7 @@
         "question": "Does the addition of software prefetching always lead to benchmarks reverting to being memory-bound?",
         "answers": {
             "answer_start": 1276,
-            "text": "NO"
+            "justification": "With the addition of software prefetching, all our benchmarks revert to being compute-bound."
         }
     },
     {
@@ -1706,7 +1706,7 @@
         "question": "Does the proposed approach provide power efficiencies at a larger scale over individual server level optimizations?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "In contrast, this work proposes power efficiencies at a larger scale by leveraging statistical properties of concurrent resource usage across a collection of systems ('ensemble')."
         }
     },
     {
@@ -1716,7 +1716,7 @@
         "question": "Is the implementation of the proposed approach at the blade enclosure level primarily responsible for monitoring and managing power across individual blades in a chassis?",
         "answers": {
             "answer_start": 444,
-            "text": "YES"
+            "justification": "Specifically, we discuss an implementation of this approach at the blade enclosure level to monitor and manage the power across the individual blades in a chassis."
         }
     },
     {
@@ -1726,7 +1726,7 @@
         "question": "Is the proposed approach a cost-intensive solution requiring complex hardware modifications?",
         "answers": {
             "answer_start": 608,
-            "text": "NO"
+            "justification": "Our approach requires low-cost hardware modifications and relatively simple software support."
         }
     },
     {
@@ -1736,7 +1736,7 @@
         "question": "In the process of evaluating the architecture, must simulations always occur after prototyping?",
         "answers": {
             "answer_start": 702,
-            "text": "NO"
+            "justification": "We evaluate our architecture through both prototyping and simulation."
         }
     },
     {
@@ -1746,7 +1746,7 @@
         "question": "Does increasing the number of servers in the workload always lead to higher power budget reductions?",
         "answers": {
             "answer_start": 772,
-            "text": "NO"
+            "justification": "For workloads representing 132 servers from nine different enterprise deployments, we show significant power budget reductions at performances comparable to conventional systems."
         }
     },
     {
@@ -1756,7 +1756,7 @@
         "question": "Does Bulk provide competitive performance with more complex schemes?",
         "answers": {
             "answer_start": 898,
-            "text": "YES"
+            "justification": "We evaluate Bulk in the context of TLS using SPECint2000 codes and TM using multithreaded Java workloads. Despite its simplicity, Bulk has competitive performance with more complex schemes."
         }
     },
     {
@@ -1766,7 +1766,7 @@
         "question": "Is hashing-encoding a thread's access information the primary idea behind Bulk?",
         "answers": {
             "answer_start": 564,
-            "text": "YES"
+            "justification": "The idea is to hash-encode a thread\u2019s access information in a concise signature, and then support in hardware signature operations that efficiently process sets of addresses."
         }
     },
     {
@@ -1776,7 +1776,7 @@
         "question": "Is Bulk inexact but still correct?",
         "answers": {
             "answer_start": 791,
-            "text": "YES"
+            "justification": "Bulk operations are inexact but correct, and provide substantial conceptual and implementation simplicity."
         }
     },
     {
@@ -1786,7 +1786,7 @@
         "question": "In Bulk process, must invalidating stale cache state always occur before making committed state visible?",
         "answers": {
             "answer_start": 227,
-            "text": "NO"
+            "justification": "correctly maintaining data dependences across threads requires mechanisms for disambiguating addresses across threads, invalidating stale cache state, and making committed state visible."
         }
     },
     {
@@ -1796,7 +1796,7 @@
         "question": "Does increasing signature configuration lead to better performance of Bulk?",
         "answers": {
             "answer_start": 1088,
-            "text": "YES"
+            "justification": "We also find that signature configuration is a key design parameter."
         }
     },
     {
@@ -1806,7 +1806,7 @@
         "question": "Does current advanced DRAM technologies attack the memory bandwidth problem but not the latency problem?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Current advanced DRAM technologies are attacking the memory bandwidth problem but not the latency problem."
         }
     },
     {
@@ -1816,7 +1816,7 @@
         "question": "Is bus transmission speed soon to become a primary factor limiting memory-system performance?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Bus transmission speed will soon become a primary factor limiting memory-system performance."
         }
     },
     {
@@ -1826,7 +1826,7 @@
         "question": "Is the post-L2 address stream still containing significant locality?",
         "answers": {
             "answer_start": 779,
-            "text": "YES"
+            "justification": "the post-L2 address stream still contains significant locality"
         }
     },
     {
@@ -1836,7 +1836,7 @@
         "question": "In wider buses, must row access time become more prominent before investigating techniques to decrease access time?",
         "answers": {
             "answer_start": 901,
-            "text": "YES"
+            "justification": "as we move to wider buses, row access time becomes more prominent, making it important to investigate techniques to exploit the available locality to decrease access time."
         }
     },
     {
@@ -1846,7 +1846,7 @@
         "question": "Does increasing bus transmission speed lead to a primary factor limiting memory-system performance?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Bus transmission speed will soon become a primary factor limiting memory-system performance."
         }
     },
     {
@@ -1856,7 +1856,7 @@
         "question": "Does BugNet obviate the need for tracking program I/O, interrupts, and DMA transfers?",
         "answers": {
             "answer_start": 901,
-            "text": "YES"
+            "justification": "BugNet obviates the need for tracking program I/O, interrupts and DMA transfers, which would have otherwise required more complex hardware support."
         }
     },
     {
@@ -1866,7 +1866,7 @@
         "question": "Is BugNet based on the insight that recording the register file contents at any point in time can enable deterministic replaying of a program's execution?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "BugNet is based on the insight that recording the register file contents at any point in time can enable deterministic replaying of a program's execution."
         }
     },
     {
@@ -1876,7 +1876,7 @@
         "question": "Is BugNet a hardware architecture designed to assist developers in reproducing and fixing bugs in released code?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "BugNet architecture is designed to continuously record information on production runs, not specifically to assist developers in reproducing and fixing bugs in released code."
         }
     },
     {
@@ -1886,7 +1886,7 @@
         "question": "In BugNet process, must recording the register file contents always occur before recording the load values?",
         "answers": {
             "answer_start": 436,
-            "text": "YES"
+            "justification": "BugNet is based on the insight that recording the register file contents at any point in time, and then recording the load values that occur after that point can enable deterministic replaying of a program's execution."
         }
     },
     {
@@ -1896,7 +1896,7 @@
         "question": "Does BugNet require a final core dump of the system state for replaying?",
         "answers": {
             "answer_start": 1062,
-            "text": "NO"
+            "justification": "BugNet does not require a final core dump of the system state for replaying, which significantly reduces the amount of data that must be sent back to the developer."
         }
     },
     {
@@ -1906,7 +1906,7 @@
         "question": "Does the Alpha EV8 branch predictor provide prediction accuracy in the same range as state-of-the-art academic global history branch predictors?",
         "answers": {
             "answer_start": 1172,
-            "text": "YES"
+            "justification": "Nevertheless, we show that the Alpha EV8 branch predictor achieves prediction accuracy in the same range as the state-of-the-art academic global history branch predictors that do not consider implementation constraints in great detail."
         }
     },
     {
@@ -1916,7 +1916,7 @@
         "question": "Is the pipelining of the Alpha EV8 branch predictor on two cycles necessary to facilitate the prediction of up to 16 branches per cycle?",
         "answers": {
             "answer_start": 708,
-            "text": "YES"
+            "justification": "One such instance is the pipelining of the predictor on two cycles to facilitate the prediction of up to 16 branches per cycle from any two dynamically successive, 8 instruction fetch blocks."
         }
     },
     {
@@ -1926,7 +1926,7 @@
         "question": "Is the Alpha EV8 branch predictor a complex component of the Alpha EV8 microprocessor architecture?",
         "answers": {
             "answer_start": 300,
-            "text": "YES"
+            "justification": "Performance of such a processor is highly dependent on the accuracy of its branch predictor and consequently a very large silicon area was devoted to branch prediction on EV8."
         }
     },
     {
@@ -1936,7 +1936,7 @@
         "question": "In the Alpha EV8 branch predictor process, must three fetch-block old compressed branch history information be used for accessing the predictor?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "This resulted in the use of three fetch-block old compressed branch history information for accessing the predictor."
         }
     },
     {
@@ -1946,7 +1946,7 @@
         "question": "Does increasing the port number of memory cells in the Alpha EV8 branch predictor lead to higher prediction accuracy?",
         "answers": {
             "answer_start": 1016,
-            "text": "NO"
+            "justification": "Implementation constraints also restricted the composition of the index functions for the predictor and forced the usage of only single-ported memory cells."
         }
     },
     {
@@ -1956,7 +1956,7 @@
         "question": "Does the predictor improve performance over egalitarian policies?",
         "answers": {
             "answer_start": 238,
-            "text": "YES"
+            "justification": "if we could predict it at run-time, egalitarian policies could be replaced with cost-sensitive strategies that will grow increasingly effective as processors become more parallel."
         }
     },
     {
@@ -1966,7 +1966,7 @@
         "question": "Is the predictor both effective and simple in its hardware implementation?",
         "answers": {
             "answer_start": 524,
-            "text": "YES"
+            "justification": "The predictor is both effective and simple in its hardware implementation."
         }
     },
     {
@@ -1976,7 +1976,7 @@
         "question": "Is the predictor a model of the microarchitectural critical path?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "The effectiveness at improving performance stems from using a dependence-graph model of the microarchitectural critical path."
         }
     },
     {
@@ -1986,7 +1986,7 @@
         "question": "In the token-passing algorithm, must actual building of the dependence graph occur?",
         "answers": {
             "answer_start": 823,
-            "text": "NO"
+            "justification": "The simplicity stems from a token-passing algorithm that computes the critical path without actually building the dependence graph."
         }
     },
     {
@@ -1996,7 +1996,7 @@
         "question": "Does increasing the priority to critical instructions always lead to performance improvement?",
         "answers": {
             "answer_start": 1066,
-            "text": "YES"
+            "justification": "It can (i) give priority to critical instructions for scarce resources (functional units, ports, predictor entries)"
         }
     },
     {
@@ -2006,7 +2006,7 @@
         "question": "Does TCC greatly simplify parallel software compared to conventional synchronization methods?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "TCC greatly simplifies parallel software by eliminating the need for synchronization using conventional locks and semaphores, along with their complexities."
         }
     },
     {
@@ -2016,7 +2016,7 @@
         "question": "Are small write buffers typically sufficient for transactions in the TCC model?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Most applications are easily divided into transactions requiring only small write buffers, on the order of 4-8 KB."
         }
     },
     {
@@ -2026,7 +2026,7 @@
         "question": "Is TCC a hardware model for transactional memory coherence and consistency?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "TCC provides a model in which atomic transactions are always the basic unit of parallel work, communication, memory coherence, and memory reference consistency."
         }
     },
     {
@@ -2036,7 +2036,7 @@
         "question": "In the TCC process, must multiple speculatively written versions of a cache line safely coexist within the system before broadcast?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "Completely eliminates the need for conventional snoopy cache coherence protocols, as multiple speculatively written versions of a cache line may safely coexist within the system."
         }
     },
     {
@@ -2046,7 +2046,7 @@
         "question": "Does increasing interprocessor bandwidth in the TCC model lead to higher costs?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "The cost of this simplified scheme is higher interprocessor bandwidth."
         }
     },
     {
@@ -2056,7 +2056,7 @@
         "question": "Does Redundant Multithreading (RMT) provide benefits over prior studies for single-processor devices?",
         "answers": {
             "answer_start": 679,
-            "text": "YES"
+            "justification": "RMT can be a more significant burden for single-processor devices than prior studies indicate."
         }
     },
     {
@@ -2066,7 +2066,7 @@
         "question": "Is Redundant Multithreading (RMT) primarily responsible for performance improvement in dual-processor devices?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "A novel application of RMT techniques in a dual-processor device shows higher performance than lockstepping the two cores."
         }
     },
     {
@@ -2076,7 +2076,7 @@
         "question": "Is Redundant Multithreading (RMT) a burden for single-processor devices?",
         "answers": {
             "answer_start": 679,
-            "text": "YES"
+            "justification": "RMT can be a more significant burden for single-processor devices than prior studies indicate."
         }
     },
     {
@@ -2086,7 +2086,7 @@
         "question": "In Redundant Multithreading (RMT) process, must comparing outputs always occur before running two copies of the same program?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "In a multithreaded environment, we can detect faults by running two copies of the same program as separate threads, feeding them identical inputs, and comparing their outputs."
         }
     },
     {
@@ -2096,7 +2096,7 @@
         "question": "Does increasing the number of threads lead to higher performance in dual-processor devices utilizing chip-level redundant threading (CRT)?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "A novel application of RMT techniques in a dual-processor device shows higher performance than lockstepping the two cores, especially on multithreaded workloads."
         }
     },
     {
@@ -2106,7 +2106,7 @@
         "question": "Does victim replication provide benefits over private or shared cache schemes?",
         "answers": {
             "answer_start": 782,
-            "text": "YES"
+            "justification": "Victim replication is a variant of the shared scheme which attempts to keep copies of local primary cache victims within the local L2 cache slice. Hits to these replicated copies reduce the effective latency of the shared L2 cache, while retaining the benefits of a higher effective capacity for shared data."
         }
     },
     {
@@ -2116,7 +2116,7 @@
         "question": "Is the shared L2 cache primarily responsible for reducing memory access latency in multi-threaded benchmarks?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "We show that victim replication reduces the average memory access latency of the shared L2 cache by an average of 16% for multi-threaded benchmarks."
         }
     },
     {
@@ -2126,7 +2126,7 @@
         "question": "Is victim replication a cache management policy?",
         "answers": {
             "answer_start": 659,
-            "text": "YES"
+            "justification": "We present a new cache management policy, victim replication, which combines the advantages of private and shared schemes."
         }
     },
     {
@@ -2136,7 +2136,7 @@
         "question": "In victim replication process, must hitting replicated copies always occur before caching into L2 cache slice?",
         "answers": {
             "answer_start": 929,
-            "text": "NO"
+            "justification": "Hits to these replicated copies reduce the effective latency of the shared L2 cache, while retaining the benefits of a higher effective capacity for shared data."
         }
     },
     {
@@ -2146,7 +2146,7 @@
         "question": "Does increasing tile count lead to improved overall performance in multi-threaded benchmarks?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "We show that victim replication reduces the average memory access latency of the shared L2 cache by an average of 16% for multi-threaded benchmarks."
         }
     },
     {
@@ -2156,7 +2156,7 @@
         "question": "Does increasing interconnect bandwidth provide performance benefits over increasing the number of cores or cache sizes?",
         "answers": {
             "answer_start": 649,
-            "text": "NO"
+            "justification": "increasing interconnect bandwidth requires area that then constrains the number of cores or cache sizes, and does not necessarily increase performance."
         }
     },
     {
@@ -2166,7 +2166,7 @@
         "question": "Is shared level-2 caches primarily responsible for the overhead of resulting crossbar?",
         "answers": {
             "answer_start": 801,
-            "text": "YES"
+            "justification": "Also, shared level-2 caches become significantly less attractive when the overhead of the resulting crossbar is accounted for."
         }
     },
     {
@@ -2176,7 +2176,7 @@
         "question": "Is interconnect considered an entity that can be independently architected and optimized?",
         "answers": {
             "answer_start": 419,
-            "text": "NO"
+            "justification": "designs that treat interconnect as an entity that can be independently architected and optimized would not arrive at the best multi-core design."
         }
     },
     {
@@ -2186,7 +2186,7 @@
         "question": "In hierarchical bus structure, must some of the performance costs of the assumed baseline architecture be negated?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "A hierarchical bus structure is examined which negates some of the performance costs of the assumed baseline architecture."
         }
     },
     {
@@ -2196,7 +2196,7 @@
         "question": "Does increasing the interconnect bandwidth lead to an increase in the number of cores or cache sizes?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "increasing interconnect bandwidth requires area that then constrains the number of cores or cache sizes."
         }
     },
     {
@@ -2206,7 +2206,7 @@
         "question": "Does using drowsy caches provide energy-efficient benefits over traditional caches?",
         "answers": {
             "answer_start": 407,
-            "text": "YES"
+            "justification": "This behavior can be exploited to cut the leakage power of large caches by putting the cold cache lines into a state preserving, low-power drowsy mode."
         }
     },
     {
@@ -2216,7 +2216,7 @@
         "question": "Is leakage the primarily responsible for power loss in large caches?",
         "answers": {
             "answer_start": 211,
-            "text": "YES"
+            "justification": "As feature sizes shrink, the dominant component of this power loss will be leakage."
         }
     },
     {
@@ -2226,7 +2226,7 @@
         "question": "Are drowsy caches a low-power solution for reducing cache energy consumption?",
         "answers": {
             "answer_start": 728,
-            "text": "YES"
+            "justification": "We show that with simple architectural techniques, about 80%-90% of the cache lines can be maintained in a drowsy state without affecting performance by more than 1%."
         }
     },
     {
@@ -2236,7 +2236,7 @@
         "question": "In the drowsy cache process, must the cold cache lines always be put into a low-power drowsy mode?",
         "answers": {
             "answer_start": 559,
-            "text": "YES"
+            "justification": "Moving lines into and out of drowsy state incurs a slight performance loss."
         }
     },
     {
@@ -2246,7 +2246,7 @@
         "question": "Does increasing the use of drowsy caches lead to a linear decrease in total cache energy consumption?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "We also argue that the use of drowsy caches can simplify the design and control of low-leakage caches."
         }
     },
     {
@@ -2256,7 +2256,7 @@
         "question": "Does CRTR provide benefits over previous recovery schemes for SMT?",
         "answers": {
             "answer_start": 182,
-            "text": "YES"
+            "justification": "CRTR extends the previously-proposed CRT for transient-fault detection in CMPs, and the previously-proposed SRTR for transient-fault recovery in SMT."
         }
     },
     {
@@ -2266,7 +2266,7 @@
         "question": "Is CRTR primarily responsible for executing and comparing two copies of a given application?",
         "answers": {
             "answer_start": 332,
-            "text": "NO"
+            "justification": "All these schemes achieve fault tolerance by executing and comparing two copies, called leading and trailing threads, of a given application."
         }
     },
     {
@@ -2276,7 +2276,7 @@
         "question": "Is DBCE a scheme for fault tolerance in CMPs?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "By reasoning that faults propagate through dependences, previously-proposed Dependence-Based Checking Elision (DBCE) exploits (true) register dependence chains..."
         }
     },
     {
@@ -2286,7 +2286,7 @@
         "question": "In CRTR process, must the trailing thread always occur after the leading thread is committed?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "CRTR commits the leading thread before checking and the trailing thread after checking..."
         }
     },
     {
@@ -2296,7 +2296,7 @@
         "question": "Does increasing the inter-processor (one-way) latency lead to negligible performance loss for CRTR?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Using SPEC2000, we show that CRTR incurs negligible performance loss compared to CRT for inter-processor (one-way) latency as high as 30 cycles..."
         }
     },
     {
@@ -2306,7 +2306,7 @@
         "question": "Does Raw provide low latency for scalar data transport?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "This network offers low latency for scalar data transport."
         }
     },
     {
@@ -2316,7 +2316,7 @@
         "question": "Is Raw responsible for managing the effect of wire delays by exposing the interconnect and using software to orchestrate data transport?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Raw manages the effect of wire delays by exposing the interconnect and using software to orchestrate both scalar and stream data transport."
         }
     },
     {
@@ -2326,7 +2326,7 @@
         "question": "Is Raw a versatile, general-purpose processor?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our evaluation attempts to determine the extent to which Raw succeeds in meeting its goal of serving as a more versatile, general-purpose processor."
         }
     },
     {
@@ -2336,7 +2336,7 @@
         "question": "In the Raw process, must the effect of wire delays be managed before data transport orchestration can occur?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "Raw manages the effect of wire delays by exposing the interconnect and using software to orchestrate both scalar and stream data transport."
         }
     },
     {
@@ -2346,7 +2346,7 @@
         "question": "Does increasing ILP lead to significantly better performance on Raw for highly parallel applications?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Raw performs within a factor of 2x for sequential applications with a very low degree of ILP, about 2x to 9x better for higher levels of ILP, and 10x-100x better when highly parallel applications are coded in a stream language or optimized by hand."
         }
     },
     {
@@ -2356,7 +2356,7 @@
         "question": "Does a single-ISA heterogeneous multi-core architecture provide higher performance in the same area than a conventional chip multiprocessor?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "This paper demonstrates that this architecture can provide significantly higher performance in the same area than a conventional chip multiprocessor."
         }
     },
     {
@@ -2366,7 +2366,7 @@
         "question": "Is dynamic core assignment primarily responsible for significant performance gains in the examined heterogeneous architectures?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "It examines policies for heterogeneous architectures in detail, demonstrating dynamic core assignment policies that provide significant performance gains over naive assignment."
         }
     },
     {
@@ -2376,7 +2376,7 @@
         "question": "Is a single-ISA heterogeneous multi-core architecture considered to be a chip multiprocessor?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "A single-ISA heterogeneous multi-core architecture is a chip multiprocessor composed of cores of varying size, performance, and complexity."
         }
     },
     {
@@ -2386,7 +2386,7 @@
         "question": "In a heterogeneous architecture, must multithreading cores always occur before static assignment?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "It examines policies for heterogeneous architectures with and without multithreading cores, suggesting that the best core assignment strategy achieves up to 31% speedup over a naive policy."
         }
     },
     {
@@ -2396,7 +2396,7 @@
         "question": "Does increasing core assignment strategy lead to a speedup over a naive policy?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our best core assignment strategy achieves up to 31% speedup over a naive policy."
         }
     },
     {
@@ -2406,7 +2406,7 @@
         "question": "Does TRIPS architecture provide better performance across a wide range of application types than an approach in which many small processors are aggregated to run workloads with irregular parallelism?",
         "answers": {
             "answer_start": 748,
-            "text": "YES"
+            "justification": "Our results show that high performance can be obtained in each of the three modes--ILP, TLP, and DLP-demonstrating the viability of the polymorphous coarse-grained approach for future microprocessors."
         }
     },
     {
@@ -2416,7 +2416,7 @@
         "question": "Is the TRIPS architecture primarily responsible for enabling the processing cores and the on-chip memory system to be configured and combined in different modes for instruction, data, or thread-level parallelism?",
         "answers": {
             "answer_start": 135,
-            "text": "YES"
+            "justification": "TRIPS contains mechanisms that enable the processing cores and the on-chip memory system to be configured and combined in different modes for instruction, data, or thread-level parallelism."
         }
     },
     {
@@ -2426,7 +2426,7 @@
         "question": "Is TRIPS architecture a polymorphous architecture?",
         "answers": {
             "answer_start": 0,
-            "text": "YES"
+            "justification": "This paper describes the polymorphous TRIPS architecture which can be configured for different granularities and types of parallelism."
         }
     },
     {
@@ -2436,7 +2436,7 @@
         "question": "In the TRIPS architecture process, must easily extractable fine-grained parallelism always exist before the Grid Processor cores can be partitioned?",
         "answers": {
             "answer_start": 376,
-            "text": "NO"
+            "justification": "TRIPS architecture contains four out-of-order, 16-wide-issue Grid Processor cores, which can be partitioned when easily extractable fine-grained parallelism exists."
         }
     },
     {
@@ -2446,7 +2446,7 @@
         "question": "Does increasing the number of modes in TRIPS architecture lead to higher performance?",
         "answers": {
             "answer_start": 748,
-            "text": "YES"
+            "justification": "Our results show that high performance can be obtained in each of the three modes--ILP, TLP, and DLP-demonstrating the viability of the polymorphous coarse-grained approach for future microprocessors."
         }
     },
     {
@@ -2456,7 +2456,7 @@
         "question": "Does dynamic reliability management (DRM) allow processors to be qualified for reliability at lower operating points than the worst case?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Instead, lifetime reliability awareness at the microarchitectural design stage can mitigate this problem, by designing processors that dynamically adapt in response to the observed usage to meet a reliability target."
         }
     },
     {
@@ -2466,7 +2466,7 @@
         "question": "Is RAMP a model that can dynamically track lifetime reliability?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "First, we describe an architecture-level model and its implementation, called RAMP, that can dynamically track lifetime reliability, responding to changes in application behavior."
         }
     },
     {
@@ -2476,7 +2476,7 @@
         "question": "Is dynamic voltage scaling an effective response technique for DRM?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Using RAMP, we show that this can save cost and/or improve performance, that dynamic voltage scaling is an effective response technique for DRM."
         }
     },
     {
@@ -2486,7 +2486,7 @@
         "question": "In the DRM process, must the processor always respond to changing application behavior to maintain its lifetime reliability target?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Second, we propose dynamic reliability management (DRM) - a technique where the processor can respond to changing application behavior to maintain its lifetime reliability target."
         }
     },
     {
@@ -2496,7 +2496,7 @@
         "question": "Does dynamic thermal management subsume dynamic reliability management (DRM)?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "and that dynamic thermal management neither subsumes nor is subsumed by DRM."
         }
     },
     {
@@ -2506,7 +2506,7 @@
         "question": "Does Flight Data Recorder (FDR) provide low-overhead benefits over traditional debuggers?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "FDR is practical because it piggybacks on the cache coherence hardware and logs nearly the minimal thread ordering information necessary to faithfully replay the multiprocessor execution."
         }
     },
     {
@@ -2516,7 +2516,7 @@
         "question": "Is non-determinism primarily responsible for debuggers failing to deliver faithful replay?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "The reason debuggers fail to deliver their most essential feature --- a faithful replay of the execution is non-determinism caused by multithreading and non-repeatable inputs."
         }
     },
     {
@@ -2526,7 +2526,7 @@
         "question": "Is Flight Data Recorder (FDR) a hardware recorder for cache-coherent multiprocessors?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "As a step towards powerful debugging, we develop a practical low-overhead hardware recorder for cache-coherent multiprocessors, called Flight Data Recorder (FDR)."
         }
     },
     {
@@ -2536,7 +2536,7 @@
         "question": "In the Flight Data Recorder (FDR) process, must recording of the execution always occur continuously?",
         "answers": {
             "answer_start": 688,
-            "text": "YES"
+            "justification": "FDR continuously records the execution, even on deployed systems, logging the execution for post-mortem analysis."
         }
     },
     {
@@ -2546,7 +2546,7 @@
         "question": "Does increasing the memory allocation for FDR lead to a decrease in system slowdown?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "Our studies show that when allocated less than 7% of the system's physical memory, our FDR design can capture the last one second of the execution at modest (less than 2%) slowdown."
         }
     },
     {
@@ -2556,7 +2556,7 @@
         "question": "Does CAEN-based computing provide high-density chips with defect tolerance at significantly reduced manufacturing costs over CMOS circuits?",
         "answers": {
             "answer_start": 554,
-            "text": "YES"
+            "justification": "We show how the inherently reconfigurable nature of CAEN devices can be exploited to provide high-density chips with defect tolerance at significantly reduced manufacturing costs. We develop a layered abstract architecture for CAEN-based computing devices and we present preliminary results which indicate that such devices will be competitive with CMOS circuits."
         }
     },
     {
@@ -2566,7 +2566,7 @@
         "question": "Is the reconfigurable nature of CAEN devices primarily responsible for high-density chips with defect tolerance at significantly reduced manufacturing costs?",
         "answers": {
             "answer_start": 554,
-            "text": "YES"
+            "justification": "We show how the inherently reconfigurable nature of CAEN devices can be exploited to provide high-density chips with defect tolerance at significantly reduced manufacturing costs."
         }
     },
     {
@@ -2576,7 +2576,7 @@
         "question": "Is CAEN a solution to the imminent challenges faced by CMOS-based computing?",
         "answers": {
             "answer_start": 246,
-            "text": "YES"
+            "justification": "A promising solution to these problems is offered by an alternative to CMOS-based computing, chemically assembled electronic nanotechnology (CAEN)."
         }
     },
     {
@@ -2586,7 +2586,7 @@
         "question": "In CAEN-based computing process, must defect tolerance always occur before reduced manufacturing costs?",
         "answers": {
             "answer_start": 554,
-            "text": "NO"
+            "justification": "We show how the inherently reconfigurable nature of CAEN devices can be exploited to provide high-density chips with defect tolerance at significantly reduced manufacturing costs."
         }
     },
     {
@@ -2596,7 +2596,7 @@
         "question": "Does increasing the use of CAEN devices lead to competitiveness with CMOS circuits?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We present preliminary results which indicate that CAEN devices will be competitive with CMOS circuits."
         }
     },
     {
@@ -2606,7 +2606,7 @@
         "question": "Does cache leakage reduction provide energy-efficient benefits over other power-saving methods?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Power dissipation is increasingly important in CPUs ranging from those intended for mobile use, all the way up to high-performance processors for high-end servers. While the bulk of the power dissipated is dynamic switching power leakage power is also beginning to be a concern."
         }
     },
     {
@@ -2616,7 +2616,7 @@
         "question": "Is cache leakage primarily responsible for increasing proportion of total chip power in future chip generations?",
         "answers": {
             "answer_start": 279,
-            "text": "YES"
+            "justification": "Chipmakers expect that in future chip generations, leakage's proportion of total chip power will increase significantly."
         }
     },
     {
@@ -2626,7 +2626,7 @@
         "question": "Is cache leakage reduction a targeted approach at the generational nature of cache line usage?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "In particular, our approach is targeted at the generational nature of cache line usage. That is, cache lines typically have a flurry of frequent use when first brought into the cache, and then have a period of 'dead time' before they are evicted."
         }
     },
     {
@@ -2636,7 +2636,7 @@
         "question": "In cache line usage process, must cache lines be 'turned off' after periods of dead time occur?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "By devising effective, low-power ways of deducing dead time, our results show that in many cases we can reduce L1 cache leakage energy by 4 times in SPEC2000 applications without impacting performance."
         }
     },
     {
@@ -2646,7 +2646,7 @@
         "question": "Does increasing adaptive decay-based policies lead to a reduction in L1 cache leakage energy?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our proposed adaptive policies effectively reduce L1 cache leakage energy by 5 times for the SPEC2000 with only negligible degradations in performance."
         }
     },
     {
@@ -2656,7 +2656,7 @@
         "question": "Does DRPM provide significant energy savings over traditional disk power management approaches?",
         "answers": {
             "answer_start": 526,
-            "text": "YES"
+            "justification": "Extensive simulations with different workload and hardware parameters show that DRPM can provide significant energy savings without compromising much on performance."
         }
     },
     {
@@ -2666,7 +2666,7 @@
         "question": "Is the I/O subsystem primarily responsible for a large portion of the power budget in server environments?",
         "answers": {
             "answer_start": 0,
-            "text": "YES"
+            "justification": "A large portion of the power budget in server environments goes into the I/O subsystem - the disk array in particular."
         }
     },
     {
@@ -2676,7 +2676,7 @@
         "question": "Is DRPM a mechanism to modulate disk speed dynamically?",
         "answers": {
             "answer_start": 382,
-            "text": "YES"
+            "justification": "We present a new approach called DRPM to modulate disk speed (RPM) dynamically, and gives a practical implementation to exploit this mechanism."
         }
     },
     {
@@ -2686,7 +2686,7 @@
         "question": "In the implementation of DRPM on server disks, must idle times between disk requests be long enough to outweigh overheads?",
         "answers": {
             "answer_start": 119,
-            "text": "NO"
+            "justification": "Traditional approaches to disk power management involve completely stopping the disk rotation, which can take a considerable amount of time, making them less useful in cases where idle times between disk requests may not be long enough to outweigh the overheads."
         }
     },
     {
@@ -2696,7 +2696,7 @@
         "question": "Does increasing workload parameters lead to reduced performance with DRPM?",
         "answers": {
             "answer_start": 526,
-            "text": "NO"
+            "justification": "Extensive simulations with different workload and hardware parameters show that DRPM can provide significant energy savings without compromising much on performance."
         }
     },
     {
@@ -2706,7 +2706,7 @@
         "question": "Does removing control overheads (routing and arbitration logic) from the critical path provide benefits in minimizing cycle-time and latency?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We remove control overheads (routing and arbitration logic) from the critical path in order to minimise cycle-time and latency."
         }
     },
     {
@@ -2716,7 +2716,7 @@
         "question": "Is dramatic cycle time improvement possible without compromising router efficiency?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Simulations illustrate that dramatic cycle time improvements are possible without compromising router efficiency."
         }
     },
     {
@@ -2726,7 +2726,7 @@
         "question": "Is on-chip network router a design for low-latency applications?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "This paper presents the design of a low-latency on-chip network router for such applications."
         }
     },
     {
@@ -2736,7 +2736,7 @@
         "question": "In the routing process, must flits always be routed in a single cycle?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Furthermore, these reductions permit flits to be routed in a single cycle, maximising the effectiveness of the router's limited buffering resources."
         }
     },
     {
@@ -2746,7 +2746,7 @@
         "question": "Does increasing cycle time lead to minimizing the effectiveness of the router's limited buffering resources?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "Simulations illustrate that dramatic cycle time improvements are possible without compromising router efficiency."
         }
     },
     {
@@ -2756,7 +2756,7 @@
         "question": "Does ECP provide longer lifetimes than previously proposed solutions with equivalent overhead?",
         "answers": {
             "answer_start": 1121,
-            "text": "YES"
+            "justification": "ECP provides longer lifetimes than previously proposed solutions with equivalent overhead."
         }
     },
     {
@@ -2766,7 +2766,7 @@
         "question": "Is Hamming-based ECC primarily responsible for handling transient faults with no effective lifetime limits?",
         "answers": {
             "answer_start": 542,
-            "text": "NO"
+            "justification": "The Hamming-based ECC codes used in DRAM are designed to handle transient faults with no effective lifetime limits, but ECC codes applied to resistive memories would wear out faster than the cells they are designed to repair."
         }
     },
     {
@@ -2776,7 +2776,7 @@
         "question": "Is ECP a new approach to error correction optimized for memories in which errors are the result of permanent cell failures?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "This paper evaluates Error-Correcting Pointers (ECP), a new approach to error correction optimized for memories in which errors are the result of permanent cell failures that occur..."
         }
     },
     {
@@ -2786,7 +2786,7 @@
         "question": "In the ECP process, must errors be immediately detectable at write time?",
         "answers": {
             "answer_start": 997,
-            "text": "YES"
+            "justification": "ECP corrects errors by permanently encoding the locations of failed cells into a table and assigning cells to replace them."
         }
     },
     {
@@ -2796,7 +2796,7 @@
         "question": "Does increasing the level of variance in cell lifetimes lead to ECP's margin of improvement over existing schemes increasing?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "What's more, as the level of variance in cell lifetimes increases -- a likely consequence of further scaling -- ECP's margin of improvement over existing schemes increases."
         }
     },
     {
@@ -2806,7 +2806,7 @@
         "question": "Does Core fusion provide additional benefits over specialized compiler support?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Core fusion... requires no additional programming effort or specialized compiler support."
         }
     },
     {
@@ -2816,7 +2816,7 @@
         "question": "Is Core fusion primarily responsible for maintaining ISA compatibility?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Core fusion gracefully accommodates software diversity... maintains ISA compatibility."
         }
     },
     {
@@ -2826,7 +2826,7 @@
         "question": "Is Core fusion a form of reconfigurable chip multiprocessor (CMP) architecture?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "This paper presents core fusion, a reconfigurable chip multiprocessor (CMP) architecture..."
         }
     },
     {
@@ -2836,7 +2836,7 @@
         "question": "In the Core fusion process, must no specialized compiler support always occur before ISA compatibility?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "Core fusion... requires no additional programming effort or specialized compiler support, maintains ISA compatibility..."
         }
     },
     {
@@ -2846,7 +2846,7 @@
         "question": "Does increasing the number of fundamentally independent cores in Core fusion lead to incremental parallelization in CMPs?",
         "answers": {
             "answer_start": 269,
-            "text": "YES"
+            "justification": "Core fusion gracefully accommodates software diversity and incremental parallelization in CMPs."
         }
     },
     {
@@ -2856,7 +2856,7 @@
         "question": "Does HALO provide general-purpose capabilities for implantable BCIs?",
         "answers": {
             "answer_start": 473,
-            "text": "YES"
+            "justification": "General-purpose architectures that can be used to treat multiple diseases and enable various computational tasks are needed for wider BCI adoption"
         }
     },
     {
@@ -2866,7 +2866,7 @@
         "question": "Is the HALO architecture configurable into heterogeneous array of hardware processing elements?",
         "answers": {
             "answer_start": 1342,
-            "text": "YES"
+            "justification": "The result is a configurable heterogeneous array of hardware processing elements (PEs)"
         }
     },
     {
@@ -2876,7 +2876,7 @@
         "question": "Is HALO used to simplify and share building blocks to enable brain-computer interaction?",
         "answers": {
             "answer_start": 1185,
-            "text": "YES"
+            "justification": "We simplify, prune, and share these building blocks to judiciously use available hardware resources while enabling many modes of brain-computer interaction"
         }
     },
     {
@@ -2886,7 +2886,7 @@
         "question": "In the HALO process, does a low-power RISC-V micro-controller configure the hardware processing elements?",
         "answers": {
             "answer_start": 1430,
-            "text": "YES"
+            "justification": "The PEs are configured by a low-power RISC-V micro-controller into signal processing pipelines"
         }
     },
     {
@@ -2896,7 +2896,7 @@
         "question": "Does increasing the number of signal processing pipelines lead to meeting performance and power constraints?",
         "answers": {
             "answer_start": 1434,
-            "text": "NO"
+            "justification": "PEs are configured by a low-power RISC-V micro-controller into signal processing pipelines that meet the target performance and power constraints"
         }
     },
     {
@@ -2906,7 +2906,7 @@
         "question": "Does CNV provide improvements over a state-of-the-art accelerator?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "CNV improves performance over a state-of-the-art accelerator from 1.24x to 1.55x and by 1.37x on average without any loss in accuracy."
         }
     },
     {
@@ -2916,7 +2916,7 @@
         "question": "Is CNV primarily responsible for improving energy efficiency in data flow?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "CNV uses hierarchical data-parallel units to improve performance and energy efficiency."
         }
     },
     {
@@ -2926,7 +2926,7 @@
         "question": "Is CNV a data-parallel architecture?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "By loosening the ineffectual computation identification criterion, CNV enables further performance and energy efficiency improvements."
         }
     },
     {
@@ -2936,7 +2936,7 @@
         "question": "In the CNV process, must computation elimination decisions always occur before control divergence?",
         "answers": {
             "answer_start": 593,
-            "text": "YES"
+            "justification": "A co-designed data storage format encodes the computation elimination decisions taking them off the critical path while avoiding control divergence in the data parallel units."
         }
     },
     {
@@ -2946,7 +2946,7 @@
         "question": "Does increasing the area overhead lead to improved EDP and ED2P?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "While CNV incurs an area overhead of 4.49%, it improves overall EDP and ED2P on average by 1.47x and 2.01x, respectively."
         }
     },
     {
@@ -2956,7 +2956,7 @@
         "question": "Does processor memory integration provide benefits over CPU-centric designs?",
         "answers": {
             "answer_start": 411,
-            "text": "YES"
+            "justification": "This paper argues for an integrated system approach that uses less-powerful CPUs that are tightly integrated with advanced memory technologies to build competitive systems with greatly reduced cost and complexity."
         }
     },
     {
@@ -2966,7 +2966,7 @@
         "question": "Is lower latency primarily responsible for compensating for the restrictions of the integrated processor?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We present results from execution driven uni- and multi-processor simulations showing that the benefits of lower latency can compensate for the restrictions on the size and complexity of the integrated processor."
         }
     },
     {
@@ -2976,7 +2976,7 @@
         "question": "Is column buffer data caches augmented with a victim cache a cache architecture?",
         "answers": {
             "answer_start": 1132,
-            "text": "YES"
+            "justification": "In this system, small direct mapped instruction caches with long lines are very effective, as are column buffer data caches augmented with a victim cache."
         }
     },
     {
@@ -2986,7 +2986,7 @@
         "question": "In the design study using the next generation 0.25\u00b5m process, must small direct mapped instruction caches always occur before column buffer data caches augmented with a victim cache?",
         "answers": {
             "answer_start": 1132,
-            "text": "NO"
+            "justification": "In this system, small direct mapped instruction caches with long lines are very effective, as are column buffer data caches augmented with a victim cache."
         }
     },
     {
@@ -2996,7 +2996,7 @@
         "question": "Does increasing bandwidth lead to compensating for the restrictions on the size and complexity of the integrated processor?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We show that processor memory integration can be used to build competitive systems with greatly reduced cost and complexity."
         }
     },
     {
@@ -3006,7 +3006,7 @@
         "question": "Does PRIME provide significant performance improvement and energy saving over a state-of-the-art neural processing unit design?",
         "answers": {
             "answer_start": 1215,
-            "text": "YES"
+            "justification": "Our experimental results show that, compared with a state-of-the-art neural processing unit design, PRIME improves the performance by ~2360x and the energy consumption by ~895x, across the evaluated machine learning benchmarks."
         }
     },
     {
@@ -3016,7 +3016,7 @@
         "question": "Is ReRAM primarily responsible for efficiently performing matrix-vector multiplication in PRIME?",
         "answers": {
             "answer_start": 322,
-            "text": "YES"
+            "justification": "Moreover, with its crossbar array structure, ReRAM can perform matrix-vector multiplication efficiently, and has been widely studied to accelerate neural network (NN) applications."
         }
     },
     {
@@ -3026,7 +3026,7 @@
         "question": "Is PRIME a novel PIM architecture designed to accelerate NN applications in ReRAM based main memory?",
         "answers": {
             "answer_start": 503,
-            "text": "YES"
+            "justification": "In this work, we propose a novel PIM architecture, called PRIME, to accelerate NN applications in ReRAM based main memory."
         }
     },
     {
@@ -3036,7 +3036,7 @@
         "question": "In configuring PRIME, must a portion of ReRAM crossbar arrays be set as accelerators for NN applications or as normal memory?",
         "answers": {
             "answer_start": 626,
-            "text": "YES"
+            "justification": "In PRIME, a portion of ReRAM crossbar arrays can be configured as accelerators for NN applications or as normal memory for a larger memory space."
         }
     },
     {
@@ -3046,7 +3046,7 @@
         "question": "Does increasing the efficiency of using ReRAM for NN computation lead to significant performance improvement and energy saving in PRIME?",
         "answers": {
             "answer_start": 996,
-            "text": "YES"
+            "justification": "Benefiting from both the PIM architecture and the efficiency of using ReRAM for NN computation, PRIME distinguishes itself from prior work on NN acceleration, with significant performance improvement and energy saving."
         }
     },
     {
@@ -3056,7 +3056,7 @@
         "question": "Does MLPerf Inference provide a set of rules and best practices to ensure comparability across systems with wildly differing architectures?",
         "answers": {
             "answer_start": 804,
-            "text": "YES"
+            "justification": "In this paper, we present our benchmarking method for evaluating ML inference systems. Driven by more than 30 organizations as well as more than 200 ML engineers and practitioners, MLPerf prescribes a set of rules and best practices to ensure comparability across systems with wildly differing architectures."
         }
     },
     {
@@ -3066,7 +3066,7 @@
         "question": "Is over 100 organizations building ML inference chips due to the burgeoning demand for ML hardware and software systems?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Machine-learning (ML) hardware and software system demand is burgeoning. Driven by ML applications, the number of different ML inference systems has exploded. Over 100 organizations are building ML inference chips..."
         }
     },
     {
@@ -3076,7 +3076,7 @@
         "question": "Are the myriad combinations of ML hardware and ML software making assessing ML-system performance challenging?",
         "answers": {
             "answer_start": 505,
-            "text": "YES"
+            "justification": "The myriad combinations of ML hardware and ML software make assessing ML-system performance in an architecture-neutral, representative, and reproducible manner challenging."
         }
     },
     {
@@ -3086,7 +3086,7 @@
         "question": "In the first call for submissions, did the submissions attest to the benchmark's flexibility and adaptability?",
         "answers": {
             "answer_start": 1311,
-            "text": "YES"
+            "justification": "The submissions attest to the benchmark\u2019s flexibility and adaptability."
         }
     },
     {
@@ -3096,7 +3096,7 @@
         "question": "Does MLPerf Inference answer the clear need for industry-wide standard ML benchmarking and evaluation criteria?",
         "answers": {
             "answer_start": 768,
-            "text": "YES"
+            "justification": "MLPerf Inference answers that call."
         }
     },
     {
@@ -3106,7 +3106,7 @@
         "question": "Does genetic algorithms find a power equation for each floorplan block that produces the measured temperature for a given thermal package?",
         "answers": {
             "answer_start": 1009,
-            "text": "YES"
+            "justification": "The genetic algorithm finds a power equation for each floorplan block that produces the measured temperature for a given thermal package."
         }
     },
     {
@@ -3116,7 +3116,7 @@
         "question": "Is validation of power and thermal models more difficult than validation of performance models using modern processors' performance counters?",
         "answers": {
             "answer_start": 332,
-            "text": "YES"
+            "justification": "Modern processors provide enough performance counters to validate the majority of the performance models; nevertheless, the information provided is not enough to validate power and thermal models."
         }
     },
     {
@@ -3126,7 +3126,7 @@
         "question": "Is infrared measurement setup used to capture run-time power consumption and thermal characteristics of modern chips?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "In order to address some of the difficulties associated with the validation of power and thermal models, this paper proposes an infrared measurement setup to capture run-time power consumption and thermal characteristics of modern chips."
         }
     },
     {
@@ -3136,7 +3136,7 @@
         "question": "In the process of generating a detailed power breakdown for each processor floorplan unit, must the genetic algorithm find a power equation before employing thermal cameras?",
         "answers": {
             "answer_start": 883,
-            "text": "NO"
+            "justification": "To generate a detailed power breakdown (leakage and dynamic) for each processor floorplan unit, we employ genetic algorithms."
         }
     },
     {
@@ -3146,7 +3146,7 @@
         "question": "Does increasing the spatial resolution of the infrared cameras lead to a higher frame rate?",
         "answers": {
             "answer_start": 766,
-            "text": "NO"
+            "justification": "We use infrared cameras with high spatial resolution (10x10\u03bcm) and high frame rate (125fps) to capture thermal maps."
         }
     },
     {
@@ -3156,7 +3156,7 @@
         "question": "Does a flattened butterfly topology provide energy efficiency benefits over other commonly proposed topologies for high-performance datacenter networks?",
         "answers": {
             "answer_start": 634,
-            "text": "YES"
+            "justification": "We first show that a flattened butterfly topology itself is inherently more power efficient than the other commonly proposed topology for high-performance datacenter networks."
         }
     },
     {
@@ -3166,7 +3166,7 @@
         "question": "Is independent control of each unidirectional channel comprising a network link primarily responsible for significant power advantage in datacenter communication?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We show that there is a significant power advantage to having independent control of each unidirectional channel comprising a network link, since many traffic patterns show very asymmetric use."
         }
     },
     {
@@ -3176,7 +3176,7 @@
         "question": "Are modern plesiochronous links a type of technology used to adjust power and performance envelopes dynamically?",
         "answers": {
             "answer_start": 810,
-            "text": "YES"
+            "justification": "We then exploit the characteristics of modern plesiochronous links to adjust their power and performance envelopes dynamically."
         }
     },
     {
@@ -3186,7 +3186,7 @@
         "question": "In datacenter network design, must designers work to optimize high-speed channel designs before choosing optimal data rate and equalization technology?",
         "answers": {
             "answer_start": 1489,
-            "text": "NO"
+            "justification": "System designers should work to optimize the high-speed channel designs to be more energy efficient by choosing optimal data rate and equalization technology."
         }
     },
     {
@@ -3196,7 +3196,7 @@
         "question": "Does increasing the energy proportionality of a datacenter network lead to an 85% reduction in power consumption?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our results also demonstrate two challenges for the designers of future network switches: ... and demonstrate an 85% reduction in power --- which approaches the ideal energy-proportionality of the network."
         }
     },
     {
@@ -3206,7 +3206,7 @@
         "question": "Does activating the same row in DRAM corrupt data in nearby rows provide benefits over preventing data corruption?",
         "answers": {
             "answer_start": 548,
-            "text": "NO"
+            "justification": "More specifically, activating the same row in DRAM corrupts data in nearby rows."
         }
     },
     {
@@ -3216,7 +3216,7 @@
         "question": "Is charge leakage from nearby rows primarily responsible for disturbance errors in DRAM chips?",
         "answers": {
             "answer_start": 913,
-            "text": "YES"
+            "justification": "We identify the root cause of disturbance errors as the repeated toggling of a DRAM row's wordline, which stresses inter-cell coupling effects that accelerate charge leakage from nearby rows."
         }
     },
     {
@@ -3226,7 +3226,7 @@
         "question": "Are disturbance errors in DRAM chips a common vulnerability in commodity systems?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We expose the vulnerability of commodity DRAM chips to disturbance errors. From this we conclude that many deployed systems are likely to be at risk."
         }
     },
     {
@@ -3236,7 +3236,7 @@
         "question": "In the process of inducing errors in DRAM modules, must as few as 139K accesses always occur?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "Among our key findings, we show that it takes as few as 139K accesses to induce an error."
         }
     },
     {
@@ -3246,7 +3246,7 @@
         "question": "Does increasing the number of DRAM accesses lead to a higher susceptibility to disturbance errors?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "After examining various potential ways of addressing the problem, we propose a low-overhead solution to prevent the errors."
         }
     },
     {
@@ -3256,7 +3256,7 @@
         "question": "Does Anton use both novel parallel algorithms and special-purpose logic to accelerate calculations?",
         "answers": {
             "answer_start": 870,
-            "text": "YES"
+            "justification": "Anton has been designed to use both novel parallel algorithms and special-purpose logic to dramatically accelerate those calculations that dominate the time required for a typical MD simulation."
         }
     },
     {
@@ -3266,7 +3266,7 @@
         "question": "Is Anton a massively parallel machine called Anton?",
         "answers": {
             "answer_start": 483,
-            "text": "YES"
+            "justification": "In this paper, we describe a massively parallel machine called Anton, which should be capable of executing millisecond-scale classical MD simulations of such biomolecular systems."
         }
     },
     {
@@ -3276,7 +3276,7 @@
         "question": "Is Anton programmed to achieve a substantial degree of parallelism?",
         "answers": {
             "answer_start": 1065,
-            "text": "YES"
+            "justification": "The remainder of the simulation algorithm is executed by a programmable portion of each chip that achieves a substantial degree of parallelism while preserving the flexibility necessary to accommodate anticipated advances in physical models and simulation methods."
         }
     },
     {
@@ -3286,7 +3286,7 @@
         "question": "In the Anton process, must ASICs interact in a tightly coupled manner before using specialized communication network?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "Anton is based on 512 identical MD-specific ASICs that interact in a tightly coupled manner using a specialized high-speed communication network."
         }
     },
     {
@@ -3296,7 +3296,7 @@
         "question": "Does increasing the number of identical MD-specific ASICs in Anton lead to faster MD simulations?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Anton is based on 512 identical MD-specific ASICs that interact in a tightly coupled manner using a specialized high-speed communication network."
         }
     },
     {
@@ -3306,7 +3306,7 @@
         "question": "Does customizing a CMP system provide benefits over using a general-purpose processor for H.264 encoding?",
         "answers": {
             "answer_start": 737,
-            "text": "YES"
+            "justification": "The ASIC is 500x more energy efficient than our original four-processor CMP."
         }
     },
     {
@@ -3316,7 +3316,7 @@
         "question": "Is the very low energy costs of actual core operations primarily responsible for the high energy overhead in solutions for H.264 encoding?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "However, the very low energy costs of actual core ops (100s fJ in 90nm) mean that over 90% of the energy used in these solutions is still 'overhead'."
         }
     },
     {
@@ -3326,7 +3326,7 @@
         "question": "Is creating specialized functional units for each sub-algorithm of H.264 a common practice in optimizing computing systems?",
         "answers": {
             "answer_start": 1132,
-            "text": "NO"
+            "justification": "For each sub-algorithm of H.264, we create a large, specialized functional unit that is capable of executing 100s of operations per instruction."
         }
     },
     {
@@ -3336,7 +3336,7 @@
         "question": "In the process of transforming a CPU into a specialized system for H.264 encoding, must algorithm-specific optimizations always occur before broad optimizations?",
         "answers": {
             "answer_start": 1042,
-            "text": "YES"
+            "justification": "Achieving ASIC-like performance and efficiency requires algorithm-specific optimizations."
         }
     },
     {
@@ -3346,7 +3346,7 @@
         "question": "Does increasing the number of operations per instruction lead to improvements in performance and energy efficiency in the customized CMP system for H.264 encoding?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "This improves performance and energy by an additional 25x."
         }
     },
     {
@@ -3356,7 +3356,7 @@
         "question": "Does the TPU provide benefits over CPUs and GPUs in terms of energy efficiency?",
         "answers": {
             "answer_start": 1333,
-            "text": "YES"
+            "justification": "Moreover, using the CPU's GDDR5 memory in the TPU would triple achieved TOPS and raise TOPS/Watt to nearly 70X the GPU and 200X the CPU."
         }
     },
     {
@@ -3366,7 +3366,7 @@
         "question": "Is the deterministic execution model of the TPU primarily responsible for its better match to response-time requirements?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "The TPU's deterministic execution model is a better match to the 99th-percentile response-time requirement of our NN applications."
         }
     },
     {
@@ -3376,7 +3376,7 @@
         "question": "Is the TPU considered a custom ASIC?",
         "answers": {
             "answer_start": 120,
-            "text": "YES"
+            "justification": "This paper evaluates a custom ASIC---called a Tensor Processing Unit (TPU) --- deployed in datacenters since 2015 that accelerates the inference phase of neural networks (NN)."
         }
     },
     {
@@ -3386,7 +3386,7 @@
         "question": "In the TPU process, must time-varying optimizations occur before guaranteed latency for NN applications?",
         "answers": {
             "answer_start": 718,
-            "text": "NO"
+            "justification": "The lack of such features helps explain why, despite having myriad MACs and a big memory, the TPU is relatively small and low power."
         }
     },
     {
@@ -3396,7 +3396,7 @@
         "question": "Does increasing the workload utilization lead to a proportional increase in the TPU's speed over its contemporary GPU or CPU?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "Despite low utilization for some applications, the TPU is on average about 15X -- 30X faster than its contemporary GPU or CPU."
         }
     },
     {
@@ -3406,7 +3406,7 @@
         "question": "Does Genesis provide cost-efficient secondary DNA analysis over traditional software tools?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We propose a framework called Genesis that can be deployed in the cloud and exploit the FPGAs-as-a-service paradigm to provide cost-efficient secondary DNA analysis."
         }
     },
     {
@@ -3416,7 +3416,7 @@
         "question": "Is the Genesis hardware library primarily responsible for accelerating genomic data analysis operations?",
         "answers": {
             "answer_start": 630,
-            "text": "YES"
+            "justification": "To accelerate such queries, we design a Genesis hardware library which consists of primitive hardware modules that can be composed to construct a dataflow architecture specialized for those queries."
         }
     },
     {
@@ -3426,7 +3426,7 @@
         "question": "Is Genesis considered a framework for genomic data analysis?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We propose a framework called Genesis (genome analysis) that contains an interface and an implementation of a system that processes genomic data efficiently."
         }
     },
     {
@@ -3436,7 +3436,7 @@
         "question": "In the Genesis process, must the use of on-chip scratchpads always occur before non-blocking APIs?",
         "answers": {
             "answer_start": 1357,
-            "text": "NO"
+            "justification": "We exploit parallelism and data reuse by utilizing a dataflow architecture along with the use of on-chip scratchpads as well as non-blocking APIs to manage the accelerators, allowing concurrent execution of the accelerator and the host."
         }
     },
     {
@@ -3446,7 +3446,7 @@
         "question": "Does increasing the utilization of Genesis hardware library modules lead to better cost savings in genomic analysis?",
         "answers": {
             "answer_start": 1594,
-            "text": "YES"
+            "justification": "Our accelerated system deployed on the cloud FPGA performs up to 19.3\u00d7 better than GATK4 running on a commodity multi-core Xeon server and obtains up to 15\u00d7 better cost savings."
         }
     },
     {
@@ -3456,7 +3456,7 @@
         "question": "Does simultaneous multithreading provide significant throughput gains over a conventional wide-issue superscalar?",
         "answers": {
             "answer_start": 783,
-            "text": "YES"
+            "justification": "Our simultaneous multithreading architecture achieves a throughput of 5.4 instructions per cycle, a 2.5-fold improvement over an unmodified superscalar with similar hardware resources."
         }
     },
     {
@@ -3466,7 +3466,7 @@
         "question": "Is the ability to favor for fetch and issue those threads most efficiently a key advantage of multithreading not exploited in other architectures?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "This speedup is enhanced by an advantage of multithreading previously unexploited in other architectures: the ability to favor for fetch and issue those threads most efficiently using the processor each cycle, thereby providing the 'best' instructions to the processor."
         }
     },
     {
@@ -3476,7 +3476,7 @@
         "question": "Is simultaneous multithreading a technique that permits multiple independent threads to issue multiple instructions each cycle?",
         "answers": {
             "answer_start": 0,
-            "text": "YES"
+            "justification": "Simultaneous multithreading is a technique that permits multiple independent threads to issue multiple instructions each cycle."
         }
     },
     {
@@ -3486,7 +3486,7 @@
         "question": "In the simultaneous multithreading process, must there always be minimal performance impact on a single thread executing alone?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "Our simultaneous multithreading architecture achieves three goals: (1) it minimizes the architectural impact on the conventional superscalar design, (2) it has minimal performance impact on a single thread executing alone, and (3) it achieves significant throughput gains when running multiple threads."
         }
     },
     {
@@ -3496,7 +3496,7 @@
         "question": "Does increasing the number of threads lead to more significant throughput gains in simultaneous multithreading?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our simultaneous multithreading architecture achieves significant throughput gains when running multiple threads."
         }
     },
     {
@@ -3506,7 +3506,7 @@
         "question": "Does maximizing memory bandwidth provide benefits over minimizing memory latencies?",
         "answers": {
             "answer_start": 242,
-            "text": "YES"
+            "justification": "Using a decomposition of execution time, we show that for modern processors that employ aggressive memory latency tolerance techniques, wasted cycles due to insufficient bandwidth generally exceed those due to raw memory latencies."
         }
     },
     {
@@ -3516,7 +3516,7 @@
         "question": "Is pin bandwidth primarily responsible for filtering accesses in caches?",
         "answers": {
             "answer_start": 612,
-            "text": "NO"
+            "justification": "We measure these quantities by determining the amount by which both caches and minimal-traffic caches filter accesses to the lower levels of the memory hierarchy."
         }
     },
     {
@@ -3526,7 +3526,7 @@
         "question": "Is efficient pin bandwidth a critical consideration for future microprocessors?",
         "answers": {
             "answer_start": 0,
-            "text": "YES"
+            "justification": "This paper makes the case that pin bandwidth will be a critical consideration for future microprocessors."
         }
     },
     {
@@ -3536,7 +3536,7 @@
         "question": "In the memory traffic gap decomposition process, must all factors contribute equally to traffic reduction?",
         "answers": {
             "answer_start": 1014,
-            "text": "NO"
+            "justification": "We decompose this traffic gap into four factors, and show they contribute quite differently to traffic reduction for different benchmarks."
         }
     },
     {
@@ -3546,7 +3546,7 @@
         "question": "Does increasing effective pin bandwidth always lead to reducing the total memory traffic?",
         "answers": {
             "answer_start": 775,
-            "text": "NO"
+            "justification": "We see that there is a gap that can exceed two orders of magnitude between the total memory traffic generated by caches and the minimal-traffic caches---implying that the potential exists to increase effective pin bandwidth substantially."
         }
     },
     {
@@ -3556,7 +3556,7 @@
         "question": "Does increasing datawidth lead to improved power and area characteristics in printed microprocessor architectures?",
         "answers": {
             "answer_start": 1351,
-            "text": "YES"
+            "justification": "We show that the best cores outperform pre-existing cores by at least one order of magnitude in terms of power and area."
         }
     },
     {
@@ -3566,7 +3566,7 @@
         "question": "Is program-specific ISA primarily responsible for improving power and area in printed microprocessor architectures?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Program-specific ISA, for example, improves power and area by up to 4.18x and 1.93x respectively."
         }
     },
     {
@@ -3576,7 +3576,7 @@
         "question": "Is Eyeriss a spatial architecture for energy-efficient dataflow for convolutional neural networks?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "Eyeriss is not mentioned in the abstract, the focus is on exploring the design space of microprocessors implemented in printing technologies."
         }
     },
     {
@@ -3586,7 +3586,7 @@
         "question": "In the design space exploration of printed microprocessor architectures, must crosspoint-based instruction ROM always outperform a RAM-based design in terms of power, area, and delay?",
         "answers": {
             "answer_start": 1759,
-            "text": "NO"
+            "justification": "Crosspoint-based instruction ROM outperforms a RAM-based design by 5.77x, 16.8x, and 2.42x respectively in terms of power, area, and delay."
         }
     },
     {
@@ -3596,7 +3596,7 @@
         "question": "Does the characterization show that several printing applications can be feasibly targeted by battery-powered printed microprocessors?",
         "answers": {
             "answer_start": 970,
-            "text": "YES"
+            "justification": "Our characterization shows that several printing applications can be feasibly targeted by battery-powered printed microprocessors."
         }
     },
     {
@@ -3606,7 +3606,7 @@
         "question": "Does weight pruning provide benefits over traditional weight pruning?",
         "answers": {
             "answer_start": 376,
-            "text": "YES"
+            "justification": "For many networks, the network sparsity caused by weight pruning will actually hurt the overall performance despite large reductions in the model size and required multiply-accumulate operations."
         }
     },
     {
@@ -3616,7 +3616,7 @@
         "question": "Is node pruning primarily responsible for reducing computation in Scalpel?",
         "answers": {
             "answer_start": 1095,
-            "text": "NO"
+            "justification": "For high-parallelism hardware (e.g., GPU), node pruning removes redundant nodes, not redundant weights, thereby reducing computation without sacrificing the dense matrix format."
         }
     },
     {
@@ -3626,7 +3626,7 @@
         "question": "Is node pruning a technique used in Scalpel?",
         "answers": {
             "answer_start": 855,
-            "text": "YES"
+            "justification": "Scalpel consists of two techniques: SIMD-aware weight pruning and node pruning."
         }
     },
     {
@@ -3636,7 +3636,7 @@
         "question": "In the Scalpel process, must SIMD-aware weight pruning always occur before node pruning?",
         "answers": {
             "answer_start": 1273,
-            "text": "NO"
+            "justification": "For hardware with moderate parallelism (e.g., desktop CPU), SIMD-aware weight pruning and node pruning are synergistically applied together."
         }
     },
     {
@@ -3646,7 +3646,7 @@
         "question": "Does increasing hardware parallelism lead to higher speedups in Scalpel?",
         "answers": {
             "answer_start": -1,
-            "text": "NO"
+            "justification": "Across the microcontroller, CPU, and GPU, Scalpel achieves mean speedups of 3.54x, 2.61x, and 1.25x, respectively."
         }
     },
     {
@@ -3656,7 +3656,7 @@
         "question": "Does applying optimizations appropriate for both CPUs and GPUs narrow the performance gap between an Nvidia GTX280 processor and the Intel Core i7-960 processor?",
         "answers": {
             "answer_start": 641,
-            "text": "YES"
+            "justification": "we perform a rigorous performance analysis and find that after applying optimizations appropriate for both CPUs and GPUs the performance gap between an Nvidia GTX280 processor and the Intel Core i7-960 processor narrows to only 2.5x on average."
         }
     },
     {
@@ -3666,7 +3666,7 @@
         "question": "Is ample parallelism present in throughput computing kernels making them suitable for today's multi-core CPUs and GPUs?",
         "answers": {
             "answer_start": 222,
-            "text": "YES"
+            "justification": "Our analysis of a set of important throughput computing kernels shows that there is an ample amount of parallelism in these kernels which makes them suitable for today's multi-core CPUs and GPUs."
         }
     },
     {
@@ -3676,7 +3676,7 @@
         "question": "Is the Nvidia GTX280 processor a multi-core architecture?",
         "answers": {
             "answer_start": 641,
-            "text": "YES"
+            "justification": "we perform a rigorous performance analysis and find that after applying optimizations appropriate for both CPUs and GPUs the performance gap between an Nvidia GTX280 processor and the Intel Core i7-960 processor narrows to only 2.5x on average."
         }
     },
     {
@@ -3686,7 +3686,7 @@
         "question": "In the process of understanding where significant performance differences come from, must optimizations for both CPUs and GPUs be applied?",
         "answers": {
             "answer_start": 575,
-            "text": "YES"
+            "justification": "To understand where such large performance difference comes from, we perform a rigorous performance analysis and find that after applying optimizations appropriate for both CPUs and GPUs the performance gap between an Nvidia GTX280 processor and the Intel Core i7-960 processor narrows to only 2.5x on average."
         }
     },
     {
@@ -3696,7 +3696,7 @@
         "question": "Does increasing architectural efficiency for throughput kernels lead to significant improvements?",
         "answers": {
             "answer_start": 1063,
-            "text": "YES"
+            "justification": "and recommend a set of architectural features which provide significant improvement in architectural efficiency for throughput kernels."
         }
     },
     {
@@ -3706,7 +3706,7 @@
         "question": "Does distributed control-theoretic DVFS alone provide benefits over other techniques to improve instruction throughput?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Among a variety of options we find that distributed control-theoretic DVFS alone improves throughput by 2.5 times under our test conditions."
         }
     },
     {
@@ -3716,7 +3716,7 @@
         "question": "Is a PI-based core thermal controller primarily responsible for avoiding thermal emergencies in the final design?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our final design involves a PI-based core thermal controller and an outer control loop to decide process migrations. This policy avoids all thermal emergencies."
         }
     },
     {
@@ -3726,7 +3726,7 @@
         "question": "Is core throttling policy a process applied locally to a core or to the processor as a whole?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We classify these techniques in terms of core throttling policy, whether that policy is applied locally to a core or to the processor as a whole."
         }
     },
     {
@@ -3736,7 +3736,7 @@
         "question": "In the final design, must the outer control loop always occur before deciding process migrations?",
         "answers": {
             "answer_start": 1195,
-            "text": "NO"
+            "justification": "Our final design involves a PI-based core thermal controller and an outer control loop to decide process migrations."
         }
     },
     {
@@ -3746,7 +3746,7 @@
         "question": "Does increasing core throughput lead to an average of 2.6 times speedup over the baseline in all workloads?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Our final design involves a PI-based core thermal controller and an outer control loop to decide process migrations. This policy avoids all thermal emergencies and yields an average of 2.6 times speedup over the baseline across all workloads."
         }
     },
     {
@@ -3756,7 +3756,7 @@
         "question": "Does using limited-precision analog circuits provide benefits over conventional approaches in terms of energy efficiency?",
         "answers": {
             "answer_start": 936,
-            "text": "YES"
+            "justification": "Analog neural acceleration provides whole application speedup of 3.7x and energy savings of 6.3x with quality loss less than 10% for all except one benchmark."
         }
     },
     {
@@ -3766,7 +3766,7 @@
         "question": "Is the algorithmic transformation primarily responsible for converting code from a von Neumann model to an analog neural model?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We utilize an algorithmic transformation that automatically converts approximable regions of code from a von Neumann model to an 'analog' neural model."
         }
     },
     {
@@ -3776,7 +3776,7 @@
         "question": "Is the hardware/software interface a circuit component?",
         "answers": {
             "answer_start": 777,
-            "text": "NO"
+            "justification": "We address these limitations with a combination of circuit techniques, a hardware/software interface, neuralnetwork training techniques, and compiler support."
         }
     },
     {
@@ -3786,7 +3786,7 @@
         "question": "In the analog approach, must noise always occur before circuit inaccuracies?",
         "answers": {
             "answer_start": 777,
-            "text": "NO"
+            "justification": "We address these limitations with a combination of circuit techniques, a hardware/software interface, neuralnetwork training techniques, and compiler support."
         }
     },
     {
@@ -3796,7 +3796,7 @@
         "question": "Does increasing the precision in computation lead to better quality loss?",
         "answers": {
             "answer_start": 936,
-            "text": "NO"
+            "justification": "Analog neural acceleration provides whole application speedup of 3.7x and energy savings of 6.3x with quality loss less than 10% for all except one benchmark."
         }
     },
     {
@@ -3806,7 +3806,7 @@
         "question": "Does the Partition-Locked cache provide benefits over the Random Permutation cache?",
         "answers": {
             "answer_start": 1107,
-            "text": "NO"
+            "justification": "Our results show that our new cache designs with built-in security can defend against cache-based side channel attacks in general-rather than only specific attacks on a given cryptographic algorithm-with very little performance degradation and hardware cost."
         }
     },
     {
@@ -3816,7 +3816,7 @@
         "question": "Is cache interference primarily responsible for cache-based side channel attacks?",
         "answers": {
             "answer_start": 603,
-            "text": "YES"
+            "justification": "We first analyze these attacks, identifying cache interference as the root cause of these attacks."
         }
     },
     {
@@ -3826,7 +3826,7 @@
         "question": "Is the PLcache a security-aware cache design?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "We present new security-aware cache designs, the Partition-Locked cache (PLcache) and Random Permutation cache (RPcache)."
         }
     },
     {
@@ -3836,7 +3836,7 @@
         "question": "In cache-based side channel attacks, must randomization-based approach always occur before partition-based approach?",
         "answers": {
             "answer_start": 702,
-            "text": "NO"
+            "justification": "We identify two basic mitigation approaches: the partition-based approach eliminates cache interference whereas the randomization-based approach randomizes cache interference so that zero information can be inferred."
         }
     },
     {
@@ -3846,7 +3846,7 @@
         "question": "Does increasing security in cache designs lead to significant performance degradation?",
         "answers": {
             "answer_start": 1107,
-            "text": "NO"
+            "justification": "Our results show that our new cache designs with built-in security can defend against cache-based side channel attacks in general-rather than only specific attacks on a given cryptographic algorithm-with very little performance degradation and hardware cost."
         }
     },
     {
@@ -3856,7 +3856,7 @@
         "question": "Does Corona provide 2 to 6 times more performance on many memory intensive workloads over an electrically-connected many-core alternative that uses the same on-stack interconnect power?",
         "answers": {
             "answer_start": 1148,
-            "text": "YES"
+            "justification": "We believe that in comparison with an electrically-connected many-core alternative that uses the same on-stack interconnect power, Corona can provide 2 to 6 times more performance on many memory intensive workloads, while simultaneously reducing power."
         }
     },
     {
@@ -3866,7 +3866,7 @@
         "question": "Is nanophotonic communication used for both inter-core communication and off-stack communication in the Corona architecture?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Corona is a 3D many-core architecture that uses nanophotonic communication for both inter-core communication and off-stack communication to memory or I/O devices."
         }
     },
     {
@@ -3876,7 +3876,7 @@
         "question": "Is Corona a 3D many-core architecture?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Corona is a 3D many-core architecture that uses nanophotonic communication for both inter-core communication and off-stack communication to memory or I/O devices."
         }
     },
     {
@@ -3886,7 +3886,7 @@
         "question": "In the Corona architecture, must photonic crossbar fully interconnect its 256 low-power multithreaded cores at 20 terabyte per second bandwidth occur before simulating a 1024 thread Corona system?",
         "answers": {
             "answer_start": 1020,
-            "text": "NO"
+            "justification": "We have simulated a 1024 thread Corona system running synthetic benchmarks and scaled versions of the SPLASH-2 benchmark suite."
         }
     },
     {
@@ -3896,7 +3896,7 @@
         "question": "Does increasing memory bandwidth lead to higher peak floating-point performance in the Corona architecture?",
         "answers": {
             "answer_start": 905,
-            "text": "NO"
+            "justification": "A photonic crossbar fully interconnects its 256 low-power multithreaded cores at 20 terabyte per second bandwidth."
         }
     },
     {
@@ -3906,7 +3906,7 @@
         "question": "Does the proposed architecture provide energy-efficient dataflow for convolutional neural networks over traditional architectures?",
         "answers": {
             "answer_start": 0,
-            "text": "YES"
+            "justification": "This paper presents a programmable and scalable digital neuromorphic architecture based on 3D high-density memory integrated with logic tier for efficient neural computing."
         }
     },
     {
@@ -3916,7 +3916,7 @@
         "question": "Is memory centric computing primarily responsible for driving data into the processing engine clusters in the proposed architecture?",
         "answers": {
             "answer_start": 419,
-            "text": "YES"
+            "justification": "The operating principle, referred to as the memory centric computing, embeds specialized state-machines within the vault controllers of HMC to drive data into the PE clusters."
         }
     },
     {
@@ -3926,7 +3926,7 @@
         "question": "Is the proposed architecture a spatial architecture for efficient neural computing?",
         "answers": {
             "answer_start": 0,
-            "text": "YES"
+            "justification": "This paper presents a programmable and scalable digital neuromorphic architecture based on 3D high-density memory integrated with logic tier for efficient neural computing."
         }
     },
     {
@@ -3936,7 +3936,7 @@
         "question": "In the process of mapping a Convolutional Neural Network in the proposed architecture, must estimating the subsequent power always occur before estimating the performance?",
         "answers": {
             "answer_start": 739,
-            "text": "NO"
+            "justification": "The performance of the Neurocube is evaluated and illustrated through the mapping of a Convolutional Neural Network and estimating the subsequent power and performance for both training and inference."
         }
     },
     {
@@ -3946,7 +3946,7 @@
         "question": "Does increasing the number of memory channels lead to higher parallel access for the processing engine clusters?",
         "answers": {
             "answer_start": 349,
-            "text": "YES"
+            "justification": "The PE clusters access multiple memory channels (vaults) in parallel."
         }
     },
     {
@@ -3956,7 +3956,7 @@
         "question": "Does Bit Fusion offer 3.9x speedup and 5.1x energy savings over Eyeriss?",
         "answers": {
             "answer_start": 1400,
-            "text": "YES"
+            "justification": "Using the synthesis results and cycle accurate simulation, we compare the benefits of Bit Fusion to two state-of-the-art DNN accelerators, Eyeriss and Stripes. In the same area, frequency, and process technology, Bit Fusion offers 3.9x speedup and 5.1x energy savings over Eyeriss."
         }
     },
     {
@@ -3966,7 +3966,7 @@
         "question": "Is dynamic bit-level fusion/decomposition primarily responsible for minimizing computation and communication at the finest granularity possible with no loss in accuracy in Bit Fusion?",
         "answers": {
             "answer_start": 1056,
-            "text": "YES"
+            "justification": "This flexibility in the architecture enables minimizing the computation and the communication at the finest granularity possible with no loss in accuracy."
         }
     },
     {
@@ -3976,7 +3976,7 @@
         "question": "Is Bit Fusion considered a bit-flexible accelerator?",
         "answers": {
             "answer_start": 848,
-            "text": "YES"
+            "justification": "We explore this dimension by designing Bit Fusion, a bit-flexible accelerator, that constitutes an array of bit-level processing elements that dynamically fuse to match the bitwidth of individual DNN layers."
         }
     },
     {
@@ -3986,7 +3986,7 @@
         "question": "In the process of adjusting bitwidth for each layer individually in Bit Fusion, must bit-level fusion always occur before matching the bitwidth of individual DNN layers?",
         "answers": {
             "answer_start": 522,
-            "text": "YES"
+            "justification": "Thus, a fixed-bitwidth accelerator would either offer limited benefits to accommodate the worst-case bitwidth requirements, or inevitably lead to a degradation in final accuracy."
         }
     },
     {
@@ -3996,7 +3996,7 @@
         "question": "Does increasing the technology node to 16 nm lead to Bit Fusion almost matching the performance of a 250-Watt Titan Xp?",
         "answers": {
             "answer_start": 1840,
-            "text": "YES"
+            "justification": "Scaling to GPU technology node of 16 nm, Bit Fusion almost matches the performance of a 250-Watt Titan Xp, which uses 8-bit vector instructions, while Bit Fusion merely consumes 895 milliwatts of power."
         }
     },
     {
@@ -4006,7 +4006,7 @@
         "question": "Does exploiting sparsity for ReRAM-based NN accelerator provide energy efficiency benefits?",
         "answers": {
             "answer_start": -1,
-            "text": "YES"
+            "justification": "Exploiting sparsity for ReRAM-based NN accelerator is a less explored area. Our evaluation shows that the proposed method is effective in eliminating ineffectual computation, and delivers significant performance improvement and energy savings."
         }
     }
 ]
