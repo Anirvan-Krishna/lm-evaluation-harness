@@ -118,7 +118,7 @@ class SQuAD2(ConfigurableTask):
         return doc["context"]
 
     def doc_to_target(self, doc):
-        answer_list = doc["answers"]["justification"]
+        answer_list = doc["answers"]["text"]
         if len(answer_list) > 0:
             answer = answer_list[0]
         else:
