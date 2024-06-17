@@ -5,8 +5,12 @@
         "context": "Exploiting model sparsity to reduce ineffectual computation is a commonly used approach to achieve energy efficiency for DNN inference accelerators. However, due to the tightly coupled crossbar structure, exploiting sparsity for ReRAM-based NN accelerator is a less explored area. Existing architectural studies on ReRAM-based NN accelerators assume that an entire crossbar array can be activated in a single cycle. However, due to inference accuracy considerations, matrix-vector computation must be conducted in a smaller granularity in practice, called Operation Unit (OU). An OU-based architecture creates a new opportunity to exploit DNN sparsity. In this paper, we propose the first practical Sparse ReRAM Engine that exploits both weight and activation sparsity. Our evaluation shows that the proposed method is effective in eliminating ineffectual computation, and delivers significant performance improvement and energy savings.",
         "question": "Is an OU-based architecture primarily responsible for exploiting DNN sparsity?",
         "answers": {
-            "answer_start": 577,
-            "justification": "An OU-based architecture creates a new opportunity to exploit DNN sparsity."
+            "justification": [
+                "An OU-based architecture creates a new opportunity to exploit DNN sparsity."
+            ],
+            "answer_start": [
+                577
+            ]
         }
     },
     {
@@ -15,8 +19,12 @@
         "context": "Exploiting model sparsity to reduce ineffectual computation is a commonly used approach to achieve energy efficiency for DNN inference accelerators. However, due to the tightly coupled crossbar structure, exploiting sparsity for ReRAM-based NN accelerator is a less explored area. Existing architectural studies on ReRAM-based NN accelerators assume that an entire crossbar array can be activated in a single cycle. However, due to inference accuracy considerations, matrix-vector computation must be conducted in a smaller granularity in practice, called Operation Unit (OU). An OU-based architecture creates a new opportunity to exploit DNN sparsity. In this paper, we propose the first practical Sparse ReRAM Engine that exploits both weight and activation sparsity. Our evaluation shows that the proposed method is effective in eliminating ineffectual computation, and delivers significant performance improvement and energy savings.",
         "question": "Is the Sparse ReRAM Engine a practical architecture for exploiting both weight and activation sparsity?",
         "answers": {
-            "answer_start": 653,
-            "justification": "In this paper, we propose the first practical Sparse ReRAM Engine that exploits both weight and activation sparsity."
+            "justification": [
+                "In this paper, we propose the first practical Sparse ReRAM Engine that exploits both weight and activation sparsity."
+            ],
+            "answer_start": [
+                653
+            ]
         }
     },
     {
@@ -25,8 +33,12 @@
         "context": "Exploiting model sparsity to reduce ineffectual computation is a commonly used approach to achieve energy efficiency for DNN inference accelerators. However, due to the tightly coupled crossbar structure, exploiting sparsity for ReRAM-based NN accelerator is a less explored area. Existing architectural studies on ReRAM-based NN accelerators assume that an entire crossbar array can be activated in a single cycle. However, due to inference accuracy considerations, matrix-vector computation must be conducted in a smaller granularity in practice, called Operation Unit (OU). An OU-based architecture creates a new opportunity to exploit DNN sparsity. In this paper, we propose the first practical Sparse ReRAM Engine that exploits both weight and activation sparsity. Our evaluation shows that the proposed method is effective in eliminating ineffectual computation, and delivers significant performance improvement and energy savings.",
         "question": "In matrix-vector computation process, must Operation Unit (OU) always occur before inference accuracy considerations?",
         "answers": {
-            "answer_start": 416,
-            "justification": "However, due to inference accuracy considerations, matrix-vector computation must be conducted in a smaller granularity in practice, called Operation Unit (OU)."
+            "justification": [
+                "However, due to inference accuracy considerations, matrix-vector computation must be conducted in a smaller granularity in practice, called Operation Unit (OU)."
+            ],
+            "answer_start": [
+                416
+            ]
         }
     },
     {
@@ -35,8 +47,12 @@
         "context": "Exploiting model sparsity to reduce ineffectual computation is a commonly used approach to achieve energy efficiency for DNN inference accelerators. However, due to the tightly coupled crossbar structure, exploiting sparsity for ReRAM-based NN accelerator is a less explored area. Existing architectural studies on ReRAM-based NN accelerators assume that an entire crossbar array can be activated in a single cycle. However, due to inference accuracy considerations, matrix-vector computation must be conducted in a smaller granularity in practice, called Operation Unit (OU). An OU-based architecture creates a new opportunity to exploit DNN sparsity. In this paper, we propose the first practical Sparse ReRAM Engine that exploits both weight and activation sparsity. Our evaluation shows that the proposed method is effective in eliminating ineffectual computation, and delivers significant performance improvement and energy savings.",
         "question": "Does increasing the use of sparsity lead to significant performance improvement and energy savings?",
         "answers": {
-            "answer_start": 770,
-            "justification": "Our evaluation shows that the proposed method is effective in eliminating ineffectual computation, and delivers significant performance improvement and energy savings."
+            "justification": [
+                "Our evaluation shows that the proposed method is effective in eliminating ineffectual computation, and delivers significant performance improvement and energy savings."
+            ],
+            "answer_start": [
+                770
+            ]
         }
     },
     {
@@ -45,8 +61,12 @@
         "context": "The SGI Origin 2000 is a cache-coherent non-uniform memory access (ccNUMA) multiprocessor designed and manufactured by Silicon Graphics, Inc. The Origin system was designed from the ground up as a multiprocessor capable of scaling to both small and large processor counts without any bandwidth, latency, or cost cliffs. The Origin system consists of up to 512 nodes interconnected by a scalable Craylink network. Each node consists of one or two R10000 processors, up to 4 GB of coherent memory, and a connection to a portion of the XIO IO subsystem. This paper discusses the motivation for building the Origin 2000 and then describes its architecture and implementation. In addition, performance results are presented for the NAS Parallel Benchmarks V2.2 and the SPLASH2 applications. Finally, the Origin system is compared to other contemporary commercial ccNUMA systems.",
         "question": "Does the Origin 2000 provide scalability to both small and large processor counts without any bandwidth, latency, or cost cliffs?",
         "answers": {
-            "answer_start": 142,
-            "justification": "The Origin system was designed from the ground up as a multiprocessor capable of scaling to both small and large processor counts without any bandwidth, latency, or cost cliffs."
+            "justification": [
+                "The Origin system was designed from the ground up as a multiprocessor capable of scaling to both small and large processor counts without any bandwidth, latency, or cost cliffs."
+            ],
+            "answer_start": [
+                142
+            ]
         }
     },
     {
@@ -55,8 +75,12 @@
         "context": "The SGI Origin 2000 is a cache-coherent non-uniform memory access (ccNUMA) multiprocessor designed and manufactured by Silicon Graphics, Inc. The Origin system was designed from the ground up as a multiprocessor capable of scaling to both small and large processor counts without any bandwidth, latency, or cost cliffs. The Origin system consists of up to 512 nodes interconnected by a scalable Craylink network. Each node consists of one or two R10000 processors, up to 4 GB of coherent memory, and a connection to a portion of the XIO IO subsystem. This paper discusses the motivation for building the Origin 2000 and then describes its architecture and implementation. In addition, performance results are presented for the NAS Parallel Benchmarks V2.2 and the SPLASH2 applications. Finally, the Origin system is compared to other contemporary commercial ccNUMA systems.",
         "question": "Are the R10000 processors primarily responsible for the computational power of the Origin 2000 system?",
         "answers": {
-            "answer_start": 413,
-            "justification": "Each node consists of one or two R10000 processors, up to 4 GB of coherent memory, and a connection to a portion of the XIO IO subsystem."
+            "justification": [
+                "Each node consists of one or two R10000 processors, up to 4 GB of coherent memory, and a connection to a portion of the XIO IO subsystem."
+            ],
+            "answer_start": [
+                413
+            ]
         }
     },
     {
@@ -65,8 +89,12 @@
         "context": "The SGI Origin 2000 is a cache-coherent non-uniform memory access (ccNUMA) multiprocessor designed and manufactured by Silicon Graphics, Inc. The Origin system was designed from the ground up as a multiprocessor capable of scaling to both small and large processor counts without any bandwidth, latency, or cost cliffs. The Origin system consists of up to 512 nodes interconnected by a scalable Craylink network. Each node consists of one or two R10000 processors, up to 4 GB of coherent memory, and a connection to a portion of the XIO IO subsystem. This paper discusses the motivation for building the Origin 2000 and then describes its architecture and implementation. In addition, performance results are presented for the NAS Parallel Benchmarks V2.2 and the SPLASH2 applications. Finally, the Origin system is compared to other contemporary commercial ccNUMA systems.",
         "question": "Is the Origin 2000 a commercial ccNUMA system?",
         "answers": {
-            "answer_start": 786,
-            "justification": "Finally, the Origin system is compared to other contemporary commercial ccNUMA systems."
+            "justification": [
+                "Finally, the Origin system is compared to other contemporary commercial ccNUMA systems."
+            ],
+            "answer_start": [
+                786
+            ]
         }
     },
     {
@@ -75,8 +103,12 @@
         "context": "The SGI Origin 2000 is a cache-coherent non-uniform memory access (ccNUMA) multiprocessor designed and manufactured by Silicon Graphics, Inc. The Origin system was designed from the ground up as a multiprocessor capable of scaling to both small and large processor counts without any bandwidth, latency, or cost cliffs. The Origin system consists of up to 512 nodes interconnected by a scalable Craylink network. Each node consists of one or two R10000 processors, up to 4 GB of coherent memory, and a connection to a portion of the XIO IO subsystem. This paper discusses the motivation for building the Origin 2000 and then describes its architecture and implementation. In addition, performance results are presented for the NAS Parallel Benchmarks V2.2 and the SPLASH2 applications. Finally, the Origin system is compared to other contemporary commercial ccNUMA systems.",
         "question": "In the Origin 2000 process, must performance results be presented for the NAS Parallel Benchmarks V2.2 before the SPLASH2 applications?",
         "answers": {
-            "answer_start": 672,
-            "justification": "In addition, performance results are presented for the NAS Parallel Benchmarks V2.2 and the SPLASH2 applications."
+            "justification": [
+                "In addition, performance results are presented for the NAS Parallel Benchmarks V2.2 and the SPLASH2 applications."
+            ],
+            "answer_start": [
+                672
+            ]
         }
     },
     {
@@ -85,8 +117,12 @@
         "context": "The SGI Origin 2000 is a cache-coherent non-uniform memory access (ccNUMA) multiprocessor designed and manufactured by Silicon Graphics, Inc. The Origin system was designed from the ground up as a multiprocessor capable of scaling to both small and large processor counts without any bandwidth, latency, or cost cliffs. The Origin system consists of up to 512 nodes interconnected by a scalable Craylink network. Each node consists of one or two R10000 processors, up to 4 GB of coherent memory, and a connection to a portion of the XIO IO subsystem. This paper discusses the motivation for building the Origin 2000 and then describes its architecture and implementation. In addition, performance results are presented for the NAS Parallel Benchmarks V2.2 and the SPLASH2 applications. Finally, the Origin system is compared to other contemporary commercial ccNUMA systems.",
         "question": "Does increasing the number of nodes in the Origin system lead to a larger Craylink network?",
         "answers": {
-            "answer_start": 320,
-            "justification": "The Origin system consists of up to 512 nodes interconnected by a scalable Craylink network."
+            "justification": [
+                "The Origin system consists of up to 512 nodes interconnected by a scalable Craylink network."
+            ],
+            "answer_start": [
+                320
+            ]
         }
     },
     {
@@ -95,8 +131,12 @@
         "context": "The performance tradeoff between hardware complexity and clock speed is studied. First, a generic superscalar pipeline is defined. Then the specific areas of register renaming, instruction window wakeup and selection logic, and operand bypassing are analyzed. Each is modeled and Spice simulated for feature sizes of 0.8&micro;m, 0.35&micro;m, and 0.18&micro;m. Performance results and trends are expressed in terms of issue width and window size. Our analysis indicates that window wakeup and selection logic as well as operand bypass logic are likely to be the most critical in the future.A microarchitecture that simplifies wakeup and selection logic is proposed and discussed. This implementation puts chains of dependent instructions into queues, and issues instructions from multiple queues in parallel. Simulation shows little slowdown as compared with a completely flexible issue window when performance is measured in clock cycles. Furthermore, because only instructions at queue heads need to be awakened and selected, issue logic is simplified and the clock cycle is faster --- consequently overall performance is improved. By grouping dependent instructions together, the proposed microarchitecture will help minimize performance degradation due to slow bypasses in future wide-issue machines.",
         "question": "Does a microarchitecture that simplifies wakeup and selection logic provide benefits over a completely flexible issue window?",
         "answers": {
-            "answer_start": 810,
-            "justification": "Simulation shows little slowdown as compared with a completely flexible issue window when performance is measured in clock cycles."
+            "justification": [
+                "Simulation shows little slowdown as compared with a completely flexible issue window when performance is measured in clock cycles."
+            ],
+            "answer_start": [
+                810
+            ]
         }
     },
     {
@@ -105,8 +145,12 @@
         "context": "The performance tradeoff between hardware complexity and clock speed is studied. First, a generic superscalar pipeline is defined. Then the specific areas of register renaming, instruction window wakeup and selection logic, and operand bypassing are analyzed. Each is modeled and Spice simulated for feature sizes of 0.8&micro;m, 0.35&micro;m, and 0.18&micro;m. Performance results and trends are expressed in terms of issue width and window size. Our analysis indicates that window wakeup and selection logic as well as operand bypass logic are likely to be the most critical in the future.A microarchitecture that simplifies wakeup and selection logic is proposed and discussed. This implementation puts chains of dependent instructions into queues, and issues instructions from multiple queues in parallel. Simulation shows little slowdown as compared with a completely flexible issue window when performance is measured in clock cycles. Furthermore, because only instructions at queue heads need to be awakened and selected, issue logic is simplified and the clock cycle is faster --- consequently overall performance is improved. By grouping dependent instructions together, the proposed microarchitecture will help minimize performance degradation due to slow bypasses in future wide-issue machines.",
         "question": "Is issue logic primarily responsible for the overall performance improvement in the proposed microarchitecture?",
         "answers": {
-            "answer_start": 1135,
-            "justification": "By grouping dependent instructions together, the proposed microarchitecture will help minimize performance degradation due to slow bypasses in future wide-issue machines."
+            "justification": [
+                "By grouping dependent instructions together, the proposed microarchitecture will help minimize performance degradation due to slow bypasses in future wide-issue machines."
+            ],
+            "answer_start": [
+                1135
+            ]
         }
     },
     {
@@ -115,8 +159,12 @@
         "context": "The performance tradeoff between hardware complexity and clock speed is studied. First, a generic superscalar pipeline is defined. Then the specific areas of register renaming, instruction window wakeup and selection logic, and operand bypassing are analyzed. Each is modeled and Spice simulated for feature sizes of 0.8&micro;m, 0.35&micro;m, and 0.18&micro;m. Performance results and trends are expressed in terms of issue width and window size. Our analysis indicates that window wakeup and selection logic as well as operand bypass logic are likely to be the most critical in the future.A microarchitecture that simplifies wakeup and selection logic is proposed and discussed. This implementation puts chains of dependent instructions into queues, and issues instructions from multiple queues in parallel. Simulation shows little slowdown as compared with a completely flexible issue window when performance is measured in clock cycles. Furthermore, because only instructions at queue heads need to be awakened and selected, issue logic is simplified and the clock cycle is faster --- consequently overall performance is improved. By grouping dependent instructions together, the proposed microarchitecture will help minimize performance degradation due to slow bypasses in future wide-issue machines.",
         "question": "Is operand bypass logic a critical component according to the analysis?",
         "answers": {
-            "answer_start": -1,
-            "justification": "Our analysis indicates that operand bypass logic are likely to be the most critical in the future."
+            "justification": [
+                "Our analysis indicates that operand bypass logic are likely to be the most critical in the future."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -125,8 +173,12 @@
         "context": "The performance tradeoff between hardware complexity and clock speed is studied. First, a generic superscalar pipeline is defined. Then the specific areas of register renaming, instruction window wakeup and selection logic, and operand bypassing are analyzed. Each is modeled and Spice simulated for feature sizes of 0.8&micro;m, 0.35&micro;m, and 0.18&micro;m. Performance results and trends are expressed in terms of issue width and window size. Our analysis indicates that window wakeup and selection logic as well as operand bypass logic are likely to be the most critical in the future.A microarchitecture that simplifies wakeup and selection logic is proposed and discussed. This implementation puts chains of dependent instructions into queues, and issues instructions from multiple queues in parallel. Simulation shows little slowdown as compared with a completely flexible issue window when performance is measured in clock cycles. Furthermore, because only instructions at queue heads need to be awakened and selected, issue logic is simplified and the clock cycle is faster --- consequently overall performance is improved. By grouping dependent instructions together, the proposed microarchitecture will help minimize performance degradation due to slow bypasses in future wide-issue machines.",
         "question": "In the proposed microarchitecture process, must instructions at queue heads must always be awakened and selected before issuing instructions from multiple queues in parallel?",
         "answers": {
-            "answer_start": -1,
-            "justification": "Furthermore, because only instructions at queue heads need to be awakened and selected, issue logic is simplified and the clock cycle is faster."
+            "justification": [
+                "Furthermore, because only instructions at queue heads need to be awakened and selected, issue logic is simplified and the clock cycle is faster."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -135,8 +187,12 @@
         "context": "The performance tradeoff between hardware complexity and clock speed is studied. First, a generic superscalar pipeline is defined. Then the specific areas of register renaming, instruction window wakeup and selection logic, and operand bypassing are analyzed. Each is modeled and Spice simulated for feature sizes of 0.8&micro;m, 0.35&micro;m, and 0.18&micro;m. Performance results and trends are expressed in terms of issue width and window size. Our analysis indicates that window wakeup and selection logic as well as operand bypass logic are likely to be the most critical in the future.A microarchitecture that simplifies wakeup and selection logic is proposed and discussed. This implementation puts chains of dependent instructions into queues, and issues instructions from multiple queues in parallel. Simulation shows little slowdown as compared with a completely flexible issue window when performance is measured in clock cycles. Furthermore, because only instructions at queue heads need to be awakened and selected, issue logic is simplified and the clock cycle is faster --- consequently overall performance is improved. By grouping dependent instructions together, the proposed microarchitecture will help minimize performance degradation due to slow bypasses in future wide-issue machines.",
         "question": "Does increasing issue width lead to performance degradation due to slow bypasses in future wide-issue machines?",
         "answers": {
-            "answer_start": 1135,
-            "justification": "By grouping dependent instructions together, the proposed microarchitecture will help minimize performance degradation due to slow bypasses in future wide-issue machines."
+            "justification": [
+                "By grouping dependent instructions together, the proposed microarchitecture will help minimize performance degradation due to slow bypasses in future wide-issue machines."
+            ],
+            "answer_start": [
+                1135
+            ]
         }
     },
     {
@@ -145,8 +201,12 @@
         "context": "Conflict-based cache attacks can allow an adversary to infer the access pattern of a co-running application by orchestrating evictions via cache conflicts. Such attacks can be mitigated by randomizing the location of the lines in the cache. Our recent proposal, CEASER, makes cache randomization practical by accessing the cache using an encrypted address and periodically changing the encryption key. CEASER was analyzed with the state-of-the-art algorithm on forming eviction sets, and the analysis showed that CEASER with a Remap-Rate of 1% is sufficient to tolerate years of attack. In this paper, we present two new attacks that significantly push the state-of-the-art in forming eviction sets. Our first attack reduces the time required to form the eviction set from O(L2) to O(L), where L is the number of lines in the attack. This attack is 35x faster than the best-known attack and requires that the Remap-Rate of CEASER be increased to 35%. Our second attack exploits the replacement policy (we analyze LRU, RRIP, and Random) to form eviction set quickly and requires that the Remap-Rate of CEASER be increased to more than 100%, incurring impractical overheads. To improve the robustness of CEASER against these attacks in a practical manner, we propose Skewed-CEASER (CEASER-S), which divides the cache ways into multiple partitions and maps the cache line to be resident in a different set in each partition. This design significantly improves the robustness of CEASER, as the attacker must form an eviction set that can dislodge the line from multiple possible locations. We show that CEASER-S can tolerate years of attacks while retaining a Remap-Rate of 1%. CEASER-S incurs negligible slowdown (within 1%) and a storage overhead of less than 100 bytes for the newly added structures.",
         "question": "Does CEASER-S provide enhanced robustness over CEASER?",
         "answers": {
-            "answer_start": -1,
-            "justification": "This design significantly improves the robustness of CEASER-S, as the attacker must form an eviction set that can dislodge the line from multiple possible locations."
+            "justification": [
+                "This design significantly improves the robustness of CEASER-S, as the attacker must form an eviction set that can dislodge the line from multiple possible locations."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -155,8 +215,12 @@
         "context": "Conflict-based cache attacks can allow an adversary to infer the access pattern of a co-running application by orchestrating evictions via cache conflicts. Such attacks can be mitigated by randomizing the location of the lines in the cache. Our recent proposal, CEASER, makes cache randomization practical by accessing the cache using an encrypted address and periodically changing the encryption key. CEASER was analyzed with the state-of-the-art algorithm on forming eviction sets, and the analysis showed that CEASER with a Remap-Rate of 1% is sufficient to tolerate years of attack. In this paper, we present two new attacks that significantly push the state-of-the-art in forming eviction sets. Our first attack reduces the time required to form the eviction set from O(L2) to O(L), where L is the number of lines in the attack. This attack is 35x faster than the best-known attack and requires that the Remap-Rate of CEASER be increased to 35%. Our second attack exploits the replacement policy (we analyze LRU, RRIP, and Random) to form eviction set quickly and requires that the Remap-Rate of CEASER be increased to more than 100%, incurring impractical overheads. To improve the robustness of CEASER against these attacks in a practical manner, we propose Skewed-CEASER (CEASER-S), which divides the cache ways into multiple partitions and maps the cache line to be resident in a different set in each partition. This design significantly improves the robustness of CEASER, as the attacker must form an eviction set that can dislodge the line from multiple possible locations. We show that CEASER-S can tolerate years of attacks while retaining a Remap-Rate of 1%. CEASER-S incurs negligible slowdown (within 1%) and a storage overhead of less than 100 bytes for the newly added structures.",
         "question": "Is the first attack primarily responsible for reducing time required to form the eviction set?",
         "answers": {
-            "answer_start": 700,
-            "justification": "Our first attack reduces the time required to form the eviction set from O(L2) to O(L), where L is the number of lines in the attack."
+            "justification": [
+                "Our first attack reduces the time required to form the eviction set from O(L2) to O(L), where L is the number of lines in the attack."
+            ],
+            "answer_start": [
+                700
+            ]
         }
     },
     {
@@ -165,8 +229,12 @@
         "context": "Conflict-based cache attacks can allow an adversary to infer the access pattern of a co-running application by orchestrating evictions via cache conflicts. Such attacks can be mitigated by randomizing the location of the lines in the cache. Our recent proposal, CEASER, makes cache randomization practical by accessing the cache using an encrypted address and periodically changing the encryption key. CEASER was analyzed with the state-of-the-art algorithm on forming eviction sets, and the analysis showed that CEASER with a Remap-Rate of 1% is sufficient to tolerate years of attack. In this paper, we present two new attacks that significantly push the state-of-the-art in forming eviction sets. Our first attack reduces the time required to form the eviction set from O(L2) to O(L), where L is the number of lines in the attack. This attack is 35x faster than the best-known attack and requires that the Remap-Rate of CEASER be increased to 35%. Our second attack exploits the replacement policy (we analyze LRU, RRIP, and Random) to form eviction set quickly and requires that the Remap-Rate of CEASER be increased to more than 100%, incurring impractical overheads. To improve the robustness of CEASER against these attacks in a practical manner, we propose Skewed-CEASER (CEASER-S), which divides the cache ways into multiple partitions and maps the cache line to be resident in a different set in each partition. This design significantly improves the robustness of CEASER, as the attacker must form an eviction set that can dislodge the line from multiple possible locations. We show that CEASER-S can tolerate years of attacks while retaining a Remap-Rate of 1%. CEASER-S incurs negligible slowdown (within 1%) and a storage overhead of less than 100 bytes for the newly added structures.",
         "question": "Is CEASER an effective countermeasure against cache attacks?",
         "answers": {
-            "answer_start": 402,
-            "justification": "CEASER was analyzed with the state-of-the-art algorithm on forming eviction sets, and the analysis showed that CEASER with a Remap-Rate of 1% is sufficient to tolerate years of attack."
+            "justification": [
+                "CEASER was analyzed with the state-of-the-art algorithm on forming eviction sets, and the analysis showed that CEASER with a Remap-Rate of 1% is sufficient to tolerate years of attack."
+            ],
+            "answer_start": [
+                402
+            ]
         }
     },
     {
@@ -175,8 +243,12 @@
         "context": "Conflict-based cache attacks can allow an adversary to infer the access pattern of a co-running application by orchestrating evictions via cache conflicts. Such attacks can be mitigated by randomizing the location of the lines in the cache. Our recent proposal, CEASER, makes cache randomization practical by accessing the cache using an encrypted address and periodically changing the encryption key. CEASER was analyzed with the state-of-the-art algorithm on forming eviction sets, and the analysis showed that CEASER with a Remap-Rate of 1% is sufficient to tolerate years of attack. In this paper, we present two new attacks that significantly push the state-of-the-art in forming eviction sets. Our first attack reduces the time required to form the eviction set from O(L2) to O(L), where L is the number of lines in the attack. This attack is 35x faster than the best-known attack and requires that the Remap-Rate of CEASER be increased to 35%. Our second attack exploits the replacement policy (we analyze LRU, RRIP, and Random) to form eviction set quickly and requires that the Remap-Rate of CEASER be increased to more than 100%, incurring impractical overheads. To improve the robustness of CEASER against these attacks in a practical manner, we propose Skewed-CEASER (CEASER-S), which divides the cache ways into multiple partitions and maps the cache line to be resident in a different set in each partition. This design significantly improves the robustness of CEASER, as the attacker must form an eviction set that can dislodge the line from multiple possible locations. We show that CEASER-S can tolerate years of attacks while retaining a Remap-Rate of 1%. CEASER-S incurs negligible slowdown (within 1%) and a storage overhead of less than 100 bytes for the newly added structures.",
         "question": "In the Skewed-CEASER design process, must cache line mapping occur differently in each partition?",
         "answers": {
-            "answer_start": 1265,
-            "justification": "Skewed-CEASER (CEASER-S), which divides the cache ways into multiple partitions and maps the cache line to be resident in a different set in each partition."
+            "justification": [
+                "Skewed-CEASER (CEASER-S), which divides the cache ways into multiple partitions and maps the cache line to be resident in a different set in each partition."
+            ],
+            "answer_start": [
+                1265
+            ]
         }
     },
     {
@@ -185,8 +257,12 @@
         "context": "Conflict-based cache attacks can allow an adversary to infer the access pattern of a co-running application by orchestrating evictions via cache conflicts. Such attacks can be mitigated by randomizing the location of the lines in the cache. Our recent proposal, CEASER, makes cache randomization practical by accessing the cache using an encrypted address and periodically changing the encryption key. CEASER was analyzed with the state-of-the-art algorithm on forming eviction sets, and the analysis showed that CEASER with a Remap-Rate of 1% is sufficient to tolerate years of attack. In this paper, we present two new attacks that significantly push the state-of-the-art in forming eviction sets. Our first attack reduces the time required to form the eviction set from O(L2) to O(L), where L is the number of lines in the attack. This attack is 35x faster than the best-known attack and requires that the Remap-Rate of CEASER be increased to 35%. Our second attack exploits the replacement policy (we analyze LRU, RRIP, and Random) to form eviction set quickly and requires that the Remap-Rate of CEASER be increased to more than 100%, incurring impractical overheads. To improve the robustness of CEASER against these attacks in a practical manner, we propose Skewed-CEASER (CEASER-S), which divides the cache ways into multiple partitions and maps the cache line to be resident in a different set in each partition. This design significantly improves the robustness of CEASER, as the attacker must form an eviction set that can dislodge the line from multiple possible locations. We show that CEASER-S can tolerate years of attacks while retaining a Remap-Rate of 1%. CEASER-S incurs negligible slowdown (within 1%) and a storage overhead of less than 100 bytes for the newly added structures.",
         "question": "Does increasing the Remap-Rate of CEASER lead to impractical overheads in the second attack?",
         "answers": {
-            "answer_start": -1,
-            "justification": "Our second attack exploits the replacement policy to form eviction set quickly and requires that the Remap-Rate of CEASER be increased to more than 100%, incurring impractical overheads."
+            "justification": [
+                "Our second attack exploits the replacement policy to form eviction set quickly and requires that the Remap-Rate of CEASER be increased to more than 100%, incurring impractical overheads."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -195,8 +271,12 @@
         "context": "Heterogeneous memory management combined with server virtualization in datacenters is expected to increase the software and OS management complexity. State-of-the-art solutions rely exclusively on the hypervisor (VMM) for expensive page hotness tracking and migrations, limiting the benefits from heterogeneity. To address this, we design HeteroOS, a novel application-transparent OS-level solution for managing memory heterogeneity in virtualized system. The HeteroOS design first makes the guest-OSes heterogeneity-aware and then extracts rich OS-level information about applications' memory usage to place data in the 'right' memory avoiding page migrations. When such pro-active placements are not possible, HeteroOS combines the power of the guest-OSes' information about applications with the VMM's hardware control to track for hotness and migrate only performance-critical pages. Finally, HeteroOS also designs an efficient heterogeneous memory sharing across multiple guest-VMs. Evaluation of HeteroOS with memory, storage, and network-intensive datacenter applications shows up to 2x performance improvement compared to the state-of-the-art VMM-exclusive approach.",
         "question": "Does HeteroOS provide performance improvement over VMM-exclusive approach?",
         "answers": {
-            "answer_start": 988,
-            "justification": "Evaluation of HeteroOS with memory, storage, and network-intensive datacenter applications shows up to 2x performance improvement compared to the state-of-the-art VMM-exclusive approach."
+            "justification": [
+                "Evaluation of HeteroOS with memory, storage, and network-intensive datacenter applications shows up to 2x performance improvement compared to the state-of-the-art VMM-exclusive approach."
+            ],
+            "answer_start": [
+                988
+            ]
         }
     },
     {
@@ -205,8 +285,12 @@
         "context": "Heterogeneous memory management combined with server virtualization in datacenters is expected to increase the software and OS management complexity. State-of-the-art solutions rely exclusively on the hypervisor (VMM) for expensive page hotness tracking and migrations, limiting the benefits from heterogeneity. To address this, we design HeteroOS, a novel application-transparent OS-level solution for managing memory heterogeneity in virtualized system. The HeteroOS design first makes the guest-OSes heterogeneity-aware and then extracts rich OS-level information about applications' memory usage to place data in the 'right' memory avoiding page migrations. When such pro-active placements are not possible, HeteroOS combines the power of the guest-OSes' information about applications with the VMM's hardware control to track for hotness and migrate only performance-critical pages. Finally, HeteroOS also designs an efficient heterogeneous memory sharing across multiple guest-VMs. Evaluation of HeteroOS with memory, storage, and network-intensive datacenter applications shows up to 2x performance improvement compared to the state-of-the-art VMM-exclusive approach.",
         "question": "Is the VMM primarily responsible for expensive page hotness tracking and migrations?",
         "answers": {
-            "answer_start": 150,
-            "justification": "State-of-the-art solutions rely exclusively on the hypervisor (VMM) for expensive page hotness tracking and migrations, limiting the benefits from heterogeneity."
+            "justification": [
+                "State-of-the-art solutions rely exclusively on the hypervisor (VMM) for expensive page hotness tracking and migrations, limiting the benefits from heterogeneity."
+            ],
+            "answer_start": [
+                150
+            ]
         }
     },
     {
@@ -215,8 +299,12 @@
         "context": "Heterogeneous memory management combined with server virtualization in datacenters is expected to increase the software and OS management complexity. State-of-the-art solutions rely exclusively on the hypervisor (VMM) for expensive page hotness tracking and migrations, limiting the benefits from heterogeneity. To address this, we design HeteroOS, a novel application-transparent OS-level solution for managing memory heterogeneity in virtualized system. The HeteroOS design first makes the guest-OSes heterogeneity-aware and then extracts rich OS-level information about applications' memory usage to place data in the 'right' memory avoiding page migrations. When such pro-active placements are not possible, HeteroOS combines the power of the guest-OSes' information about applications with the VMM's hardware control to track for hotness and migrate only performance-critical pages. Finally, HeteroOS also designs an efficient heterogeneous memory sharing across multiple guest-VMs. Evaluation of HeteroOS with memory, storage, and network-intensive datacenter applications shows up to 2x performance improvement compared to the state-of-the-art VMM-exclusive approach.",
         "question": "Is HeteroOS a novel application-transparent OS-level solution?",
         "answers": {
-            "answer_start": -1,
-            "justification": "To address this, we design HeteroOS, a novel application-transparent OS-level solution for managing memory heterogeneity in a virtualized system."
+            "justification": [
+                "To address this, we design HeteroOS, a novel application-transparent OS-level solution for managing memory heterogeneity in a virtualized system."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -225,8 +313,12 @@
         "context": "Heterogeneous memory management combined with server virtualization in datacenters is expected to increase the software and OS management complexity. State-of-the-art solutions rely exclusively on the hypervisor (VMM) for expensive page hotness tracking and migrations, limiting the benefits from heterogeneity. To address this, we design HeteroOS, a novel application-transparent OS-level solution for managing memory heterogeneity in virtualized system. The HeteroOS design first makes the guest-OSes heterogeneity-aware and then extracts rich OS-level information about applications' memory usage to place data in the 'right' memory avoiding page migrations. When such pro-active placements are not possible, HeteroOS combines the power of the guest-OSes' information about applications with the VMM's hardware control to track for hotness and migrate only performance-critical pages. Finally, HeteroOS also designs an efficient heterogeneous memory sharing across multiple guest-VMs. Evaluation of HeteroOS with memory, storage, and network-intensive datacenter applications shows up to 2x performance improvement compared to the state-of-the-art VMM-exclusive approach.",
         "question": "In the HeteroOS process, must pro-active placements occur before page migrations?",
         "answers": {
-            "answer_start": 662,
-            "justification": "When such pro-active placements are not possible, HeteroOS combines the power of the guest-OSes' information about applications with the VMM's hardware control to track for hotness and migrate only performance-critical pages."
+            "justification": [
+                "When such pro-active placements are not possible, HeteroOS combines the power of the guest-OSes' information about applications with the VMM's hardware control to track for hotness and migrate only performance-critical pages."
+            ],
+            "answer_start": [
+                662
+            ]
         }
     },
     {
@@ -235,8 +327,12 @@
         "context": "Heterogeneous memory management combined with server virtualization in datacenters is expected to increase the software and OS management complexity. State-of-the-art solutions rely exclusively on the hypervisor (VMM) for expensive page hotness tracking and migrations, limiting the benefits from heterogeneity. To address this, we design HeteroOS, a novel application-transparent OS-level solution for managing memory heterogeneity in virtualized system. The HeteroOS design first makes the guest-OSes heterogeneity-aware and then extracts rich OS-level information about applications' memory usage to place data in the 'right' memory avoiding page migrations. When such pro-active placements are not possible, HeteroOS combines the power of the guest-OSes' information about applications with the VMM's hardware control to track for hotness and migrate only performance-critical pages. Finally, HeteroOS also designs an efficient heterogeneous memory sharing across multiple guest-VMs. Evaluation of HeteroOS with memory, storage, and network-intensive datacenter applications shows up to 2x performance improvement compared to the state-of-the-art VMM-exclusive approach.",
         "question": "Does increasing memory heterogeneity sharing lead to performance improvement in HeteroOS?",
         "answers": {
-            "answer_start": -1,
-            "justification": "HeteroOS designs an efficient heterogeneous memory sharing across multiple guest-VMs."
+            "justification": [
+                "HeteroOS designs an efficient heterogeneous memory sharing across multiple guest-VMs."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -245,8 +341,12 @@
         "context": "State-of-the-art deep neural networks (DNNs) have hundreds of millions of connections and are both computationally and memory intensive, making them difficult to deploy on embedded systems with limited hardware resources and power budgets. While custom hardware helps the computation, fetching weights from DRAM is two orders of magnitude more expensive than ALU operations, and dominates the required power. Previously proposed 'Deep Compression' makes it possible to fit large DNNs (AlexNet and VGGNet) fully in on-chip SRAM. This compression is achieved by pruning the redundant connections and having multiple connections share the same weight. We propose an energy efficient inference engine (EIE) that performs inference on this compressed network model and accelerates the resulting sparse matrix-vector multiplication with weight sharing. Going from DRAM to SRAM gives EIE 120x energy saving, Exploiting sparsity saves 10x, Weight sharing gives 8x, Skipping zero activations from ReLU saves another 3x. Evaluated on nine DNN benchmarks, EIE is 189x and 13x faster when compared to CPU and GPU implementations of the same DNN without compression. EIE has a processing power of 102 GOPS working directly on a compressed network, corresponding to 3 TOPS on an uncompressed network, and processes FC layers of AlexNet at 1.88x104 frames/sec with a power dissipation of only 600mW. It is 24,000x and 3,400x more energy efficient than a CPU and GPU respectively. Compared with DaDianNao, EIE has 2.9x, 19x and 3x better throughput, energy efficiency and area efficiency.",
         "question": "Does weight sharing in EIE provide energy benefits over direct fetching from DRAM?",
         "answers": {
-            "answer_start": -1,
-            "justification": "Weight sharing gives 8x energy saving in EIE (Eyeriss) compared to direct fetching from DRAM."
+            "justification": [
+                "Weight sharing gives 8x energy saving in EIE (Eyeriss) compared to direct fetching from DRAM."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -255,8 +355,12 @@
         "context": "State-of-the-art deep neural networks (DNNs) have hundreds of millions of connections and are both computationally and memory intensive, making them difficult to deploy on embedded systems with limited hardware resources and power budgets. While custom hardware helps the computation, fetching weights from DRAM is two orders of magnitude more expensive than ALU operations, and dominates the required power. Previously proposed 'Deep Compression' makes it possible to fit large DNNs (AlexNet and VGGNet) fully in on-chip SRAM. This compression is achieved by pruning the redundant connections and having multiple connections share the same weight. We propose an energy efficient inference engine (EIE) that performs inference on this compressed network model and accelerates the resulting sparse matrix-vector multiplication with weight sharing. Going from DRAM to SRAM gives EIE 120x energy saving, Exploiting sparsity saves 10x, Weight sharing gives 8x, Skipping zero activations from ReLU saves another 3x. Evaluated on nine DNN benchmarks, EIE is 189x and 13x faster when compared to CPU and GPU implementations of the same DNN without compression. EIE has a processing power of 102 GOPS working directly on a compressed network, corresponding to 3 TOPS on an uncompressed network, and processes FC layers of AlexNet at 1.88x104 frames/sec with a power dissipation of only 600mW. It is 24,000x and 3,400x more energy efficient than a CPU and GPU respectively. Compared with DaDianNao, EIE has 2.9x, 19x and 3x better throughput, energy efficiency and area efficiency.",
         "question": "Is EIE primarily responsible for the significant energy efficiency improvement over CPU and GPU implementations?",
         "answers": {
-            "answer_start": -1,
-            "justification": "EIE is 24,000x and 3,400x more energy efficient than a CPU and GPU respectively."
+            "justification": [
+                "EIE is 24,000x and 3,400x more energy efficient than a CPU and GPU respectively."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -265,8 +369,12 @@
         "context": "State-of-the-art deep neural networks (DNNs) have hundreds of millions of connections and are both computationally and memory intensive, making them difficult to deploy on embedded systems with limited hardware resources and power budgets. While custom hardware helps the computation, fetching weights from DRAM is two orders of magnitude more expensive than ALU operations, and dominates the required power. Previously proposed 'Deep Compression' makes it possible to fit large DNNs (AlexNet and VGGNet) fully in on-chip SRAM. This compression is achieved by pruning the redundant connections and having multiple connections share the same weight. We propose an energy efficient inference engine (EIE) that performs inference on this compressed network model and accelerates the resulting sparse matrix-vector multiplication with weight sharing. Going from DRAM to SRAM gives EIE 120x energy saving, Exploiting sparsity saves 10x, Weight sharing gives 8x, Skipping zero activations from ReLU saves another 3x. Evaluated on nine DNN benchmarks, EIE is 189x and 13x faster when compared to CPU and GPU implementations of the same DNN without compression. EIE has a processing power of 102 GOPS working directly on a compressed network, corresponding to 3 TOPS on an uncompressed network, and processes FC layers of AlexNet at 1.88x104 frames/sec with a power dissipation of only 600mW. It is 24,000x and 3,400x more energy efficient than a CPU and GPU respectively. Compared with DaDianNao, EIE has 2.9x, 19x and 3x better throughput, energy efficiency and area efficiency.",
         "question": "Is EIE an inference engine for performing computation on compressed network models?",
         "answers": {
-            "answer_start": -1,
-            "justification": "We propose an energy efficient inference engine (EIE) that performs inference on compressed network model."
+            "justification": [
+                "We propose an energy efficient inference engine (EIE) that performs inference on compressed network model."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -275,8 +383,12 @@
         "context": "State-of-the-art deep neural networks (DNNs) have hundreds of millions of connections and are both computationally and memory intensive, making them difficult to deploy on embedded systems with limited hardware resources and power budgets. While custom hardware helps the computation, fetching weights from DRAM is two orders of magnitude more expensive than ALU operations, and dominates the required power. Previously proposed 'Deep Compression' makes it possible to fit large DNNs (AlexNet and VGGNet) fully in on-chip SRAM. This compression is achieved by pruning the redundant connections and having multiple connections share the same weight. We propose an energy efficient inference engine (EIE) that performs inference on this compressed network model and accelerates the resulting sparse matrix-vector multiplication with weight sharing. Going from DRAM to SRAM gives EIE 120x energy saving, Exploiting sparsity saves 10x, Weight sharing gives 8x, Skipping zero activations from ReLU saves another 3x. Evaluated on nine DNN benchmarks, EIE is 189x and 13x faster when compared to CPU and GPU implementations of the same DNN without compression. EIE has a processing power of 102 GOPS working directly on a compressed network, corresponding to 3 TOPS on an uncompressed network, and processes FC layers of AlexNet at 1.88x104 frames/sec with a power dissipation of only 600mW. It is 24,000x and 3,400x more energy efficient than a CPU and GPU respectively. Compared with DaDianNao, EIE has 2.9x, 19x and 3x better throughput, energy efficiency and area efficiency.",
         "question": "In processing FC layers of AlexNet with EIE, must skipping zero activations from ReLU always occur before exploiting sparsity?",
         "answers": {
-            "answer_start": -1,
-            "justification": "Skipping zero activations from ReLU saves another 3x in EIE, but does not have to occur before exploiting sparsity."
+            "justification": [
+                "Skipping zero activations from ReLU saves another 3x in EIE, but does not have to occur before exploiting sparsity."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -285,8 +397,12 @@
         "context": "State-of-the-art deep neural networks (DNNs) have hundreds of millions of connections and are both computationally and memory intensive, making them difficult to deploy on embedded systems with limited hardware resources and power budgets. While custom hardware helps the computation, fetching weights from DRAM is two orders of magnitude more expensive than ALU operations, and dominates the required power. Previously proposed 'Deep Compression' makes it possible to fit large DNNs (AlexNet and VGGNet) fully in on-chip SRAM. This compression is achieved by pruning the redundant connections and having multiple connections share the same weight. We propose an energy efficient inference engine (EIE) that performs inference on this compressed network model and accelerates the resulting sparse matrix-vector multiplication with weight sharing. Going from DRAM to SRAM gives EIE 120x energy saving, Exploiting sparsity saves 10x, Weight sharing gives 8x, Skipping zero activations from ReLU saves another 3x. Evaluated on nine DNN benchmarks, EIE is 189x and 13x faster when compared to CPU and GPU implementations of the same DNN without compression. EIE has a processing power of 102 GOPS working directly on a compressed network, corresponding to 3 TOPS on an uncompressed network, and processes FC layers of AlexNet at 1.88x104 frames/sec with a power dissipation of only 600mW. It is 24,000x and 3,400x more energy efficient than a CPU and GPU respectively. Compared with DaDianNao, EIE has 2.9x, 19x and 3x better throughput, energy efficiency and area efficiency.",
         "question": "Does increasing the processing power of EIE lead to a proportional increase in energy efficiency?",
         "answers": {
-            "answer_start": -1,
-            "justification": "EIE has a processing power of 102 GOPS working directly on compressed network, corresponding to 3 TOPS, but is 24,000x more energy efficient than a CPU."
+            "justification": [
+                "EIE has a processing power of 102 GOPS working directly on compressed network, corresponding to 3 TOPS, but is 24,000x more energy efficient than a CPU."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -295,8 +411,12 @@
         "context": "With the shift towards chip multiprocessors (CMPs), exploiting and managing parallelism has become a central problem in computing systems. Many issues of parallelism management boil down to discerning which running threads or processes are critical, or slowest, versus which are non-critical. If one can accurately predict critical threads in a parallel program, then one can respond in a variety of ways. Possibilities include running the critical thread at a faster clock rate, performing load balancing techniques to offload work onto currently non-critical threads, or giving the critical thread more on-chip resources to execute faster. This paper proposes and evaluates simple but effective thread criticality predictors for parallel applications. We show that accurate predictors can be built using counters that are typically already available on-chip. Our predictor, based on memory hierarchy statistics, identifies thread criticality with an average accuracy of 93% across a range of architectures. We also demonstrate two applications of our predictor. First, we show how Intel's Threading Building Blocks (TBB) parallel runtime system can benefit from task stealing techniques that use our criticality predictor to reduce load imbalance. Using criticality prediction to guide TBB's task-stealing decisions improves performance by 13-32% for TBB-based PARSEC benchmarks running on a 32-core CMP. As a second application, criticality prediction guides dynamic energy optimizations in barrier-based applications. By running the predicted critical thread at the full clock rate and frequency-scaling non-critical threads, this approach achieves average energy savings of 15% while negligibly degrading performance for SPLASH-2 and PARSEC benchmarks.",
         "question": "Does accurate criticality prediction provide benefits over inaccurate prediction in parallel applications?",
         "answers": {
-            "answer_start": 754,
-            "justification": "We show that accurate predictors can be built using counters that are typically already available on-chip. Our predictor, based on memory hierarchy statistics, identifies thread criticality with an average accuracy of 93% across a range of architectures."
+            "justification": [
+                "We show that accurate predictors can be built using counters that are typically already available on-chip. Our predictor, based on memory hierarchy statistics, identifies thread criticality with an average accuracy of 93% across a range of architectures."
+            ],
+            "answer_start": [
+                754
+            ]
         }
     },
     {
@@ -305,8 +425,12 @@
         "context": "With the shift towards chip multiprocessors (CMPs), exploiting and managing parallelism has become a central problem in computing systems. Many issues of parallelism management boil down to discerning which running threads or processes are critical, or slowest, versus which are non-critical. If one can accurately predict critical threads in a parallel program, then one can respond in a variety of ways. Possibilities include running the critical thread at a faster clock rate, performing load balancing techniques to offload work onto currently non-critical threads, or giving the critical thread more on-chip resources to execute faster. This paper proposes and evaluates simple but effective thread criticality predictors for parallel applications. We show that accurate predictors can be built using counters that are typically already available on-chip. Our predictor, based on memory hierarchy statistics, identifies thread criticality with an average accuracy of 93% across a range of architectures. We also demonstrate two applications of our predictor. First, we show how Intel's Threading Building Blocks (TBB) parallel runtime system can benefit from task stealing techniques that use our criticality predictor to reduce load imbalance. Using criticality prediction to guide TBB's task-stealing decisions improves performance by 13-32% for TBB-based PARSEC benchmarks running on a 32-core CMP. As a second application, criticality prediction guides dynamic energy optimizations in barrier-based applications. By running the predicted critical thread at the full clock rate and frequency-scaling non-critical threads, this approach achieves average energy savings of 15% while negligibly degrading performance for SPLASH-2 and PARSEC benchmarks.",
         "question": "Is accurately predicting critical threads primarily responsible for improving performance in parallel programs?",
         "answers": {
-            "answer_start": -1,
-            "justification": "If one can accurately predict critical threads in a parallel program, then one can respond in a variety of ways. ... criticality prediction to guide TBB's task-stealing decisions improves performance by 13-32% for TBB-based PARSEC benchmarks running on a 32-core CMP."
+            "justification": [
+                "If one can accurately predict critical threads in a parallel program, then one can respond in a variety of ways. ... criticality prediction to guide TBB's task-stealing decisions improves performance by 13-32% for TBB-based PARSEC benchmarks running on a 32-core CMP."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -315,8 +439,12 @@
         "context": "With the shift towards chip multiprocessors (CMPs), exploiting and managing parallelism has become a central problem in computing systems. Many issues of parallelism management boil down to discerning which running threads or processes are critical, or slowest, versus which are non-critical. If one can accurately predict critical threads in a parallel program, then one can respond in a variety of ways. Possibilities include running the critical thread at a faster clock rate, performing load balancing techniques to offload work onto currently non-critical threads, or giving the critical thread more on-chip resources to execute faster. This paper proposes and evaluates simple but effective thread criticality predictors for parallel applications. We show that accurate predictors can be built using counters that are typically already available on-chip. Our predictor, based on memory hierarchy statistics, identifies thread criticality with an average accuracy of 93% across a range of architectures. We also demonstrate two applications of our predictor. First, we show how Intel's Threading Building Blocks (TBB) parallel runtime system can benefit from task stealing techniques that use our criticality predictor to reduce load imbalance. Using criticality prediction to guide TBB's task-stealing decisions improves performance by 13-32% for TBB-based PARSEC benchmarks running on a 32-core CMP. As a second application, criticality prediction guides dynamic energy optimizations in barrier-based applications. By running the predicted critical thread at the full clock rate and frequency-scaling non-critical threads, this approach achieves average energy savings of 15% while negligibly degrading performance for SPLASH-2 and PARSEC benchmarks.",
         "question": "Is a criticality predictor a tool used for enhancing parallel applications?",
         "answers": {
-            "answer_start": 642,
-            "justification": "This paper proposes and evaluates simple but effective thread criticality predictors for parallel applications."
+            "justification": [
+                "This paper proposes and evaluates simple but effective thread criticality predictors for parallel applications."
+            ],
+            "answer_start": [
+                642
+            ]
         }
     },
     {
@@ -325,8 +453,12 @@
         "context": "With the shift towards chip multiprocessors (CMPs), exploiting and managing parallelism has become a central problem in computing systems. Many issues of parallelism management boil down to discerning which running threads or processes are critical, or slowest, versus which are non-critical. If one can accurately predict critical threads in a parallel program, then one can respond in a variety of ways. Possibilities include running the critical thread at a faster clock rate, performing load balancing techniques to offload work onto currently non-critical threads, or giving the critical thread more on-chip resources to execute faster. This paper proposes and evaluates simple but effective thread criticality predictors for parallel applications. We show that accurate predictors can be built using counters that are typically already available on-chip. Our predictor, based on memory hierarchy statistics, identifies thread criticality with an average accuracy of 93% across a range of architectures. We also demonstrate two applications of our predictor. First, we show how Intel's Threading Building Blocks (TBB) parallel runtime system can benefit from task stealing techniques that use our criticality predictor to reduce load imbalance. Using criticality prediction to guide TBB's task-stealing decisions improves performance by 13-32% for TBB-based PARSEC benchmarks running on a 32-core CMP. As a second application, criticality prediction guides dynamic energy optimizations in barrier-based applications. By running the predicted critical thread at the full clock rate and frequency-scaling non-critical threads, this approach achieves average energy savings of 15% while negligibly degrading performance for SPLASH-2 and PARSEC benchmarks.",
         "question": "In dynamic energy optimizations, must the predicted critical thread always run at the full clock rate before frequency-scaling non-critical threads?",
         "answers": {
-            "answer_start": 1522,
-            "justification": "By running the predicted critical thread at the full clock rate and frequency-scaling non-critical threads, this approach achieves average energy savings of 15% while negligibly degrading performance for SPLASH-2 and PARSEC benchmarks."
+            "justification": [
+                "By running the predicted critical thread at the full clock rate and frequency-scaling non-critical threads, this approach achieves average energy savings of 15% while negligibly degrading performance for SPLASH-2 and PARSEC benchmarks."
+            ],
+            "answer_start": [
+                1522
+            ]
         }
     },
     {
@@ -335,8 +467,12 @@
         "context": "With the shift towards chip multiprocessors (CMPs), exploiting and managing parallelism has become a central problem in computing systems. Many issues of parallelism management boil down to discerning which running threads or processes are critical, or slowest, versus which are non-critical. If one can accurately predict critical threads in a parallel program, then one can respond in a variety of ways. Possibilities include running the critical thread at a faster clock rate, performing load balancing techniques to offload work onto currently non-critical threads, or giving the critical thread more on-chip resources to execute faster. This paper proposes and evaluates simple but effective thread criticality predictors for parallel applications. We show that accurate predictors can be built using counters that are typically already available on-chip. Our predictor, based on memory hierarchy statistics, identifies thread criticality with an average accuracy of 93% across a range of architectures. We also demonstrate two applications of our predictor. First, we show how Intel's Threading Building Blocks (TBB) parallel runtime system can benefit from task stealing techniques that use our criticality predictor to reduce load imbalance. Using criticality prediction to guide TBB's task-stealing decisions improves performance by 13-32% for TBB-based PARSEC benchmarks running on a 32-core CMP. As a second application, criticality prediction guides dynamic energy optimizations in barrier-based applications. By running the predicted critical thread at the full clock rate and frequency-scaling non-critical threads, this approach achieves average energy savings of 15% while negligibly degrading performance for SPLASH-2 and PARSEC benchmarks.",
         "question": "Does increasing the accuracy of thread criticality prediction always lead to better performance in TBB-based parallel applications?",
         "answers": {
-            "answer_start": 1250,
-            "justification": "Using criticality prediction to guide TBB's task-stealing decisions improves performance by 13-32% for TBB-based PARSEC benchmarks running on a 32-core CMP."
+            "justification": [
+                "Using criticality prediction to guide TBB's task-stealing decisions improves performance by 13-32% for TBB-based PARSEC benchmarks running on a 32-core CMP."
+            ],
+            "answer_start": [
+                1250
+            ]
         }
     },
     {
@@ -345,8 +481,12 @@
         "context": "The commonly used LRU replacement policy is susceptible to thrashing for memory-intensive workloads that have a working set greater than the available cache size. For such applications, the majority of lines traverse from the MRU position to the LRU position without receiving any cache hits, resulting in inefficient use of cache space. Cache performance can be improved if some fraction of the working set is retained in the cache so that at least that fraction of the working set can contribute to cache hits. We show that simple changes to the insertion policy can significantly reduce cache misses for memory-intensive workloads. We propose the LRU Insertion Policy (LIP) which places the incoming line in the LRU position instead of the MRU position. LIP protects the cache from thrashing and results in close to optimal hitrate for applications that have a cyclic reference pattern. We also propose the Bimodal Insertion Policy (BIP) as an enhancement of LIP that adapts to changes in the working set while maintaining the thrashing protection of LIP. We finally propose a Dynamic Insertion Policy (DIP) to choose between BIP and the traditional LRU policy depending on which policy incurs fewer misses. The proposed insertion policies do not require any change to the existing cache structure, are trivial to implement, and have a storage requirement of less than two bytes. We show that DIP reduces the average MPKI of the baseline 1MB 16-way L2 cache by 21%, bridging two-thirds of the gap between LRU and OPT.",
         "question": "Does LIP provide close to optimal hitrate for applications that have a cyclic reference pattern over LRU?",
         "answers": {
-            "answer_start": 757,
-            "justification": "LIP protects the cache from thrashing and results in close to optimal hitrate for applications that have a cyclic reference pattern."
+            "justification": [
+                "LIP protects the cache from thrashing and results in close to optimal hitrate for applications that have a cyclic reference pattern."
+            ],
+            "answer_start": [
+                757
+            ]
         }
     },
     {
@@ -355,8 +495,12 @@
         "context": "The commonly used LRU replacement policy is susceptible to thrashing for memory-intensive workloads that have a working set greater than the available cache size. For such applications, the majority of lines traverse from the MRU position to the LRU position without receiving any cache hits, resulting in inefficient use of cache space. Cache performance can be improved if some fraction of the working set is retained in the cache so that at least that fraction of the working set can contribute to cache hits. We show that simple changes to the insertion policy can significantly reduce cache misses for memory-intensive workloads. We propose the LRU Insertion Policy (LIP) which places the incoming line in the LRU position instead of the MRU position. LIP protects the cache from thrashing and results in close to optimal hitrate for applications that have a cyclic reference pattern. We also propose the Bimodal Insertion Policy (BIP) as an enhancement of LIP that adapts to changes in the working set while maintaining the thrashing protection of LIP. We finally propose a Dynamic Insertion Policy (DIP) to choose between BIP and the traditional LRU policy depending on which policy incurs fewer misses. The proposed insertion policies do not require any change to the existing cache structure, are trivial to implement, and have a storage requirement of less than two bytes. We show that DIP reduces the average MPKI of the baseline 1MB 16-way L2 cache by 21%, bridging two-thirds of the gap between LRU and OPT.",
         "question": "Is BIP an enhancement of LIP that adapts to changes in the working set while maintaining thrashing protection?",
         "answers": {
-            "answer_start": 890,
-            "justification": "We also propose the Bimodal Insertion Policy (BIP) as an enhancement of LIP that adapts to changes in the working set while maintaining the thrashing protection of LIP."
+            "justification": [
+                "We also propose the Bimodal Insertion Policy (BIP) as an enhancement of LIP that adapts to changes in the working set while maintaining the thrashing protection of LIP."
+            ],
+            "answer_start": [
+                890
+            ]
         }
     },
     {
@@ -365,8 +509,12 @@
         "context": "The commonly used LRU replacement policy is susceptible to thrashing for memory-intensive workloads that have a working set greater than the available cache size. For such applications, the majority of lines traverse from the MRU position to the LRU position without receiving any cache hits, resulting in inefficient use of cache space. Cache performance can be improved if some fraction of the working set is retained in the cache so that at least that fraction of the working set can contribute to cache hits. We show that simple changes to the insertion policy can significantly reduce cache misses for memory-intensive workloads. We propose the LRU Insertion Policy (LIP) which places the incoming line in the LRU position instead of the MRU position. LIP protects the cache from thrashing and results in close to optimal hitrate for applications that have a cyclic reference pattern. We also propose the Bimodal Insertion Policy (BIP) as an enhancement of LIP that adapts to changes in the working set while maintaining the thrashing protection of LIP. We finally propose a Dynamic Insertion Policy (DIP) to choose between BIP and the traditional LRU policy depending on which policy incurs fewer misses. The proposed insertion policies do not require any change to the existing cache structure, are trivial to implement, and have a storage requirement of less than two bytes. We show that DIP reduces the average MPKI of the baseline 1MB 16-way L2 cache by 21%, bridging two-thirds of the gap between LRU and OPT.",
         "question": "Is DIP considered a choice between BIP and the traditional LRU policy depending on which policy incurs fewer misses?",
         "answers": {
-            "answer_start": 1059,
-            "justification": "We finally propose a Dynamic Insertion Policy (DIP) to choose between BIP and the traditional LRU policy depending on which policy incurs fewer misses."
+            "justification": [
+                "We finally propose a Dynamic Insertion Policy (DIP) to choose between BIP and the traditional LRU policy depending on which policy incurs fewer misses."
+            ],
+            "answer_start": [
+                1059
+            ]
         }
     },
     {
@@ -375,8 +523,12 @@
         "context": "The commonly used LRU replacement policy is susceptible to thrashing for memory-intensive workloads that have a working set greater than the available cache size. For such applications, the majority of lines traverse from the MRU position to the LRU position without receiving any cache hits, resulting in inefficient use of cache space. Cache performance can be improved if some fraction of the working set is retained in the cache so that at least that fraction of the working set can contribute to cache hits. We show that simple changes to the insertion policy can significantly reduce cache misses for memory-intensive workloads. We propose the LRU Insertion Policy (LIP) which places the incoming line in the LRU position instead of the MRU position. LIP protects the cache from thrashing and results in close to optimal hitrate for applications that have a cyclic reference pattern. We also propose the Bimodal Insertion Policy (BIP) as an enhancement of LIP that adapts to changes in the working set while maintaining the thrashing protection of LIP. We finally propose a Dynamic Insertion Policy (DIP) to choose between BIP and the traditional LRU policy depending on which policy incurs fewer misses. The proposed insertion policies do not require any change to the existing cache structure, are trivial to implement, and have a storage requirement of less than two bytes. We show that DIP reduces the average MPKI of the baseline 1MB 16-way L2 cache by 21%, bridging two-thirds of the gap between LRU and OPT.",
         "question": "In the DIP process, must BIP always occur before the traditional LRU policy?",
         "answers": {
-            "answer_start": -1,
-            "justification": "We finally propose a Dynamic Insertion Policy (DIP) to choose between BIP and the traditional LRU policy..."
+            "justification": [
+                "We finally propose a Dynamic Insertion Policy (DIP) to choose between BIP and the traditional LRU policy..."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -385,8 +537,12 @@
         "context": "The commonly used LRU replacement policy is susceptible to thrashing for memory-intensive workloads that have a working set greater than the available cache size. For such applications, the majority of lines traverse from the MRU position to the LRU position without receiving any cache hits, resulting in inefficient use of cache space. Cache performance can be improved if some fraction of the working set is retained in the cache so that at least that fraction of the working set can contribute to cache hits. We show that simple changes to the insertion policy can significantly reduce cache misses for memory-intensive workloads. We propose the LRU Insertion Policy (LIP) which places the incoming line in the LRU position instead of the MRU position. LIP protects the cache from thrashing and results in close to optimal hitrate for applications that have a cyclic reference pattern. We also propose the Bimodal Insertion Policy (BIP) as an enhancement of LIP that adapts to changes in the working set while maintaining the thrashing protection of LIP. We finally propose a Dynamic Insertion Policy (DIP) to choose between BIP and the traditional LRU policy depending on which policy incurs fewer misses. The proposed insertion policies do not require any change to the existing cache structure, are trivial to implement, and have a storage requirement of less than two bytes. We show that DIP reduces the average MPKI of the baseline 1MB 16-way L2 cache by 21%, bridging two-thirds of the gap between LRU and OPT.",
         "question": "Does increasing the usage of DIP lead to a reduction in the average MPKI of the baseline 1MB 16-way L2 cache?",
         "answers": {
-            "answer_start": -1,
-            "justification": "We show that DIP reduces the average MPKI of the baseline 1MB 16-way L2 cache by 21%..."
+            "justification": [
+                "We show that DIP reduces the average MPKI of the baseline 1MB 16-way L2 cache by 21%..."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -395,8 +551,12 @@
         "context": "GPU architectures are increasingly important in the multi-core era due to their high number of parallel processors. Programming thousands of massively parallel threads is a big challenge for software engineers, but understanding the performance bottlenecks of those parallel programs on GPU architectures to improve application performance is even more difficult. Current approaches rely on programmers to tune their applications by exploiting the design space exhaustively without fully understanding the performance characteristics of their applications. To provide insights into the performance bottlenecks of parallel applications on GPU architectures, we propose a simple analytical model that estimates the execution time of massively parallel programs. The key component of our model is estimating the number of parallel memory requests (we call this the memory warp parallelism) by considering the number of running threads and memory bandwidth. Based on the degree of memory warp parallelism, the model estimates the cost of memory requests, thereby estimating the overall execution time of a program. Comparisons between the outcome of the model and the actual execution time in several GPUs show that the geometric mean of absolute error of our model on micro-benchmarks is 5.4% and on GPU computing applications is 13.3%. All the applications are written in the CUDA programming language.",
         "question": "Does the proposed analytical model provide insights into the performance bottlenecks of parallel applications on GPU architectures?",
         "answers": {
-            "answer_start": 557,
-            "justification": "To provide insights into the performance bottlenecks of parallel applications on GPU architectures, we propose a simple analytical model that estimates the execution time of massively parallel programs."
+            "justification": [
+                "To provide insights into the performance bottlenecks of parallel applications on GPU architectures, we propose a simple analytical model that estimates the execution time of massively parallel programs."
+            ],
+            "answer_start": [
+                557
+            ]
         }
     },
     {
@@ -405,8 +565,12 @@
         "context": "GPU architectures are increasingly important in the multi-core era due to their high number of parallel processors. Programming thousands of massively parallel threads is a big challenge for software engineers, but understanding the performance bottlenecks of those parallel programs on GPU architectures to improve application performance is even more difficult. Current approaches rely on programmers to tune their applications by exploiting the design space exhaustively without fully understanding the performance characteristics of their applications. To provide insights into the performance bottlenecks of parallel applications on GPU architectures, we propose a simple analytical model that estimates the execution time of massively parallel programs. The key component of our model is estimating the number of parallel memory requests (we call this the memory warp parallelism) by considering the number of running threads and memory bandwidth. Based on the degree of memory warp parallelism, the model estimates the cost of memory requests, thereby estimating the overall execution time of a program. Comparisons between the outcome of the model and the actual execution time in several GPUs show that the geometric mean of absolute error of our model on micro-benchmarks is 5.4% and on GPU computing applications is 13.3%. All the applications are written in the CUDA programming language.",
         "question": "Is estimating the number of parallel memory requests a key component of the proposed analytical model?",
         "answers": {
-            "answer_start": 760,
-            "justification": "The key component of our model is estimating the number of parallel memory requests (we call this the memory warp parallelism) by considering the number of running threads and memory bandwidth."
+            "justification": [
+                "The key component of our model is estimating the number of parallel memory requests (we call this the memory warp parallelism) by considering the number of running threads and memory bandwidth."
+            ],
+            "answer_start": [
+                760
+            ]
         }
     },
     {
@@ -415,8 +579,12 @@
         "context": "GPU architectures are increasingly important in the multi-core era due to their high number of parallel processors. Programming thousands of massively parallel threads is a big challenge for software engineers, but understanding the performance bottlenecks of those parallel programs on GPU architectures to improve application performance is even more difficult. Current approaches rely on programmers to tune their applications by exploiting the design space exhaustively without fully understanding the performance characteristics of their applications. To provide insights into the performance bottlenecks of parallel applications on GPU architectures, we propose a simple analytical model that estimates the execution time of massively parallel programs. The key component of our model is estimating the number of parallel memory requests (we call this the memory warp parallelism) by considering the number of running threads and memory bandwidth. Based on the degree of memory warp parallelism, the model estimates the cost of memory requests, thereby estimating the overall execution time of a program. Comparisons between the outcome of the model and the actual execution time in several GPUs show that the geometric mean of absolute error of our model on micro-benchmarks is 5.4% and on GPU computing applications is 13.3%. All the applications are written in the CUDA programming language.",
         "question": "Is the outcome of the model always accurate in estimating the execution time of applications on GPUs?",
         "answers": {
-            "answer_start": 1111,
-            "justification": "Comparisons between the outcome of the model and the actual execution time in several GPUs show that the geometric mean of absolute error of our model on micro-benchmarks is 5.4% and on GPU computing applications is 13.3%."
+            "justification": [
+                "Comparisons between the outcome of the model and the actual execution time in several GPUs show that the geometric mean of absolute error of our model on micro-benchmarks is 5.4% and on GPU computing applications is 13.3%."
+            ],
+            "answer_start": [
+                1111
+            ]
         }
     },
     {
@@ -425,8 +593,12 @@
         "context": "GPU architectures are increasingly important in the multi-core era due to their high number of parallel processors. Programming thousands of massively parallel threads is a big challenge for software engineers, but understanding the performance bottlenecks of those parallel programs on GPU architectures to improve application performance is even more difficult. Current approaches rely on programmers to tune their applications by exploiting the design space exhaustively without fully understanding the performance characteristics of their applications. To provide insights into the performance bottlenecks of parallel applications on GPU architectures, we propose a simple analytical model that estimates the execution time of massively parallel programs. The key component of our model is estimating the number of parallel memory requests (we call this the memory warp parallelism) by considering the number of running threads and memory bandwidth. Based on the degree of memory warp parallelism, the model estimates the cost of memory requests, thereby estimating the overall execution time of a program. Comparisons between the outcome of the model and the actual execution time in several GPUs show that the geometric mean of absolute error of our model on micro-benchmarks is 5.4% and on GPU computing applications is 13.3%. All the applications are written in the CUDA programming language.",
         "question": "In the proposed model, must the cost of memory requests be estimated before the overall execution time of a program?",
         "answers": {
-            "answer_start": 954,
-            "justification": "Based on the degree of memory warp parallelism, the model estimates the cost of memory requests, thereby estimating the overall execution time of a program."
+            "justification": [
+                "Based on the degree of memory warp parallelism, the model estimates the cost of memory requests, thereby estimating the overall execution time of a program."
+            ],
+            "answer_start": [
+                954
+            ]
         }
     },
     {
@@ -435,8 +607,12 @@
         "context": "GPU architectures are increasingly important in the multi-core era due to their high number of parallel processors. Programming thousands of massively parallel threads is a big challenge for software engineers, but understanding the performance bottlenecks of those parallel programs on GPU architectures to improve application performance is even more difficult. Current approaches rely on programmers to tune their applications by exploiting the design space exhaustively without fully understanding the performance characteristics of their applications. To provide insights into the performance bottlenecks of parallel applications on GPU architectures, we propose a simple analytical model that estimates the execution time of massively parallel programs. The key component of our model is estimating the number of parallel memory requests (we call this the memory warp parallelism) by considering the number of running threads and memory bandwidth. Based on the degree of memory warp parallelism, the model estimates the cost of memory requests, thereby estimating the overall execution time of a program. Comparisons between the outcome of the model and the actual execution time in several GPUs show that the geometric mean of absolute error of our model on micro-benchmarks is 5.4% and on GPU computing applications is 13.3%. All the applications are written in the CUDA programming language.",
         "question": "Does increasing memory warp parallelism lead to a reduction in execution time for programs?",
         "answers": {
-            "answer_start": 760,
-            "justification": "The key component of our model is estimating the number of parallel memory requests (we call this the memory warp parallelism) by considering the number of running threads and memory bandwidth."
+            "justification": [
+                "The key component of our model is estimating the number of parallel memory requests (we call this the memory warp parallelism) by considering the number of running threads and memory bandwidth."
+            ],
+            "answer_start": [
+                760
+            ]
         }
     },
     {
@@ -445,8 +621,12 @@
         "context": "Efficiently utilizing off-chip DRAM bandwidth is a critical issuein designing cost-effective, high-performance chip multiprocessors(CMPs). Conventional memory controllers deliver relativelylow performance in part because they often employ fixed,rigid access scheduling policies designed for average-case applicationbehavior. As a result, they cannot learn and optimizethe long-term performance impact of their scheduling decisions,and cannot adapt their scheduling policies to dynamic workloadbehavior.We propose a new, self-optimizing memory controller designthat operates using the principles of reinforcement learning (RL)to overcome these limitations. Our RL-based memory controllerobserves the system state and estimates the long-term performanceimpact of each action it can take. In this way, the controllerlearns to optimize its scheduling policy on the fly to maximizelong-term performance. Our results show that an RL-basedmemory controller improves the performance of a set of parallelapplications run on a 4-core CMP by 19% on average (upto 33%), and it improves DRAM bandwidth utilization by 22%compared to a state-of-the-art controller.",
         "question": "Does the RL-based memory controller provide better performance over a state-of-the-art controller?",
         "answers": {
-            "answer_start": -1,
-            "justification": "Our results show that an RL-based memory controller improves the performance of a set of parallel applications run on a 4-core CMP by 19% on average (up to 33%), and it improves DRAM bandwidth utilization by 22% compared to a state-of-the-art controller."
+            "justification": [
+                "Our results show that an RL-based memory controller improves the performance of a set of parallel applications run on a 4-core CMP by 19% on average (up to 33%), and it improves DRAM bandwidth utilization by 22% compared to a state-of-the-art controller."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -455,8 +635,12 @@
         "context": "Efficiently utilizing off-chip DRAM bandwidth is a critical issuein designing cost-effective, high-performance chip multiprocessors(CMPs). Conventional memory controllers deliver relativelylow performance in part because they often employ fixed,rigid access scheduling policies designed for average-case applicationbehavior. As a result, they cannot learn and optimizethe long-term performance impact of their scheduling decisions,and cannot adapt their scheduling policies to dynamic workloadbehavior.We propose a new, self-optimizing memory controller designthat operates using the principles of reinforcement learning (RL)to overcome these limitations. Our RL-based memory controllerobserves the system state and estimates the long-term performanceimpact of each action it can take. In this way, the controllerlearns to optimize its scheduling policy on the fly to maximizelong-term performance. Our results show that an RL-basedmemory controller improves the performance of a set of parallelapplications run on a 4-core CMP by 19% on average (upto 33%), and it improves DRAM bandwidth utilization by 22%compared to a state-of-the-art controller.",
         "question": "Is the RL-based memory controller primarily responsible for optimizing scheduling policies on the fly?",
         "answers": {
-            "answer_start": -1,
-            "justification": "Our RL-based memory controller observes the system state and estimates the long-term performance impact of each action it can take. In this way, the controller learns to optimize its scheduling policy on the fly to maximize long-term performance."
+            "justification": [
+                "Our RL-based memory controller observes the system state and estimates the long-term performance impact of each action it can take. In this way, the controller learns to optimize its scheduling policy on the fly to maximize long-term performance."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -465,8 +649,12 @@
         "context": "Efficiently utilizing off-chip DRAM bandwidth is a critical issuein designing cost-effective, high-performance chip multiprocessors(CMPs). Conventional memory controllers deliver relativelylow performance in part because they often employ fixed,rigid access scheduling policies designed for average-case applicationbehavior. As a result, they cannot learn and optimizethe long-term performance impact of their scheduling decisions,and cannot adapt their scheduling policies to dynamic workloadbehavior.We propose a new, self-optimizing memory controller designthat operates using the principles of reinforcement learning (RL)to overcome these limitations. Our RL-based memory controllerobserves the system state and estimates the long-term performanceimpact of each action it can take. In this way, the controllerlearns to optimize its scheduling policy on the fly to maximizelong-term performance. Our results show that an RL-basedmemory controller improves the performance of a set of parallelapplications run on a 4-core CMP by 19% on average (upto 33%), and it improves DRAM bandwidth utilization by 22%compared to a state-of-the-art controller.",
         "question": "Is the RL-based memory controller an adaptive controller?",
         "answers": {
-            "answer_start": -1,
-            "justification": "We propose a new, self-optimizing memory controller design that operates using the principles of reinforcement learning (RL) to overcome these limitations. As a result, they cannot learn and optimize the long-term performance impact of their scheduling decisions, and cannot adapt their scheduling policies to dynamic workload behavior."
+            "justification": [
+                "We propose a new, self-optimizing memory controller design that operates using the principles of reinforcement learning (RL) to overcome these limitations. As a result, they cannot learn and optimize the long-term performance impact of their scheduling decisions, and cannot adapt their scheduling policies to dynamic workload behavior."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -475,8 +663,12 @@
         "context": "Efficiently utilizing off-chip DRAM bandwidth is a critical issuein designing cost-effective, high-performance chip multiprocessors(CMPs). Conventional memory controllers deliver relativelylow performance in part because they often employ fixed,rigid access scheduling policies designed for average-case applicationbehavior. As a result, they cannot learn and optimizethe long-term performance impact of their scheduling decisions,and cannot adapt their scheduling policies to dynamic workloadbehavior.We propose a new, self-optimizing memory controller designthat operates using the principles of reinforcement learning (RL)to overcome these limitations. Our RL-based memory controllerobserves the system state and estimates the long-term performanceimpact of each action it can take. In this way, the controllerlearns to optimize its scheduling policy on the fly to maximizelong-term performance. Our results show that an RL-basedmemory controller improves the performance of a set of parallelapplications run on a 4-core CMP by 19% on average (upto 33%), and it improves DRAM bandwidth utilization by 22%compared to a state-of-the-art controller.",
         "question": "In the RL-based memory controller process, must the controller always estimate the long-term performance impact before taking an action?",
         "answers": {
-            "answer_start": -1,
-            "justification": "Our RL-based memory controller observes the system state and estimates the long-term performance impact of each action it can take."
+            "justification": [
+                "Our RL-based memory controller observes the system state and estimates the long-term performance impact of each action it can take."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -485,8 +677,12 @@
         "context": "Efficiently utilizing off-chip DRAM bandwidth is a critical issuein designing cost-effective, high-performance chip multiprocessors(CMPs). Conventional memory controllers deliver relativelylow performance in part because they often employ fixed,rigid access scheduling policies designed for average-case applicationbehavior. As a result, they cannot learn and optimizethe long-term performance impact of their scheduling decisions,and cannot adapt their scheduling policies to dynamic workloadbehavior.We propose a new, self-optimizing memory controller designthat operates using the principles of reinforcement learning (RL)to overcome these limitations. Our RL-based memory controllerobserves the system state and estimates the long-term performanceimpact of each action it can take. In this way, the controllerlearns to optimize its scheduling policy on the fly to maximizelong-term performance. Our results show that an RL-basedmemory controller improves the performance of a set of parallelapplications run on a 4-core CMP by 19% on average (upto 33%), and it improves DRAM bandwidth utilization by 22%compared to a state-of-the-art controller.",
         "question": "Does increasing the use of reinforcement learning in the memory controller lead to improved DRAM bandwidth utilization?",
         "answers": {
-            "answer_start": -1,
-            "justification": "Our results show that an RL-based memory controller improves the performance of a set of parallel applications run on a 4-core CMP by 19% on average (up to 33%), and it improves DRAM bandwidth utilization by 22% compared to a state-of-the-art controller."
+            "justification": [
+                "Our results show that an RL-based memory controller improves the performance of a set of parallel applications run on a 4-core CMP by 19% on average (up to 33%), and it improves DRAM bandwidth utilization by 22% compared to a state-of-the-art controller."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -495,8 +691,12 @@
         "context": "We present FireSim, an open-source simulation platform that enables cycle-exact microarchitectural simulation of large scale-out clusters by combining FPGA-accelerated simulation of silicon-proven RTL designs with a scalable, distributed network simulation. Unlike prior FPGA-accelerated simulation tools, FireSim runs on Amazon EC2 F1, a public cloud FPGA platform, which greatly improves usability, provides elasticity, and lowers the cost of large-scale FPGA-based experiments. We describe the design and implementation of FireSim and show how it can provide sufficient performance to run modern applications at scale, to enable true hardware-software co-design. As an example, we demonstrate automatically generating and deploying a target cluster of 1,024 3.2 GHz quad-core server nodes, each with 16 GB of DRAM, interconnected by a 200 Gbit/s network with 2 microsecond latency, which simulates at a 3.4 MHz processor clock rate (less than 1,000x slowdown over real-time). In aggregate, this FireSim instantiation simulates 4,096 cores and 16 TB of memory, runs ~14 billion instructions per second, and harnesses 12.8 million dollars worth of FPGAs\u2014at a total cost of only ~$100 per simulation hour to the user. We present several examples to show how FireSim can be used to explore various research directions in warehouse-scale machine design, including modeling networks with high-bandwidth and low-latency, integrating arbitrary RTL designs for a variety of commodity and specialized datacenter nodes, and modeling a variety of datacenter organizations, as well as reusing the scale-out FireSim infrastructure to enable fast, massively parallel cycle-exact single-node microarchitectural experimentation.",
         "question": "Does FireSim provide elasticity, improved usability, and lower cost over prior FPGA-accelerated simulation tools?",
         "answers": {
-            "answer_start": 306,
-            "justification": "FireSim runs on Amazon EC2 F1, a public cloud FPGA platform, which greatly improves usability, provides elasticity, and lowers the cost of large-scale FPGA-based experiments."
+            "justification": [
+                "FireSim runs on Amazon EC2 F1, a public cloud FPGA platform, which greatly improves usability, provides elasticity, and lowers the cost of large-scale FPGA-based experiments."
+            ],
+            "answer_start": [
+                306
+            ]
         }
     },
     {
@@ -505,8 +705,12 @@
         "context": "We present FireSim, an open-source simulation platform that enables cycle-exact microarchitectural simulation of large scale-out clusters by combining FPGA-accelerated simulation of silicon-proven RTL designs with a scalable, distributed network simulation. Unlike prior FPGA-accelerated simulation tools, FireSim runs on Amazon EC2 F1, a public cloud FPGA platform, which greatly improves usability, provides elasticity, and lowers the cost of large-scale FPGA-based experiments. We describe the design and implementation of FireSim and show how it can provide sufficient performance to run modern applications at scale, to enable true hardware-software co-design. As an example, we demonstrate automatically generating and deploying a target cluster of 1,024 3.2 GHz quad-core server nodes, each with 16 GB of DRAM, interconnected by a 200 Gbit/s network with 2 microsecond latency, which simulates at a 3.4 MHz processor clock rate (less than 1,000x slowdown over real-time). In aggregate, this FireSim instantiation simulates 4,096 cores and 16 TB of memory, runs ~14 billion instructions per second, and harnesses 12.8 million dollars worth of FPGAs\u2014at a total cost of only ~$100 per simulation hour to the user. We present several examples to show how FireSim can be used to explore various research directions in warehouse-scale machine design, including modeling networks with high-bandwidth and low-latency, integrating arbitrary RTL designs for a variety of commodity and specialized datacenter nodes, and modeling a variety of datacenter organizations, as well as reusing the scale-out FireSim infrastructure to enable fast, massively parallel cycle-exact single-node microarchitectural experimentation.",
         "question": "Is FireSim responsible for simulating at a 3.4 MHz processor clock rate?",
         "answers": {
-            "answer_start": 979,
-            "justification": "In aggregate, this FireSim instantiation simulates 4,096 cores and 16 TB of memory, runs ~14 billion instructions per second, and harnesses 12.8 million dollars worth of FPGAs\u2014at a total cost of only ~$100 per simulation hour to the user."
+            "justification": [
+                "In aggregate, this FireSim instantiation simulates 4,096 cores and 16 TB of memory, runs ~14 billion instructions per second, and harnesses 12.8 million dollars worth of FPGAs\u2014at a total cost of only ~$100 per simulation hour to the user."
+            ],
+            "answer_start": [
+                979
+            ]
         }
     },
     {
@@ -515,8 +719,12 @@
         "context": "We present FireSim, an open-source simulation platform that enables cycle-exact microarchitectural simulation of large scale-out clusters by combining FPGA-accelerated simulation of silicon-proven RTL designs with a scalable, distributed network simulation. Unlike prior FPGA-accelerated simulation tools, FireSim runs on Amazon EC2 F1, a public cloud FPGA platform, which greatly improves usability, provides elasticity, and lowers the cost of large-scale FPGA-based experiments. We describe the design and implementation of FireSim and show how it can provide sufficient performance to run modern applications at scale, to enable true hardware-software co-design. As an example, we demonstrate automatically generating and deploying a target cluster of 1,024 3.2 GHz quad-core server nodes, each with 16 GB of DRAM, interconnected by a 200 Gbit/s network with 2 microsecond latency, which simulates at a 3.4 MHz processor clock rate (less than 1,000x slowdown over real-time). In aggregate, this FireSim instantiation simulates 4,096 cores and 16 TB of memory, runs ~14 billion instructions per second, and harnesses 12.8 million dollars worth of FPGAs\u2014at a total cost of only ~$100 per simulation hour to the user. We present several examples to show how FireSim can be used to explore various research directions in warehouse-scale machine design, including modeling networks with high-bandwidth and low-latency, integrating arbitrary RTL designs for a variety of commodity and specialized datacenter nodes, and modeling a variety of datacenter organizations, as well as reusing the scale-out FireSim infrastructure to enable fast, massively parallel cycle-exact single-node microarchitectural experimentation.",
         "question": "Is FireSim a cycle-exact microarchitectural simulation platform for large scale-out clusters?",
         "answers": {
-            "answer_start": 0,
-            "justification": "We present FireSim, an open-source simulation platform that enables cycle-exact microarchitectural simulation of large scale-out clusters by combining FPGA-accelerated simulation of silicon-proven RTL designs with a scalable, distributed network simulation."
+            "justification": [
+                "We present FireSim, an open-source simulation platform that enables cycle-exact microarchitectural simulation of large scale-out clusters by combining FPGA-accelerated simulation of silicon-proven RTL designs with a scalable, distributed network simulation."
+            ],
+            "answer_start": [
+                0
+            ]
         }
     },
     {
@@ -525,8 +733,12 @@
         "context": "We present FireSim, an open-source simulation platform that enables cycle-exact microarchitectural simulation of large scale-out clusters by combining FPGA-accelerated simulation of silicon-proven RTL designs with a scalable, distributed network simulation. Unlike prior FPGA-accelerated simulation tools, FireSim runs on Amazon EC2 F1, a public cloud FPGA platform, which greatly improves usability, provides elasticity, and lowers the cost of large-scale FPGA-based experiments. We describe the design and implementation of FireSim and show how it can provide sufficient performance to run modern applications at scale, to enable true hardware-software co-design. As an example, we demonstrate automatically generating and deploying a target cluster of 1,024 3.2 GHz quad-core server nodes, each with 16 GB of DRAM, interconnected by a 200 Gbit/s network with 2 microsecond latency, which simulates at a 3.4 MHz processor clock rate (less than 1,000x slowdown over real-time). In aggregate, this FireSim instantiation simulates 4,096 cores and 16 TB of memory, runs ~14 billion instructions per second, and harnesses 12.8 million dollars worth of FPGAs\u2014at a total cost of only ~$100 per simulation hour to the user. We present several examples to show how FireSim can be used to explore various research directions in warehouse-scale machine design, including modeling networks with high-bandwidth and low-latency, integrating arbitrary RTL designs for a variety of commodity and specialized datacenter nodes, and modeling a variety of datacenter organizations, as well as reusing the scale-out FireSim infrastructure to enable fast, massively parallel cycle-exact single-node microarchitectural experimentation.",
         "question": "In the FireSim process, must a target cluster of 1,024 3.2 GHz quad-core server nodes be deployed before demonstrating it?",
         "answers": {
-            "answer_start": 666,
-            "justification": "As an example, we demonstrate automatically generating and deploying a target cluster of 1,024 3.2 GHz quad-core server nodes, each with 16 GB of DRAM, interconnected by a 200 Gbit/s network with 2 microsecond latency, which simulates at a 3.4 MHz processor clock rate (less than 1,000x slowdown over real-time)."
+            "justification": [
+                "As an example, we demonstrate automatically generating and deploying a target cluster of 1,024 3.2 GHz quad-core server nodes, each with 16 GB of DRAM, interconnected by a 200 Gbit/s network with 2 microsecond latency, which simulates at a 3.4 MHz processor clock rate (less than 1,000x slowdown over real-time)."
+            ],
+            "answer_start": [
+                666
+            ]
         }
     },
     {
@@ -535,8 +747,12 @@
         "context": "We present FireSim, an open-source simulation platform that enables cycle-exact microarchitectural simulation of large scale-out clusters by combining FPGA-accelerated simulation of silicon-proven RTL designs with a scalable, distributed network simulation. Unlike prior FPGA-accelerated simulation tools, FireSim runs on Amazon EC2 F1, a public cloud FPGA platform, which greatly improves usability, provides elasticity, and lowers the cost of large-scale FPGA-based experiments. We describe the design and implementation of FireSim and show how it can provide sufficient performance to run modern applications at scale, to enable true hardware-software co-design. As an example, we demonstrate automatically generating and deploying a target cluster of 1,024 3.2 GHz quad-core server nodes, each with 16 GB of DRAM, interconnected by a 200 Gbit/s network with 2 microsecond latency, which simulates at a 3.4 MHz processor clock rate (less than 1,000x slowdown over real-time). In aggregate, this FireSim instantiation simulates 4,096 cores and 16 TB of memory, runs ~14 billion instructions per second, and harnesses 12.8 million dollars worth of FPGAs\u2014at a total cost of only ~$100 per simulation hour to the user. We present several examples to show how FireSim can be used to explore various research directions in warehouse-scale machine design, including modeling networks with high-bandwidth and low-latency, integrating arbitrary RTL designs for a variety of commodity and specialized datacenter nodes, and modeling a variety of datacenter organizations, as well as reusing the scale-out FireSim infrastructure to enable fast, massively parallel cycle-exact single-node microarchitectural experimentation.",
         "question": "Does increasing the number of cores FireSim simulates lead to a decrease in cost per simulation hour?",
         "answers": {
-            "answer_start": 979,
-            "justification": "In aggregate, this FireSim instantiation simulates 4,096 cores and 16 TB of memory, runs ~14 billion instructions per second, and harnesses 12.8 million dollars worth of FPGAs\u2014at a total cost of only ~$100 per simulation hour to the user."
+            "justification": [
+                "In aggregate, this FireSim instantiation simulates 4,096 cores and 16 TB of memory, runs ~14 billion instructions per second, and harnesses 12.8 million dollars worth of FPGAs\u2014at a total cost of only ~$100 per simulation hour to the user."
+            ],
+            "answer_start": [
+                979
+            ]
         }
     },
     {
@@ -545,8 +761,12 @@
         "context": "Reconfigurable architectures have gained popularity in recent years as they allow the design of energy-efficient accelerators. Fine-grain fabrics (e.g. FPGAs) have traditionally suffered from performance and power inefficiencies due to bit-level reconfigurable abstractions. Both fine-grain and coarse-grain architectures (e.g. CGRAs) traditionally require low level programming and suffer from long compilation times. We address both challenges with Plasticine, a new spatially reconfigurable architecture designed to efficiently execute applications composed of parallel patterns. Parallel patterns have emerged from recent research on parallel programming as powerful, high-level abstractions that can elegantly capture data locality, memory access patterns, and parallelism across a wide range of dense and sparse applications. We motivate Plasticine by first observing key application characteristics captured by parallel patterns that are amenable to hardware acceleration, such as hierarchical parallelism, data locality, memory access patterns, and control flow. Based on these observations, we architect Plasticine as a collection of Pattern Compute Units and Pattern Memory Units. Pattern Compute Units are multi-stage pipelines of reconfigurable SIMD functional units that can efficiently execute nested patterns. Data locality is exploited in Pattern Memory Units using banked scratchpad memories and configurable address decoders. Multiple on-chip address generators and scatter-gather engines make efficient use of DRAM bandwidth by supporting a large number of outstanding memory requests, memory coalescing, and burst mode for dense accesses. Plasticine has an area footprint of 113 mm2 in a 28nm process, and consumes a maximum power of 49 W at a 1 GHz clock. Using a cycle-accurate simulator, we demonstrate that Plasticine provides an improvement of up to 76.9x in performance-per-Watt over a conventional FPGA over a wide range of dense and sparse applications.",
         "question": "Does Plasticine provide an improvement of up to 76.9x in performance-per-Watt over a conventional FPGA?",
         "answers": {
-            "answer_start": 1777,
-            "justification": "Using a cycle-accurate simulator, we demonstrate that Plasticine provides an improvement of up to 76.9x in performance-per-Watt over a conventional FPGA over a wide range of dense and sparse applications."
+            "justification": [
+                "Using a cycle-accurate simulator, we demonstrate that Plasticine provides an improvement of up to 76.9x in performance-per-Watt over a conventional FPGA over a wide range of dense and sparse applications."
+            ],
+            "answer_start": [
+                1777
+            ]
         }
     },
     {
@@ -555,8 +775,12 @@
         "context": "Reconfigurable architectures have gained popularity in recent years as they allow the design of energy-efficient accelerators. Fine-grain fabrics (e.g. FPGAs) have traditionally suffered from performance and power inefficiencies due to bit-level reconfigurable abstractions. Both fine-grain and coarse-grain architectures (e.g. CGRAs) traditionally require low level programming and suffer from long compilation times. We address both challenges with Plasticine, a new spatially reconfigurable architecture designed to efficiently execute applications composed of parallel patterns. Parallel patterns have emerged from recent research on parallel programming as powerful, high-level abstractions that can elegantly capture data locality, memory access patterns, and parallelism across a wide range of dense and sparse applications. We motivate Plasticine by first observing key application characteristics captured by parallel patterns that are amenable to hardware acceleration, such as hierarchical parallelism, data locality, memory access patterns, and control flow. Based on these observations, we architect Plasticine as a collection of Pattern Compute Units and Pattern Memory Units. Pattern Compute Units are multi-stage pipelines of reconfigurable SIMD functional units that can efficiently execute nested patterns. Data locality is exploited in Pattern Memory Units using banked scratchpad memories and configurable address decoders. Multiple on-chip address generators and scatter-gather engines make efficient use of DRAM bandwidth by supporting a large number of outstanding memory requests, memory coalescing, and burst mode for dense accesses. Plasticine has an area footprint of 113 mm2 in a 28nm process, and consumes a maximum power of 49 W at a 1 GHz clock. Using a cycle-accurate simulator, we demonstrate that Plasticine provides an improvement of up to 76.9x in performance-per-Watt over a conventional FPGA over a wide range of dense and sparse applications.",
         "question": "Are Pattern Compute Units primarily responsible for executing nested patterns efficiently?",
         "answers": {
-            "answer_start": 1191,
-            "justification": "Pattern Compute Units are multi-stage pipelines of reconfigurable SIMD functional units that can efficiently execute nested patterns."
+            "justification": [
+                "Pattern Compute Units are multi-stage pipelines of reconfigurable SIMD functional units that can efficiently execute nested patterns."
+            ],
+            "answer_start": [
+                1191
+            ]
         }
     },
     {
@@ -565,8 +789,12 @@
         "context": "Reconfigurable architectures have gained popularity in recent years as they allow the design of energy-efficient accelerators. Fine-grain fabrics (e.g. FPGAs) have traditionally suffered from performance and power inefficiencies due to bit-level reconfigurable abstractions. Both fine-grain and coarse-grain architectures (e.g. CGRAs) traditionally require low level programming and suffer from long compilation times. We address both challenges with Plasticine, a new spatially reconfigurable architecture designed to efficiently execute applications composed of parallel patterns. Parallel patterns have emerged from recent research on parallel programming as powerful, high-level abstractions that can elegantly capture data locality, memory access patterns, and parallelism across a wide range of dense and sparse applications. We motivate Plasticine by first observing key application characteristics captured by parallel patterns that are amenable to hardware acceleration, such as hierarchical parallelism, data locality, memory access patterns, and control flow. Based on these observations, we architect Plasticine as a collection of Pattern Compute Units and Pattern Memory Units. Pattern Compute Units are multi-stage pipelines of reconfigurable SIMD functional units that can efficiently execute nested patterns. Data locality is exploited in Pattern Memory Units using banked scratchpad memories and configurable address decoders. Multiple on-chip address generators and scatter-gather engines make efficient use of DRAM bandwidth by supporting a large number of outstanding memory requests, memory coalescing, and burst mode for dense accesses. Plasticine has an area footprint of 113 mm2 in a 28nm process, and consumes a maximum power of 49 W at a 1 GHz clock. Using a cycle-accurate simulator, we demonstrate that Plasticine provides an improvement of up to 76.9x in performance-per-Watt over a conventional FPGA over a wide range of dense and sparse applications.",
         "question": "Is Plasticine a collection of Pattern Compute Units and Pattern Memory Units?",
         "answers": {
-            "answer_start": 1071,
-            "justification": "Based on these observations, we architect Plasticine as a collection of Pattern Compute Units and Pattern Memory Units."
+            "justification": [
+                "Based on these observations, we architect Plasticine as a collection of Pattern Compute Units and Pattern Memory Units."
+            ],
+            "answer_start": [
+                1071
+            ]
         }
     },
     {
@@ -575,8 +803,12 @@
         "context": "Reconfigurable architectures have gained popularity in recent years as they allow the design of energy-efficient accelerators. Fine-grain fabrics (e.g. FPGAs) have traditionally suffered from performance and power inefficiencies due to bit-level reconfigurable abstractions. Both fine-grain and coarse-grain architectures (e.g. CGRAs) traditionally require low level programming and suffer from long compilation times. We address both challenges with Plasticine, a new spatially reconfigurable architecture designed to efficiently execute applications composed of parallel patterns. Parallel patterns have emerged from recent research on parallel programming as powerful, high-level abstractions that can elegantly capture data locality, memory access patterns, and parallelism across a wide range of dense and sparse applications. We motivate Plasticine by first observing key application characteristics captured by parallel patterns that are amenable to hardware acceleration, such as hierarchical parallelism, data locality, memory access patterns, and control flow. Based on these observations, we architect Plasticine as a collection of Pattern Compute Units and Pattern Memory Units. Pattern Compute Units are multi-stage pipelines of reconfigurable SIMD functional units that can efficiently execute nested patterns. Data locality is exploited in Pattern Memory Units using banked scratchpad memories and configurable address decoders. Multiple on-chip address generators and scatter-gather engines make efficient use of DRAM bandwidth by supporting a large number of outstanding memory requests, memory coalescing, and burst mode for dense accesses. Plasticine has an area footprint of 113 mm2 in a 28nm process, and consumes a maximum power of 49 W at a 1 GHz clock. Using a cycle-accurate simulator, we demonstrate that Plasticine provides an improvement of up to 76.9x in performance-per-Watt over a conventional FPGA over a wide range of dense and sparse applications.",
         "question": "In Plasticine process, must memory coalescing always occur before burst mode?",
         "answers": {
-            "answer_start": 1444,
-            "justification": "Multiple on-chip address generators and scatter-gather engines make efficient use of DRAM bandwidth by supporting a large number of outstanding memory requests, memory coalescing, and burst mode for dense accesses."
+            "justification": [
+                "Multiple on-chip address generators and scatter-gather engines make efficient use of DRAM bandwidth by supporting a large number of outstanding memory requests, memory coalescing, and burst mode for dense accesses."
+            ],
+            "answer_start": [
+                1444
+            ]
         }
     },
     {
@@ -585,8 +817,12 @@
         "context": "Reconfigurable architectures have gained popularity in recent years as they allow the design of energy-efficient accelerators. Fine-grain fabrics (e.g. FPGAs) have traditionally suffered from performance and power inefficiencies due to bit-level reconfigurable abstractions. Both fine-grain and coarse-grain architectures (e.g. CGRAs) traditionally require low level programming and suffer from long compilation times. We address both challenges with Plasticine, a new spatially reconfigurable architecture designed to efficiently execute applications composed of parallel patterns. Parallel patterns have emerged from recent research on parallel programming as powerful, high-level abstractions that can elegantly capture data locality, memory access patterns, and parallelism across a wide range of dense and sparse applications. We motivate Plasticine by first observing key application characteristics captured by parallel patterns that are amenable to hardware acceleration, such as hierarchical parallelism, data locality, memory access patterns, and control flow. Based on these observations, we architect Plasticine as a collection of Pattern Compute Units and Pattern Memory Units. Pattern Compute Units are multi-stage pipelines of reconfigurable SIMD functional units that can efficiently execute nested patterns. Data locality is exploited in Pattern Memory Units using banked scratchpad memories and configurable address decoders. Multiple on-chip address generators and scatter-gather engines make efficient use of DRAM bandwidth by supporting a large number of outstanding memory requests, memory coalescing, and burst mode for dense accesses. Plasticine has an area footprint of 113 mm2 in a 28nm process, and consumes a maximum power of 49 W at a 1 GHz clock. Using a cycle-accurate simulator, we demonstrate that Plasticine provides an improvement of up to 76.9x in performance-per-Watt over a conventional FPGA over a wide range of dense and sparse applications.",
         "question": "Does increasing the clock speed of Plasticine lead to a decrease in power consumption?",
         "answers": {
-            "answer_start": 1659,
-            "justification": "Plasticine has an area footprint of 113 mm2 in a 28nm process, and consumes a maximum power of 49 W at a 1 GHz clock."
+            "justification": [
+                "Plasticine has an area footprint of 113 mm2 in a 28nm process, and consumes a maximum power of 49 W at a 1 GHz clock."
+            ],
+            "answer_start": [
+                1659
+            ]
         }
     },
     {
@@ -595,8 +831,12 @@
         "context": "Prefetching is one approach to reducing the latency of memory operations in modern computer systems. In this paper, we describe the Markov prefetcher. This prefetcher acts as an interface between the on-chip and off-chip cache, and can be added to existing computer designs. The Markov prefetcher is distinguished by prefetching multiple reference predictions from the memory subsystem, and then prioritizing the delivery of those references to the processor.This design results in a prefetching system that provides good coverage, is accurate and produces timely results that can be effectively used by the processor. In our cycle-level simulations, the Markov Prefetcher reduces the overall execution stalls due to instruction and data memory operations by an average of 54% for various commercial benchmarks while only using two thirds the memory of a demand-fetch cache organization.",
         "question": "Does the Markov prefetcher provide good coverage, accuracy, and timely results over a demand-fetch cache organization?",
         "answers": {
-            "answer_start": 459,
-            "justification": "This design results in a prefetching system that provides good coverage, is accurate and produces timely results that can be effectively used by the processor."
+            "justification": [
+                "This design results in a prefetching system that provides good coverage, is accurate and produces timely results that can be effectively used by the processor."
+            ],
+            "answer_start": [
+                459
+            ]
         }
     },
     {
@@ -605,8 +845,12 @@
         "context": "Prefetching is one approach to reducing the latency of memory operations in modern computer systems. In this paper, we describe the Markov prefetcher. This prefetcher acts as an interface between the on-chip and off-chip cache, and can be added to existing computer designs. The Markov prefetcher is distinguished by prefetching multiple reference predictions from the memory subsystem, and then prioritizing the delivery of those references to the processor.This design results in a prefetching system that provides good coverage, is accurate and produces timely results that can be effectively used by the processor. In our cycle-level simulations, the Markov Prefetcher reduces the overall execution stalls due to instruction and data memory operations by an average of 54% for various commercial benchmarks while only using two thirds the memory of a demand-fetch cache organization.",
         "question": "Is the Markov prefetcher primarily responsible for reducing the overall execution stalls due to instruction and data memory operations?",
         "answers": {
-            "answer_start": -1,
-            "justification": "In our cycle-level simulations, the Markov Prefetcher reduces the overall execution stalls due to instruction and data memory operations by an average of 54% for various commercial benchmarks."
+            "justification": [
+                "In our cycle-level simulations, the Markov Prefetcher reduces the overall execution stalls due to instruction and data memory operations by an average of 54% for various commercial benchmarks."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -615,8 +859,12 @@
         "context": "Prefetching is one approach to reducing the latency of memory operations in modern computer systems. In this paper, we describe the Markov prefetcher. This prefetcher acts as an interface between the on-chip and off-chip cache, and can be added to existing computer designs. The Markov prefetcher is distinguished by prefetching multiple reference predictions from the memory subsystem, and then prioritizing the delivery of those references to the processor.This design results in a prefetching system that provides good coverage, is accurate and produces timely results that can be effectively used by the processor. In our cycle-level simulations, the Markov Prefetcher reduces the overall execution stalls due to instruction and data memory operations by an average of 54% for various commercial benchmarks while only using two thirds the memory of a demand-fetch cache organization.",
         "question": "Is the Markov prefetcher an interface between the on-chip and off-chip cache in modern computer systems?",
         "answers": {
-            "answer_start": 151,
-            "justification": "This prefetcher acts as an interface between the on-chip and off-chip cache, and can be added to existing computer designs."
+            "justification": [
+                "This prefetcher acts as an interface between the on-chip and off-chip cache, and can be added to existing computer designs."
+            ],
+            "answer_start": [
+                151
+            ]
         }
     },
     {
@@ -625,8 +873,12 @@
         "context": "Prefetching is one approach to reducing the latency of memory operations in modern computer systems. In this paper, we describe the Markov prefetcher. This prefetcher acts as an interface between the on-chip and off-chip cache, and can be added to existing computer designs. The Markov prefetcher is distinguished by prefetching multiple reference predictions from the memory subsystem, and then prioritizing the delivery of those references to the processor.This design results in a prefetching system that provides good coverage, is accurate and produces timely results that can be effectively used by the processor. In our cycle-level simulations, the Markov Prefetcher reduces the overall execution stalls due to instruction and data memory operations by an average of 54% for various commercial benchmarks while only using two thirds the memory of a demand-fetch cache organization.",
         "question": "In the Markov prefetcher process, must prefetching multiple reference predictions from the memory subsystem always occur before prioritizing the delivery of those references to the processor?",
         "answers": {
-            "answer_start": 275,
-            "justification": "The Markov prefetcher is distinguished by prefetching multiple reference predictions from the memory subsystem, and then prioritizing the delivery of those references to the processor."
+            "justification": [
+                "The Markov prefetcher is distinguished by prefetching multiple reference predictions from the memory subsystem, and then prioritizing the delivery of those references to the processor."
+            ],
+            "answer_start": [
+                275
+            ]
         }
     },
     {
@@ -635,8 +887,12 @@
         "context": "Prefetching is one approach to reducing the latency of memory operations in modern computer systems. In this paper, we describe the Markov prefetcher. This prefetcher acts as an interface between the on-chip and off-chip cache, and can be added to existing computer designs. The Markov prefetcher is distinguished by prefetching multiple reference predictions from the memory subsystem, and then prioritizing the delivery of those references to the processor.This design results in a prefetching system that provides good coverage, is accurate and produces timely results that can be effectively used by the processor. In our cycle-level simulations, the Markov Prefetcher reduces the overall execution stalls due to instruction and data memory operations by an average of 54% for various commercial benchmarks while only using two thirds the memory of a demand-fetch cache organization.",
         "question": "Does increasing the memory usage of the Markov prefetcher lead to a proportional increase in its efficiency compared to a demand-fetch cache organization?",
         "answers": {
-            "answer_start": 811,
-            "justification": "while only using two thirds the memory of a demand-fetch cache organization."
+            "justification": [
+                "while only using two thirds the memory of a demand-fetch cache organization."
+            ],
+            "answer_start": [
+                811
+            ]
         }
     },
     {
@@ -645,8 +901,12 @@
         "context": "Although VLIW architectures offer the advantages of simplicity of design and high issue rates, a major impediment to their use is that they are not compatible with the existing software base. We describe new simple hardware features for a VLIW machine we call DAISY (Dynamically Architected Instruction Set from Yorktown). DAISY is specifically intended to emulate existing architectures, so that all existing software for an old architecture (including operating system kernel code) runs without changes on the VLIW. Each time a new fragment of code is executed for the first time, the code is translated to VLIW primitives, parallelized and saved in a portion of main memory not visible to the old architecture, by a Virtual Machine Monitor (software) residing in read only memory. Subsequent executions of the same fragment do not require a translation (unless cast out). We discuss the architectural requirements for such a VLIW, to deal with issues including self-modifying code, precise exceptions, and aggressive reordering of memory references in the presence of strong MP consistency and memory mapped I/O. We have implemented the dynamic parallelization algorithms for the PowerPC architecture. The initial results show high degrees of instruction level parallelism with reasonable translation overhead and memory usage.",
         "question": "Does DAISY provide compatibility benefits over existing architectures?",
         "answers": {
-            "answer_start": -1,
-            "justification": "DAISY is specifically intended to emulate existing architectures, so that all existing software for an old architecture runs without changes on the VLIW."
+            "justification": [
+                "DAISY is specifically intended to emulate existing architectures, so that all existing software for an old architecture runs without changes on the VLIW."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -655,8 +915,12 @@
         "context": "Although VLIW architectures offer the advantages of simplicity of design and high issue rates, a major impediment to their use is that they are not compatible with the existing software base. We describe new simple hardware features for a VLIW machine we call DAISY (Dynamically Architected Instruction Set from Yorktown). DAISY is specifically intended to emulate existing architectures, so that all existing software for an old architecture (including operating system kernel code) runs without changes on the VLIW. Each time a new fragment of code is executed for the first time, the code is translated to VLIW primitives, parallelized and saved in a portion of main memory not visible to the old architecture, by a Virtual Machine Monitor (software) residing in read only memory. Subsequent executions of the same fragment do not require a translation (unless cast out). We discuss the architectural requirements for such a VLIW, to deal with issues including self-modifying code, precise exceptions, and aggressive reordering of memory references in the presence of strong MP consistency and memory mapped I/O. We have implemented the dynamic parallelization algorithms for the PowerPC architecture. The initial results show high degrees of instruction level parallelism with reasonable translation overhead and memory usage.",
         "question": "Is the Virtual Machine Monitor primarily responsible for translating code to VLIW primitives?",
         "answers": {
-            "answer_start": -1,
-            "justification": "...the code is translated to VLIW primitives, parallelized and saved in a portion of main memory not visible to the old architecture, by a Virtual Machine Monitor (software) residing in read only memory."
+            "justification": [
+                "...the code is translated to VLIW primitives, parallelized and saved in a portion of main memory not visible to the old architecture, by a Virtual Machine Monitor (software) residing in read only memory."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -665,8 +929,12 @@
         "context": "Although VLIW architectures offer the advantages of simplicity of design and high issue rates, a major impediment to their use is that they are not compatible with the existing software base. We describe new simple hardware features for a VLIW machine we call DAISY (Dynamically Architected Instruction Set from Yorktown). DAISY is specifically intended to emulate existing architectures, so that all existing software for an old architecture (including operating system kernel code) runs without changes on the VLIW. Each time a new fragment of code is executed for the first time, the code is translated to VLIW primitives, parallelized and saved in a portion of main memory not visible to the old architecture, by a Virtual Machine Monitor (software) residing in read only memory. Subsequent executions of the same fragment do not require a translation (unless cast out). We discuss the architectural requirements for such a VLIW, to deal with issues including self-modifying code, precise exceptions, and aggressive reordering of memory references in the presence of strong MP consistency and memory mapped I/O. We have implemented the dynamic parallelization algorithms for the PowerPC architecture. The initial results show high degrees of instruction level parallelism with reasonable translation overhead and memory usage.",
         "question": "Is DAISY considered a VLIW machine?",
         "answers": {
-            "answer_start": 192,
-            "justification": "We describe new simple hardware features for a VLIW machine we call DAISY (Dynamically Architected Instruction Set from Yorktown)."
+            "justification": [
+                "We describe new simple hardware features for a VLIW machine we call DAISY (Dynamically Architected Instruction Set from Yorktown)."
+            ],
+            "answer_start": [
+                192
+            ]
         }
     },
     {
@@ -675,8 +943,12 @@
         "context": "Although VLIW architectures offer the advantages of simplicity of design and high issue rates, a major impediment to their use is that they are not compatible with the existing software base. We describe new simple hardware features for a VLIW machine we call DAISY (Dynamically Architected Instruction Set from Yorktown). DAISY is specifically intended to emulate existing architectures, so that all existing software for an old architecture (including operating system kernel code) runs without changes on the VLIW. Each time a new fragment of code is executed for the first time, the code is translated to VLIW primitives, parallelized and saved in a portion of main memory not visible to the old architecture, by a Virtual Machine Monitor (software) residing in read only memory. Subsequent executions of the same fragment do not require a translation (unless cast out). We discuss the architectural requirements for such a VLIW, to deal with issues including self-modifying code, precise exceptions, and aggressive reordering of memory references in the presence of strong MP consistency and memory mapped I/O. We have implemented the dynamic parallelization algorithms for the PowerPC architecture. The initial results show high degrees of instruction level parallelism with reasonable translation overhead and memory usage.",
         "question": "In the dynamic parallelization process, must code translation always occur before execution?",
         "answers": {
-            "answer_start": 784,
-            "justification": "Subsequent executions of the same fragment do not require a translation (unless cast out)."
+            "justification": [
+                "Subsequent executions of the same fragment do not require a translation (unless cast out)."
+            ],
+            "answer_start": [
+                784
+            ]
         }
     },
     {
@@ -685,8 +957,12 @@
         "context": "Although VLIW architectures offer the advantages of simplicity of design and high issue rates, a major impediment to their use is that they are not compatible with the existing software base. We describe new simple hardware features for a VLIW machine we call DAISY (Dynamically Architected Instruction Set from Yorktown). DAISY is specifically intended to emulate existing architectures, so that all existing software for an old architecture (including operating system kernel code) runs without changes on the VLIW. Each time a new fragment of code is executed for the first time, the code is translated to VLIW primitives, parallelized and saved in a portion of main memory not visible to the old architecture, by a Virtual Machine Monitor (software) residing in read only memory. Subsequent executions of the same fragment do not require a translation (unless cast out). We discuss the architectural requirements for such a VLIW, to deal with issues including self-modifying code, precise exceptions, and aggressive reordering of memory references in the presence of strong MP consistency and memory mapped I/O. We have implemented the dynamic parallelization algorithms for the PowerPC architecture. The initial results show high degrees of instruction level parallelism with reasonable translation overhead and memory usage.",
         "question": "Does increasing instruction level parallelism lead to higher translation overhead?",
         "answers": {
-            "answer_start": 1205,
-            "justification": "The initial results show high degrees of instruction level parallelism with reasonable translation overhead and memory usage."
+            "justification": [
+                "The initial results show high degrees of instruction level parallelism with reasonable translation overhead and memory usage."
+            ],
+            "answer_start": [
+                1205
+            ]
         }
     },
     {
@@ -695,8 +971,12 @@
         "context": "The processors that drive embedded systems are getting smaller; meanwhile, the batteries used to provide power to those systems have stagnated. If we are to realize the dream of ubiquitous computing promised by the Internet of Things, processors must shed large, heavy, expensive, and high maintenance batteries and, instead, harvest energy from their environment. One challenge with this transition is that harvested energy is insufficient for continuous operation. Unfortunately, existing programs fail miserably when executed intermittently. This paper presents Clank: lightweight architectural support for correct and efficient execution of long-running applications on harvested energy---without programmer intervention or extreme hardware modifications. Clank is a set of hardware buffers and memory-access monitors that dynamically maintain idempotency. Essentially, Clank dynamically decomposes program execution into a stream of restartable sub-executions connected via lightweight checkpoints. To validate Clank's ability to correctly stretch program execution across frequent, random power cycles, and to explore the associated hardware and software overheads, we implement Clank in Verilog, formally verify it, and then add it to an ARM Cortex M0+ processor which we use to run a set of 23 embedded systems benchmarks. Experiments show run-time overheads as low as 2.5%, with run-time overheads of 6% for a version of Clank that adds 1.7% hardware. Clank minimizes checkpoints so much that re-execution time becomes the dominate contributor to run-time overhead.",
         "question": "Does Clank provide correct and efficient execution of long-running applications on harvested energy?",
         "answers": {
-            "answer_start": -1,
-            "justification": "This paper presents Clank: lightweight architectural support for correct and efficient execution of long-running applications on harvested energy."
+            "justification": [
+                "This paper presents Clank: lightweight architectural support for correct and efficient execution of long-running applications on harvested energy."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -705,8 +985,12 @@
         "context": "The processors that drive embedded systems are getting smaller; meanwhile, the batteries used to provide power to those systems have stagnated. If we are to realize the dream of ubiquitous computing promised by the Internet of Things, processors must shed large, heavy, expensive, and high maintenance batteries and, instead, harvest energy from their environment. One challenge with this transition is that harvested energy is insufficient for continuous operation. Unfortunately, existing programs fail miserably when executed intermittently. This paper presents Clank: lightweight architectural support for correct and efficient execution of long-running applications on harvested energy---without programmer intervention or extreme hardware modifications. Clank is a set of hardware buffers and memory-access monitors that dynamically maintain idempotency. Essentially, Clank dynamically decomposes program execution into a stream of restartable sub-executions connected via lightweight checkpoints. To validate Clank's ability to correctly stretch program execution across frequent, random power cycles, and to explore the associated hardware and software overheads, we implement Clank in Verilog, formally verify it, and then add it to an ARM Cortex M0+ processor which we use to run a set of 23 embedded systems benchmarks. Experiments show run-time overheads as low as 2.5%, with run-time overheads of 6% for a version of Clank that adds 1.7% hardware. Clank minimizes checkpoints so much that re-execution time becomes the dominate contributor to run-time overhead.",
         "question": "Is Clank primarily responsible for maintaining idempotency dynamically?",
         "answers": {
-            "answer_start": 760,
-            "justification": "Clank is a set of hardware buffers and memory-access monitors that dynamically maintain idempotency."
+            "justification": [
+                "Clank is a set of hardware buffers and memory-access monitors that dynamically maintain idempotency."
+            ],
+            "answer_start": [
+                760
+            ]
         }
     },
     {
@@ -715,8 +999,12 @@
         "context": "The processors that drive embedded systems are getting smaller; meanwhile, the batteries used to provide power to those systems have stagnated. If we are to realize the dream of ubiquitous computing promised by the Internet of Things, processors must shed large, heavy, expensive, and high maintenance batteries and, instead, harvest energy from their environment. One challenge with this transition is that harvested energy is insufficient for continuous operation. Unfortunately, existing programs fail miserably when executed intermittently. This paper presents Clank: lightweight architectural support for correct and efficient execution of long-running applications on harvested energy---without programmer intervention or extreme hardware modifications. Clank is a set of hardware buffers and memory-access monitors that dynamically maintain idempotency. Essentially, Clank dynamically decomposes program execution into a stream of restartable sub-executions connected via lightweight checkpoints. To validate Clank's ability to correctly stretch program execution across frequent, random power cycles, and to explore the associated hardware and software overheads, we implement Clank in Verilog, formally verify it, and then add it to an ARM Cortex M0+ processor which we use to run a set of 23 embedded systems benchmarks. Experiments show run-time overheads as low as 2.5%, with run-time overheads of 6% for a version of Clank that adds 1.7% hardware. Clank minimizes checkpoints so much that re-execution time becomes the dominate contributor to run-time overhead.",
         "question": "Is Clank a program?",
         "answers": {
-            "answer_start": 760,
-            "justification": "Clank is a set of hardware buffers and memory-access monitors that dynamically maintain idempotency."
+            "justification": [
+                "Clank is a set of hardware buffers and memory-access monitors that dynamically maintain idempotency."
+            ],
+            "answer_start": [
+                760
+            ]
         }
     },
     {
@@ -725,8 +1013,12 @@
         "context": "The processors that drive embedded systems are getting smaller; meanwhile, the batteries used to provide power to those systems have stagnated. If we are to realize the dream of ubiquitous computing promised by the Internet of Things, processors must shed large, heavy, expensive, and high maintenance batteries and, instead, harvest energy from their environment. One challenge with this transition is that harvested energy is insufficient for continuous operation. Unfortunately, existing programs fail miserably when executed intermittently. This paper presents Clank: lightweight architectural support for correct and efficient execution of long-running applications on harvested energy---without programmer intervention or extreme hardware modifications. Clank is a set of hardware buffers and memory-access monitors that dynamically maintain idempotency. Essentially, Clank dynamically decomposes program execution into a stream of restartable sub-executions connected via lightweight checkpoints. To validate Clank's ability to correctly stretch program execution across frequent, random power cycles, and to explore the associated hardware and software overheads, we implement Clank in Verilog, formally verify it, and then add it to an ARM Cortex M0+ processor which we use to run a set of 23 embedded systems benchmarks. Experiments show run-time overheads as low as 2.5%, with run-time overheads of 6% for a version of Clank that adds 1.7% hardware. Clank minimizes checkpoints so much that re-execution time becomes the dominate contributor to run-time overhead.",
         "question": "In Clank process, must program re-execution always occur before adding hardware checkpoints?",
         "answers": {
-            "answer_start": 1461,
-            "justification": "Clank minimizes checkpoints so much that re-execution time becomes the dominate contributor to run-time overhead."
+            "justification": [
+                "Clank minimizes checkpoints so much that re-execution time becomes the dominate contributor to run-time overhead."
+            ],
+            "answer_start": [
+                1461
+            ]
         }
     },
     {
@@ -735,8 +1027,12 @@
         "context": "The processors that drive embedded systems are getting smaller; meanwhile, the batteries used to provide power to those systems have stagnated. If we are to realize the dream of ubiquitous computing promised by the Internet of Things, processors must shed large, heavy, expensive, and high maintenance batteries and, instead, harvest energy from their environment. One challenge with this transition is that harvested energy is insufficient for continuous operation. Unfortunately, existing programs fail miserably when executed intermittently. This paper presents Clank: lightweight architectural support for correct and efficient execution of long-running applications on harvested energy---without programmer intervention or extreme hardware modifications. Clank is a set of hardware buffers and memory-access monitors that dynamically maintain idempotency. Essentially, Clank dynamically decomposes program execution into a stream of restartable sub-executions connected via lightweight checkpoints. To validate Clank's ability to correctly stretch program execution across frequent, random power cycles, and to explore the associated hardware and software overheads, we implement Clank in Verilog, formally verify it, and then add it to an ARM Cortex M0+ processor which we use to run a set of 23 embedded systems benchmarks. Experiments show run-time overheads as low as 2.5%, with run-time overheads of 6% for a version of Clank that adds 1.7% hardware. Clank minimizes checkpoints so much that re-execution time becomes the dominate contributor to run-time overhead.",
         "question": "Does increasing hardware lead to a decrease in Clank run-time overheads?",
         "answers": {
-            "answer_start": 1461,
-            "justification": "Clank minimizes checkpoints so much that re-execution time becomes the dominate contributor to run-time overhead."
+            "justification": [
+                "Clank minimizes checkpoints so much that re-execution time becomes the dominate contributor to run-time overhead."
+            ],
+            "answer_start": [
+                1461
+            ]
         }
     },
     {
@@ -745,8 +1041,12 @@
         "context": "Interactive AI-powered services require low-latency evaluation of deep neural network (DNN) models-aka \"\"real-time AI\"\". The growing demand for computationally expensive, state-of-the-art DNNs, coupled with diminishing performance gains of general-purpose architectures, has fueled an explosion of specialized Neural Processing Units (NPUs). NPUs for interactive services should satisfy two requirements: (1) execution of DNN models with low latency, high throughput, and high efficiency, and (2) flexibility to accommodate evolving state-of-the-art models (e.g., RNNs, CNNs, MLPs) without costly silicon updates. This paper describes the NPU architecture for Project Brainwave, a production-scale system for real-time AI. The Brainwave NPU achieves more than an order of magnitude improvement in latency and throughput over state-of-the-art GPUs on large RNNs at a batch size of 1. The NPU attains this performance using a single-threaded SIMD ISA paired with a distributed microarchitecture capable of dispatching over 7M operations from a single instruction. The spatially distributed microarchitecture, scaled up to 96,000 multiply-accumulate units, is supported by hierarchical instruction decoders and schedulers coupled with thousands of independently addressable high-bandwidth on-chip memories, and can transparently exploit many levels of fine-grain SIMD parallelism. When targeting an FPGA, microarchitectural parameters such as native datapaths and numerical precision can be \"synthesis specialized\" to models at compile time, enabling atypically high FPGA performance competitive with hardened NPUs. When running on an Intel Stratix 10 280 FPGA, the Brainwave NPU achieves performance ranging from ten to over thirty-five teraflops, with no batching, on large, memory-intensive RNNs.",
         "question": "Does the Brainwave NPU provide more than an order of magnitude improvement in latency and throughput over state-of-the-art GPUs on large RNNs at a batch size of 1?",
         "answers": {
-            "answer_start": 723,
-            "justification": "The Brainwave NPU achieves more than an order of magnitude improvement in latency and throughput over state-of-the-art GPUs on large RNNs at a batch size of 1."
+            "justification": [
+                "The Brainwave NPU achieves more than an order of magnitude improvement in latency and throughput over state-of-the-art GPUs on large RNNs at a batch size of 1."
+            ],
+            "answer_start": [
+                723
+            ]
         }
     },
     {
@@ -755,8 +1055,12 @@
         "context": "Interactive AI-powered services require low-latency evaluation of deep neural network (DNN) models-aka \"\"real-time AI\"\". The growing demand for computationally expensive, state-of-the-art DNNs, coupled with diminishing performance gains of general-purpose architectures, has fueled an explosion of specialized Neural Processing Units (NPUs). NPUs for interactive services should satisfy two requirements: (1) execution of DNN models with low latency, high throughput, and high efficiency, and (2) flexibility to accommodate evolving state-of-the-art models (e.g., RNNs, CNNs, MLPs) without costly silicon updates. This paper describes the NPU architecture for Project Brainwave, a production-scale system for real-time AI. The Brainwave NPU achieves more than an order of magnitude improvement in latency and throughput over state-of-the-art GPUs on large RNNs at a batch size of 1. The NPU attains this performance using a single-threaded SIMD ISA paired with a distributed microarchitecture capable of dispatching over 7M operations from a single instruction. The spatially distributed microarchitecture, scaled up to 96,000 multiply-accumulate units, is supported by hierarchical instruction decoders and schedulers coupled with thousands of independently addressable high-bandwidth on-chip memories, and can transparently exploit many levels of fine-grain SIMD parallelism. When targeting an FPGA, microarchitectural parameters such as native datapaths and numerical precision can be \"synthesis specialized\" to models at compile time, enabling atypically high FPGA performance competitive with hardened NPUs. When running on an Intel Stratix 10 280 FPGA, the Brainwave NPU achieves performance ranging from ten to over thirty-five teraflops, with no batching, on large, memory-intensive RNNs.",
         "question": "Is the single-threaded SIMD ISA primarily responsible for achieving more than an order of magnitude improvement in latency and throughput over state-of-the-art GPUs?",
         "answers": {
-            "answer_start": 883,
-            "justification": "The NPU attains this performance using a single-threaded SIMD ISA paired with a distributed microarchitecture capable of dispatching over 7M operations from a single instruction."
+            "justification": [
+                "The NPU attains this performance using a single-threaded SIMD ISA paired with a distributed microarchitecture capable of dispatching over 7M operations from a single instruction."
+            ],
+            "answer_start": [
+                883
+            ]
         }
     },
     {
@@ -765,8 +1069,12 @@
         "context": "Interactive AI-powered services require low-latency evaluation of deep neural network (DNN) models-aka \"\"real-time AI\"\". The growing demand for computationally expensive, state-of-the-art DNNs, coupled with diminishing performance gains of general-purpose architectures, has fueled an explosion of specialized Neural Processing Units (NPUs). NPUs for interactive services should satisfy two requirements: (1) execution of DNN models with low latency, high throughput, and high efficiency, and (2) flexibility to accommodate evolving state-of-the-art models (e.g., RNNs, CNNs, MLPs) without costly silicon updates. This paper describes the NPU architecture for Project Brainwave, a production-scale system for real-time AI. The Brainwave NPU achieves more than an order of magnitude improvement in latency and throughput over state-of-the-art GPUs on large RNNs at a batch size of 1. The NPU attains this performance using a single-threaded SIMD ISA paired with a distributed microarchitecture capable of dispatching over 7M operations from a single instruction. The spatially distributed microarchitecture, scaled up to 96,000 multiply-accumulate units, is supported by hierarchical instruction decoders and schedulers coupled with thousands of independently addressable high-bandwidth on-chip memories, and can transparently exploit many levels of fine-grain SIMD parallelism. When targeting an FPGA, microarchitectural parameters such as native datapaths and numerical precision can be \"synthesis specialized\" to models at compile time, enabling atypically high FPGA performance competitive with hardened NPUs. When running on an Intel Stratix 10 280 FPGA, the Brainwave NPU achieves performance ranging from ten to over thirty-five teraflops, with no batching, on large, memory-intensive RNNs.",
         "question": "Is the Brainwave NPU a production-scale system for real-time AI?",
         "answers": {
-            "answer_start": 614,
-            "justification": "This paper describes the NPU architecture for Project Brainwave, a production-scale system for real-time AI."
+            "justification": [
+                "This paper describes the NPU architecture for Project Brainwave, a production-scale system for real-time AI."
+            ],
+            "answer_start": [
+                614
+            ]
         }
     },
     {
@@ -775,8 +1083,12 @@
         "context": "Interactive AI-powered services require low-latency evaluation of deep neural network (DNN) models-aka \"\"real-time AI\"\". The growing demand for computationally expensive, state-of-the-art DNNs, coupled with diminishing performance gains of general-purpose architectures, has fueled an explosion of specialized Neural Processing Units (NPUs). NPUs for interactive services should satisfy two requirements: (1) execution of DNN models with low latency, high throughput, and high efficiency, and (2) flexibility to accommodate evolving state-of-the-art models (e.g., RNNs, CNNs, MLPs) without costly silicon updates. This paper describes the NPU architecture for Project Brainwave, a production-scale system for real-time AI. The Brainwave NPU achieves more than an order of magnitude improvement in latency and throughput over state-of-the-art GPUs on large RNNs at a batch size of 1. The NPU attains this performance using a single-threaded SIMD ISA paired with a distributed microarchitecture capable of dispatching over 7M operations from a single instruction. The spatially distributed microarchitecture, scaled up to 96,000 multiply-accumulate units, is supported by hierarchical instruction decoders and schedulers coupled with thousands of independently addressable high-bandwidth on-chip memories, and can transparently exploit many levels of fine-grain SIMD parallelism. When targeting an FPGA, microarchitectural parameters such as native datapaths and numerical precision can be \"synthesis specialized\" to models at compile time, enabling atypically high FPGA performance competitive with hardened NPUs. When running on an Intel Stratix 10 280 FPGA, the Brainwave NPU achieves performance ranging from ten to over thirty-five teraflops, with no batching, on large, memory-intensive RNNs.",
         "question": "In the Brainwave NPU process, must hierarchical instruction decoders and schedulers always occur before thousands of independently addressable high-bandwidth on-chip memories?",
         "answers": {
-            "answer_start": -1,
-            "justification": "The spatially distributed microarchitecture, scaled up to 96,000 multiply-accumulate units, is supported by hierarchical instruction decoders and schedulers coupled with thousands of independently addressable high-bandwidth on-chip memories."
+            "justification": [
+                "The spatially distributed microarchitecture, scaled up to 96,000 multiply-accumulate units, is supported by hierarchical instruction decoders and schedulers coupled with thousands of independently addressable high-bandwidth on-chip memories."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -785,8 +1097,12 @@
         "context": "Interactive AI-powered services require low-latency evaluation of deep neural network (DNN) models-aka \"\"real-time AI\"\". The growing demand for computationally expensive, state-of-the-art DNNs, coupled with diminishing performance gains of general-purpose architectures, has fueled an explosion of specialized Neural Processing Units (NPUs). NPUs for interactive services should satisfy two requirements: (1) execution of DNN models with low latency, high throughput, and high efficiency, and (2) flexibility to accommodate evolving state-of-the-art models (e.g., RNNs, CNNs, MLPs) without costly silicon updates. This paper describes the NPU architecture for Project Brainwave, a production-scale system for real-time AI. The Brainwave NPU achieves more than an order of magnitude improvement in latency and throughput over state-of-the-art GPUs on large RNNs at a batch size of 1. The NPU attains this performance using a single-threaded SIMD ISA paired with a distributed microarchitecture capable of dispatching over 7M operations from a single instruction. The spatially distributed microarchitecture, scaled up to 96,000 multiply-accumulate units, is supported by hierarchical instruction decoders and schedulers coupled with thousands of independently addressable high-bandwidth on-chip memories, and can transparently exploit many levels of fine-grain SIMD parallelism. When targeting an FPGA, microarchitectural parameters such as native datapaths and numerical precision can be \"synthesis specialized\" to models at compile time, enabling atypically high FPGA performance competitive with hardened NPUs. When running on an Intel Stratix 10 280 FPGA, the Brainwave NPU achieves performance ranging from ten to over thirty-five teraflops, with no batching, on large, memory-intensive RNNs.",
         "question": "Does increasing microarchitectural parameters such as native datapaths and numerical precision lead to atypically high FPGA performance competitive with hardened NPUs?",
         "answers": {
-            "answer_start": -1,
-            "justification": "When targeting an FPGA, microarchitectural parameters such as native datapaths and numerical precision can be 'synthesis specialized' to models at compile time, enabling atypically high FPGA performance competitive with hardened NPUs."
+            "justification": [
+                "When targeting an FPGA, microarchitectural parameters such as native datapaths and numerical precision can be 'synthesis specialized' to models at compile time, enabling atypically high FPGA performance competitive with hardened NPUs."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -795,8 +1111,12 @@
         "context": "Large-scale Internet services require a computing infrastructure that can beappropriately described as a warehouse-sized computing system. The cost ofbuilding datacenter facilities capable of delivering a given power capacity tosuch a computer can rival the recurring energy consumption costs themselves.Therefore, there are strong economic incentives to operate facilities as closeas possible to maximum capacity, so that the non-recurring facility costs canbe best amortized. That is difficult to achieve in practice because ofuncertainties in equipment power ratings and because power consumption tends tovary significantly with the actual computing activity. Effective powerprovisioning strategies are needed to determine how much computing equipmentcan be safely and efficiently hosted within a given power budget. In this paper we present the aggregate power usage characteristics of largecollections of servers (up to 15 thousand) for different classes ofapplications over a period of approximately six months. Those observationsallow us to evaluate opportunities for maximizing the use of the deployed powercapacity of datacenters, and assess the risks of over-subscribing it. We findthat even in well-tuned applications there is a noticeable gap (7 - 16%)between achieved and theoretical aggregate peak power usage at the clusterlevel (thousands of servers). The gap grows to almost 40% in wholedatacenters. This headroom can be used to deploy additional compute equipmentwithin the same power budget with minimal risk of exceeding it. We use ourmodeling framework to estimate the potential of power management schemes toreduce peak power and energy usage. We find that the opportunities for powerand energy savings are significant, but greater at the cluster-level (thousandsof servers) than at the rack-level (tens). Finally we argue that systems needto be power efficient across the activity range, and not only at peakperformance levels.",
         "question": "Does effective power provisioning provide opportunities for maximizing the use of deployed power capacity?",
         "answers": {
-            "answer_start": -1,
-            "justification": "Effective power provisioning strategies are needed to determine how much computing equipment can be safely and efficiently hosted within a given power budget. In this paper we present the aggregate power usage characteristics of large collections of servers for different classes of applications over a period of approximately six months. Those observations allow us to evaluate opportunities for maximizing the use of the deployed power capacity of datacenters..."
+            "justification": [
+                "Effective power provisioning strategies are needed to determine how much computing equipment can be safely and efficiently hosted within a given power budget. In this paper we present the aggregate power usage characteristics of large collections of servers for different classes of applications over a period of approximately six months. Those observations allow us to evaluate opportunities for maximizing the use of the deployed power capacity of datacenters..."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -805,8 +1125,12 @@
         "context": "Large-scale Internet services require a computing infrastructure that can beappropriately described as a warehouse-sized computing system. The cost ofbuilding datacenter facilities capable of delivering a given power capacity tosuch a computer can rival the recurring energy consumption costs themselves.Therefore, there are strong economic incentives to operate facilities as closeas possible to maximum capacity, so that the non-recurring facility costs canbe best amortized. That is difficult to achieve in practice because ofuncertainties in equipment power ratings and because power consumption tends tovary significantly with the actual computing activity. Effective powerprovisioning strategies are needed to determine how much computing equipmentcan be safely and efficiently hosted within a given power budget. In this paper we present the aggregate power usage characteristics of largecollections of servers (up to 15 thousand) for different classes ofapplications over a period of approximately six months. Those observationsallow us to evaluate opportunities for maximizing the use of the deployed powercapacity of datacenters, and assess the risks of over-subscribing it. We findthat even in well-tuned applications there is a noticeable gap (7 - 16%)between achieved and theoretical aggregate peak power usage at the clusterlevel (thousands of servers). The gap grows to almost 40% in wholedatacenters. This headroom can be used to deploy additional compute equipmentwithin the same power budget with minimal risk of exceeding it. We use ourmodeling framework to estimate the potential of power management schemes toreduce peak power and energy usage. We find that the opportunities for powerand energy savings are significant, but greater at the cluster-level (thousandsof servers) than at the rack-level (tens). Finally we argue that systems needto be power efficient across the activity range, and not only at peakperformance levels.",
         "question": "Is power saving potential greater at the cluster-level than at the rack-level?",
         "answers": {
-            "answer_start": -1,
-            "justification": "We find that the opportunities for power and energy savings are significant, but greater at the cluster-level (thousands of servers) than at the rack-level (tens)."
+            "justification": [
+                "We find that the opportunities for power and energy savings are significant, but greater at the cluster-level (thousands of servers) than at the rack-level (tens)."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -815,8 +1139,12 @@
         "context": "Large-scale Internet services require a computing infrastructure that can beappropriately described as a warehouse-sized computing system. The cost ofbuilding datacenter facilities capable of delivering a given power capacity tosuch a computer can rival the recurring energy consumption costs themselves.Therefore, there are strong economic incentives to operate facilities as closeas possible to maximum capacity, so that the non-recurring facility costs canbe best amortized. That is difficult to achieve in practice because ofuncertainties in equipment power ratings and because power consumption tends tovary significantly with the actual computing activity. Effective powerprovisioning strategies are needed to determine how much computing equipmentcan be safely and efficiently hosted within a given power budget. In this paper we present the aggregate power usage characteristics of largecollections of servers (up to 15 thousand) for different classes ofapplications over a period of approximately six months. Those observationsallow us to evaluate opportunities for maximizing the use of the deployed powercapacity of datacenters, and assess the risks of over-subscribing it. We findthat even in well-tuned applications there is a noticeable gap (7 - 16%)between achieved and theoretical aggregate peak power usage at the clusterlevel (thousands of servers). The gap grows to almost 40% in wholedatacenters. This headroom can be used to deploy additional compute equipmentwithin the same power budget with minimal risk of exceeding it. We use ourmodeling framework to estimate the potential of power management schemes toreduce peak power and energy usage. We find that the opportunities for powerand energy savings are significant, but greater at the cluster-level (thousandsof servers) than at the rack-level (tens). Finally we argue that systems needto be power efficient across the activity range, and not only at peakperformance levels.",
         "question": "Is the gap between achieved and theoretical aggregate peak power usage at cluster-level significant?",
         "answers": {
-            "answer_start": -1,
-            "justification": "We find that even in well-tuned applications there is a noticeable gap (7 - 16%) between achieved and theoretical aggregate peak power usage at the cluster level. The gap grows to almost 40% in whole datacenters."
+            "justification": [
+                "We find that even in well-tuned applications there is a noticeable gap (7 - 16%) between achieved and theoretical aggregate peak power usage at the cluster level. The gap grows to almost 40% in whole datacenters."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -825,8 +1153,12 @@
         "context": "Large-scale Internet services require a computing infrastructure that can beappropriately described as a warehouse-sized computing system. The cost ofbuilding datacenter facilities capable of delivering a given power capacity tosuch a computer can rival the recurring energy consumption costs themselves.Therefore, there are strong economic incentives to operate facilities as closeas possible to maximum capacity, so that the non-recurring facility costs canbe best amortized. That is difficult to achieve in practice because ofuncertainties in equipment power ratings and because power consumption tends tovary significantly with the actual computing activity. Effective powerprovisioning strategies are needed to determine how much computing equipmentcan be safely and efficiently hosted within a given power budget. In this paper we present the aggregate power usage characteristics of largecollections of servers (up to 15 thousand) for different classes ofapplications over a period of approximately six months. Those observationsallow us to evaluate opportunities for maximizing the use of the deployed powercapacity of datacenters, and assess the risks of over-subscribing it. We findthat even in well-tuned applications there is a noticeable gap (7 - 16%)between achieved and theoretical aggregate peak power usage at the clusterlevel (thousands of servers). The gap grows to almost 40% in wholedatacenters. This headroom can be used to deploy additional compute equipmentwithin the same power budget with minimal risk of exceeding it. We use ourmodeling framework to estimate the potential of power management schemes toreduce peak power and energy usage. We find that the opportunities for powerand energy savings are significant, but greater at the cluster-level (thousandsof servers) than at the rack-level (tens). Finally we argue that systems needto be power efficient across the activity range, and not only at peakperformance levels.",
         "question": "In power management schemes, must peak power and energy usage always be reduced?",
         "answers": {
-            "answer_start": -1,
-            "justification": "We use our modeling framework to estimate the potential of power management schemes to reduce peak power and energy usage. We find that the opportunities for power and energy savings are significant..."
+            "justification": [
+                "We use our modeling framework to estimate the potential of power management schemes to reduce peak power and energy usage. We find that the opportunities for power and energy savings are significant..."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -835,8 +1167,12 @@
         "context": "Large-scale Internet services require a computing infrastructure that can beappropriately described as a warehouse-sized computing system. The cost ofbuilding datacenter facilities capable of delivering a given power capacity tosuch a computer can rival the recurring energy consumption costs themselves.Therefore, there are strong economic incentives to operate facilities as closeas possible to maximum capacity, so that the non-recurring facility costs canbe best amortized. That is difficult to achieve in practice because ofuncertainties in equipment power ratings and because power consumption tends tovary significantly with the actual computing activity. Effective powerprovisioning strategies are needed to determine how much computing equipmentcan be safely and efficiently hosted within a given power budget. In this paper we present the aggregate power usage characteristics of largecollections of servers (up to 15 thousand) for different classes ofapplications over a period of approximately six months. Those observationsallow us to evaluate opportunities for maximizing the use of the deployed powercapacity of datacenters, and assess the risks of over-subscribing it. We findthat even in well-tuned applications there is a noticeable gap (7 - 16%)between achieved and theoretical aggregate peak power usage at the clusterlevel (thousands of servers). The gap grows to almost 40% in wholedatacenters. This headroom can be used to deploy additional compute equipmentwithin the same power budget with minimal risk of exceeding it. We use ourmodeling framework to estimate the potential of power management schemes toreduce peak power and energy usage. We find that the opportunities for powerand energy savings are significant, but greater at the cluster-level (thousandsof servers) than at the rack-level (tens). Finally we argue that systems needto be power efficient across the activity range, and not only at peakperformance levels.",
         "question": "Does computing equipment tend to exhibit significant power consumption variations based on computing activity?",
         "answers": {
-            "answer_start": -1,
-            "justification": "...power consumption tends to vary significantly with the actual computing activity."
+            "justification": [
+                "...power consumption tends to vary significantly with the actual computing activity."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -845,8 +1181,12 @@
         "context": "The memory subsystem accounts for a significant cost and power budget of a computer system. Current DRAM-based main memory systems are starting to hit the power and cost limit. An alternative memory technology that uses resistance contrast in phase-change materials is being actively investigated in the circuits community. Phase Change Memory (PCM) devices offer more density relative to DRAM, and can help increase main memory capacity of future systems while remaining within the cost and power constraints. In this paper, we analyze a PCM-based hybrid main memory system using an architecture level model of PCM.We explore the trade-offs for a main memory system consisting of PCMstorage coupled with a small DRAM buffer. Such an architecture has the latency benefits of DRAM and the capacity benefits of PCM. Our evaluations for a baseline system of 16-cores with 8GB DRAM show that, on average, PCM can reduce page faults by 5X and provide a speedup of 3X. As PCM is projected to have limited write endurance, we also propose simple organizational and management solutions of the hybrid memory that reduces the write traffic to PCM, boosting its lifetime from 3 years to 9.7 years.",
         "question": "Does PCM offer more density relative to DRAM?",
         "answers": {
-            "answer_start": -1,
-            "justification": "Phase Change Memory (PCM) devices offer more density relative to DRAM."
+            "justification": [
+                "Phase Change Memory (PCM) devices offer more density relative to DRAM."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -855,8 +1195,12 @@
         "context": "The memory subsystem accounts for a significant cost and power budget of a computer system. Current DRAM-based main memory systems are starting to hit the power and cost limit. An alternative memory technology that uses resistance contrast in phase-change materials is being actively investigated in the circuits community. Phase Change Memory (PCM) devices offer more density relative to DRAM, and can help increase main memory capacity of future systems while remaining within the cost and power constraints. In this paper, we analyze a PCM-based hybrid main memory system using an architecture level model of PCM.We explore the trade-offs for a main memory system consisting of PCMstorage coupled with a small DRAM buffer. Such an architecture has the latency benefits of DRAM and the capacity benefits of PCM. Our evaluations for a baseline system of 16-cores with 8GB DRAM show that, on average, PCM can reduce page faults by 5X and provide a speedup of 3X. As PCM is projected to have limited write endurance, we also propose simple organizational and management solutions of the hybrid memory that reduces the write traffic to PCM, boosting its lifetime from 3 years to 9.7 years.",
         "question": "Is PCM projected to have limited write endurance?",
         "answers": {
-            "answer_start": -1,
-            "justification": "As PCM is projected to have limited write endurance..."
+            "justification": [
+                "As PCM is projected to have limited write endurance..."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -865,8 +1209,12 @@
         "context": "The memory subsystem accounts for a significant cost and power budget of a computer system. Current DRAM-based main memory systems are starting to hit the power and cost limit. An alternative memory technology that uses resistance contrast in phase-change materials is being actively investigated in the circuits community. Phase Change Memory (PCM) devices offer more density relative to DRAM, and can help increase main memory capacity of future systems while remaining within the cost and power constraints. In this paper, we analyze a PCM-based hybrid main memory system using an architecture level model of PCM.We explore the trade-offs for a main memory system consisting of PCMstorage coupled with a small DRAM buffer. Such an architecture has the latency benefits of DRAM and the capacity benefits of PCM. Our evaluations for a baseline system of 16-cores with 8GB DRAM show that, on average, PCM can reduce page faults by 5X and provide a speedup of 3X. As PCM is projected to have limited write endurance, we also propose simple organizational and management solutions of the hybrid memory that reduces the write traffic to PCM, boosting its lifetime from 3 years to 9.7 years.",
         "question": "Is DRAM primarily responsible for the latency benefits in the proposed architecture?",
         "answers": {
-            "answer_start": -1,
-            "justification": "Such an architecture has the latency benefits of DRAM..."
+            "justification": [
+                "Such an architecture has the latency benefits of DRAM..."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     },
     {
@@ -875,8 +1223,12 @@
         "context": "The memory subsystem accounts for a significant cost and power budget of a computer system. Current DRAM-based main memory systems are starting to hit the power and cost limit. An alternative memory technology that uses resistance contrast in phase-change materials is being actively investigated in the circuits community. Phase Change Memory (PCM) devices offer more density relative to DRAM, and can help increase main memory capacity of future systems while remaining within the cost and power constraints. In this paper, we analyze a PCM-based hybrid main memory system using an architecture level model of PCM.We explore the trade-offs for a main memory system consisting of PCMstorage coupled with a small DRAM buffer. Such an architecture has the latency benefits of DRAM and the capacity benefits of PCM. Our evaluations for a baseline system of 16-cores with 8GB DRAM show that, on average, PCM can reduce page faults by 5X and provide a speedup of 3X. As PCM is projected to have limited write endurance, we also propose simple organizational and management solutions of the hybrid memory that reduces the write traffic to PCM, boosting its lifetime from 3 years to 9.7 years.",
         "question": "In hybrid memory system, must write traffic reduction to PCM occur before boosting its lifetime?",
         "answers": {
-            "answer_start": 1016,
-            "justification": "we also propose simple organizational and management solutions of the hybrid memory that reduces the write traffic to PCM, boosting its lifetime from 3 years to 9.7 years."
+            "justification": [
+                "we also propose simple organizational and management solutions of the hybrid memory that reduces the write traffic to PCM, boosting its lifetime from 3 years to 9.7 years."
+            ],
+            "answer_start": [
+                1016
+            ]
         }
     },
     {
@@ -885,8 +1237,12 @@
         "context": "The memory subsystem accounts for a significant cost and power budget of a computer system. Current DRAM-based main memory systems are starting to hit the power and cost limit. An alternative memory technology that uses resistance contrast in phase-change materials is being actively investigated in the circuits community. Phase Change Memory (PCM) devices offer more density relative to DRAM, and can help increase main memory capacity of future systems while remaining within the cost and power constraints. In this paper, we analyze a PCM-based hybrid main memory system using an architecture level model of PCM.We explore the trade-offs for a main memory system consisting of PCMstorage coupled with a small DRAM buffer. Such an architecture has the latency benefits of DRAM and the capacity benefits of PCM. Our evaluations for a baseline system of 16-cores with 8GB DRAM show that, on average, PCM can reduce page faults by 5X and provide a speedup of 3X. As PCM is projected to have limited write endurance, we also propose simple organizational and management solutions of the hybrid memory that reduces the write traffic to PCM, boosting its lifetime from 3 years to 9.7 years.",
         "question": "Does increasing the size of the DRAM buffer lead to a decrease in page faults on average?",
         "answers": {
-            "answer_start": -1,
-            "justification": "Our evaluations for a baseline system of 16-cores with 8GB DRAM show that, on average, PCM can reduce page faults by 5X..."
+            "justification": [
+                "Our evaluations for a baseline system of 16-cores with 8GB DRAM show that, on average, PCM can reduce page faults by 5X..."
+            ],
+            "answer_start": [
+                -1
+            ]
         }
     }
 ]
