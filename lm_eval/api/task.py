@@ -905,7 +905,7 @@ class ConfigurableTask(Task):
             path=self.DATASET_PATH,
             name=self.DATASET_NAME,
             data_files = self.DATA_FILES,
-            trust_remote_code=True,
+            # trust_remote_code=True,
             **dataset_kwargs if dataset_kwargs is not None else {},
         )
 
