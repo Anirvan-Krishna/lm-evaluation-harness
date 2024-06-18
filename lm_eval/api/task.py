@@ -191,7 +191,7 @@ class Task(abc.ABC):
     # The name of a subset within `DATASET_PATH`.
     DATASET_NAME: Optional[str] = None
    
-    DATA_FILES = {'train':'train.json', 'validation': 'test.json'}
+    DATA_FILES: Optional[dict] = None
 
     OUTPUT_TYPE: Optional[OutputType] = None
 
