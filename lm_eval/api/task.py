@@ -64,8 +64,8 @@ class TaskConfig(dict):
     dataset_path: Optional[str] = None
     dataset_name: Optional[str] = None
     dataset_kwargs: Optional[dict] = None
-    training_split: Optional[str] = 'train'
-    validation_split: Optional[str] = 'validation'
+    training_split: Optional[str] = None
+    validation_split: Optional[str] = None
     test_split: Optional[str] = None
     fewshot_split: Optional[
         str
