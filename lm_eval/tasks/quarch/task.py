@@ -257,8 +257,8 @@ class SQuAD2(ConfigurableTask):
             "f1": True,  # The F-score of predicted tokens versus the gold answer
             "HasAns_exact": True,  # Exact match (the normalized answer exactly match the gold answer)
             "HasAns_f1": True,  # The F-score of predicted tokens versus the gold answer
-            # "NoAns_exact": True,  # Exact match (the normalized answer exactly match the gold answer)
-            # "NoAns_f1": True,  # The F-score of predicted tokens versus the gold answer
-            # "best_exact": True,  # Best exact match (with varying threshold)
-            # "best_f1": True,  # Best F1 (with varying threshold)
+            "NoAns_exact": True,  # Exact match (the normalized answer exactly match the gold answer)
+            "NoAns_f1": True,  # The F-score of predicted tokens versus the gold answer
+            "best_exact": True,  # Best exact match (with varying threshold)
+            "best_f1": True,  # Best F1 (with varying threshold)
         }
