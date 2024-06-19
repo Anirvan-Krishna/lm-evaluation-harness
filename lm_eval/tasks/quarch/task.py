@@ -243,7 +243,7 @@ class SQuAD2(ConfigurableTask):
             # ),  # Best exact match (with varying threshold)
             # "best_f1": partial(
             #     _squad_agg, "best_f1"
-            # ),  # Best F1 (with varying threshold)
+            # ),   Best F1 (with varying threshold)
         }
 
     def higher_is_better(self):
