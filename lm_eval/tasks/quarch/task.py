@@ -165,14 +165,14 @@ class SQuAD2(ConfigurableTask):
             The results of the requests created in construct_requests.
         """
 
-        continuation, (logprob_unanswerable, _) = results
+        continuation = results # continuation, (logprob_unanswerable, _)
 
-        no_answer_probability = exp(logprob_unanswerable)
+        #no_answer_probability = exp(logprob_unanswerable)
 
         predictions = {
             "id": doc["id"],
             "prediction_text": continuation,
-            "no_answer_probability": no_answer_probability,
+            #"no_answer_probability": no_answer_probability,
         }
 
         references = {
