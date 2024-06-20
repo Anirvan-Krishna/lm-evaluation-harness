@@ -190,10 +190,10 @@ class SQuAD2(ConfigurableTask):
             #     predictions,
             #     references,
             # ),  # The F-score of predicted tokens versus the gold answer
-            "HasAns_exact": (
-                predictions,
-                references,
-            ),  # Exact match (the normalized answer exactly match the gold answer)
+            # "HasAns_exact": (
+            #     predictions,
+            #     references,
+            # ),  # Exact match (the normalized answer exactly match the gold answer)
             # "HasAns_f1": (
             #     predictions,
             #     references,
@@ -226,9 +226,9 @@ class SQuAD2(ConfigurableTask):
             # "f1": partial(
             #     _squad_agg, "f1"
             # ),  # The F-score of predicted tokens versus the gold answer
-            "HasAns_exact": partial(
-                _squad_agg, "HasAns_exact"
-            ),  # Exact match (the normalized answer exactly match the gold answer)
+            # "HasAns_exact": partial(
+            #     _squad_agg, "HasAns_exact"
+            # ),  # Exact match (the normalized answer exactly match the gold answer)
             # "HasAns_f1": partial(
             #     _squad_agg, "HasAns_f1"
             # ),  # The F-score of predicted tokens versus the gold answer
@@ -255,7 +255,7 @@ class SQuAD2(ConfigurableTask):
         return {
             "exact": True,  # Exact match (the normalized answer exactly match the gold answer)
             # "f1": True,  # The F-score of predicted tokens versus the gold answer
-            "HasAns_exact": True,  # Exact match (the normalized answer exactly match the gold answer)
+            # "HasAns_exact": True,  # Exact match (the normalized answer exactly match the gold answer)
             # "HasAns_f1": True,  # The F-score of predicted tokens versus the gold answer
             # "NoAns_exact": True,  # Exact match (the normalized answer exactly match the gold answer)
             # "NoAns_f1": True,  # The F-score of predicted tokens versus the gold answer
