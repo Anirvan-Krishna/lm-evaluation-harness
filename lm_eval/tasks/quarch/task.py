@@ -145,13 +145,13 @@ class SQuAD2(ConfigurableTask):
                 idx=0,
                 **kwargs,
             ),
-            Instance(
-                request_type="loglikelihood",
-                doc=doc,
-                arguments=(ctx, " " + "unanswerable"),
-                idx=0,
-                **kwargs,
-            ),
+            # Instance(
+            #     request_type="loglikelihood",
+            #     doc=doc,
+            #     arguments=(ctx, " " + "unanswerable"),
+            #     idx=0,
+            #     **kwargs,
+            # ),
         ]
 
     def process_results(self, doc, results):
