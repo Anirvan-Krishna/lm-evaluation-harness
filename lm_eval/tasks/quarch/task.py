@@ -104,7 +104,7 @@ class SQuAD2(ConfigurableTask):
             + "\n\n"
             + "Background: "
             + doc["context"]
-            + "\n\n"
+            + "The following is a binary choice question (answer with YES or NO) about Hardware Design\n\n"
             + "Question: "
             + doc["question"]
             + "\n\n"

@@ -8,7 +8,7 @@ dataset_kwargs:
 
 description: "This is a question answering dataset.\n\n"
 output_type: generate_until
-doc_to_text: "Title: {{title}}\nContext:{{context}}\nQuestion: {{question}}\nAnswer:"
+doc_to_text: "Title: {{title}}\nContext:{{context}}\n The following is a binary choice question (answer with YES or NO) about Hardware Design\n\nQuestion: {{question}}\nAnswer:"
 doc_to_target: 1
 doc_to_choice: ["NO", "YES"]
 metric_list:
