@@ -472,7 +472,9 @@ class OpenaiChatCompletionsLM(LM):
         return grouper.get_original(res)
 
     def loglikelihood(self, requests, disable_tqdm: bool = False):
-        raise NotImplementedError("No support for logits.")
+        #raise NotImplementedError("No support for logits.")
+        return
 
     def loglikelihood_rolling(self, requests, disable_tqdm: bool = False):
-        raise NotImplementedError("No support for logits.")
+        #raise NotImplementedError("No support for logits.")
+        return
