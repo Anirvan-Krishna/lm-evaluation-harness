@@ -167,7 +167,7 @@ class SQuAD2(ConfigurableTask):
 
         continuation = results # continuation, (logprob_unanswerable, _)
 
-        no_answer_probability = 0.5  #exp(logprob_unanswerable)
+        no_answer_probability = 0  #exp(logprob_unanswerable)
 
         predictions = {
             "id": doc["id"],
