@@ -84,7 +84,7 @@ class SQuAD2(ConfigurableTask):
 
 
     def has_training_docs(self):
-        return True
+        return False 
 
     def has_validation_docs(self):
         return True
