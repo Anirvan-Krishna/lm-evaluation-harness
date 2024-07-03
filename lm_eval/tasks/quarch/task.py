@@ -102,6 +102,8 @@ def preprocess_data(path):
     with open(file_path, 'w') as f:
         f.write(test_json)
 
+    return test_json
+
 
 class SQuAD2(ConfigurableTask):
     VERSION = 1
@@ -151,8 +153,7 @@ class SQuAD2(ConfigurableTask):
     #     return self.dataset["train"]
 
     def validation_docs(self):
-        preprocess_data("QuArch_v0_1_1.json")
-        print("Preprocessed Succesfully!")
+        self.dataset['validation'] = preprocess_data("QuArch_v0_1_1.json")
         return self.dataset["validation"]
 
     def doc_to_text(self, doc):
