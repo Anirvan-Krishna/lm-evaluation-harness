@@ -96,7 +96,10 @@ def preprocess_data(path):
     df = json_to_dataframe(json_data)
     test_json = df_to_json(df)
 
-    with open('./test.json', 'w') as f:
+    current_directory = os.getcwd()
+    file_path = os.path.join(current_directory, 'test.json')
+
+    with open(file_path, 'w') as f:
         f.write(test_json)
 
 
