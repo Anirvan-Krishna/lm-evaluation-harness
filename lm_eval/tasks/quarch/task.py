@@ -96,7 +96,7 @@ def preprocess_data(path):
     df = json_to_dataframe(json_data)
     test_json = df_to_json(df)
 
-    with open('test.json', 'w') as f:
+    with open('./test.json', 'w') as f:
         f.write(test_json)
 
 
@@ -149,6 +149,7 @@ class SQuAD2(ConfigurableTask):
 
     def validation_docs(self):
         preprocess_data("QuArch_v0_1_1.json")
+        print("Preprocessed Succesfully!")
         return self.dataset["validation"]
 
     def doc_to_text(self, doc):
