@@ -19,6 +19,7 @@ import os
 import json
 
 import datasets
+import pandas as pd
 from packaging import version
 
 from lm_eval.api.instance import Instance
@@ -48,11 +49,62 @@ def _squad_agg(key, items):
     return _squad_metric(predictions=predictions, references=references).get(key, 0)
 
 
+def json_to_dataframe(json_data):
+    records = []
+    for entry in json_data:
+        title = entry["title"]
+        for paragraph in entry["paragraphs"]:
+            context = paragraph["context"]
+            for qa in paragraph["qas"]:
+              if qa["split"] == "TEST":
+                record = {
+                    "id": qa["id"],
+                    "title": title,
+                    "context": context,
+                    "question": qa["question"],
+                    "answers": {'text': [qa['answers'][0]['text']], 'answer_start': [qa['answers'][0]['answer_start']]}
+                }
+                records.append(record)
+    df = pd.DataFrame(records)
+    return df
+
+
+def df_to_json(df):
+  """
+  Converts a Pandas DataFrame to a JSON object.
+
+  Args:
+      df (pd.DataFrame): The DataFrame to convert.
+
+  Returns:
+      dict: The JSON object.
+  """
+
+  # Convert the DataFrame to a dictionary
+  data = df.to_dict(orient='records')
+
+  # Convert the dictionary to a JSON object
+  json_object = json.dumps(data, indent=4)
+
+  return json_object
+
+
+def preprocess_data(path):
+    data = pd.read_json(path)
+    json_data = data['data']
+    # Convert the JSON structure to a DataFrame
+    df = json_to_dataframe(json_data)
+    test_json = df_to_json(df)
+
+    with open('test.json', 'w') as f:
+        f.write(test_json)
+
+
 class SQuAD2(ConfigurableTask):
     VERSION = 1
     DATASET_PATH = "json"
     DATASET_NAME = None
-    DATA_FILES = { "validation": "./test.json"}
+    DATA_FILES = {"validation": "./test.json"}
     # "train": "./train.json",
     
     def __init__(self):
@@ -96,6 +148,7 @@ class SQuAD2(ConfigurableTask):
     #     return self.dataset["train"]
 
     def validation_docs(self):
+        preprocess_data("QuArch_v0_1_1.json")
         return self.dataset["validation"]
 
     def doc_to_text(self, doc):
