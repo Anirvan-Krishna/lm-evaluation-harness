@@ -56,7 +56,6 @@ for entry in mismatched_entries:
     print(f'Target: {entry["target"]}')
     print(f'Response: {entry["filtered_resps"][0]}')
     print('-' * 50)
-
 ```
 - If you want to run the task with different models, remember to remove the folder *quarch* from your current working directory
 
