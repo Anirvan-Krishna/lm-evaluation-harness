@@ -101,7 +101,7 @@ def preprocess_data(path):
 
     with open(file_path, 'w') as f:
         f.write(test_json)
-
+    return "test.json"
 
 
 class SQuAD2(ConfigurableTask):
@@ -152,8 +152,8 @@ class SQuAD2(ConfigurableTask):
     #     return self.dataset["train"]
 
     def validation_docs(self):
-        preprocess_data("test.json")
-        return self.dataset["validation"]
+        return preprocess_data("test.json")
+        # return self.dataset["validation"]
 
     def doc_to_text(self, doc):
         return (
