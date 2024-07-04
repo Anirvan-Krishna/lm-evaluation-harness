@@ -111,7 +111,7 @@ class SQuAD2(ConfigurableTask):
     DATASET_NAME = None
 
     current_directory = os.getcwd()
-    file_path = os.path.join(current_directory, 'data.json')
+    file_path = os.path.join(current_directory, 'test.json')
     test_path = preprocess_data(file_path)
     DATA_FILES = {"validation": test_path}
     # "train": "./train.json",
