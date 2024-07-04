@@ -153,7 +153,7 @@ class SQuAD2(ConfigurableTask):
     #     return self.dataset["train"]
 
     def validation_docs(self):
-        self.dataset["validation"] = preprocess_data("test.json")
+        preprocess_data("test.json")
         return self.dataset["validation"]
 
     def doc_to_text(self, doc):
