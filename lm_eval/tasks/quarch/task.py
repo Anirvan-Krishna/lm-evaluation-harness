@@ -143,7 +143,7 @@ class SQuAD2(ConfigurableTask):
         return False 
 
     def has_validation_docs(self):
-        preprocess_data('test.json')
+        preprocess_data('data.json')
         return True
 
     def has_test_docs(self):
