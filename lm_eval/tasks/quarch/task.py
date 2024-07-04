@@ -101,8 +101,6 @@ def preprocess_data(path):
 
     with open(file_path, 'w') as f:
         f.write(test_json)
-    return test_json
-
 
 class SQuAD2(ConfigurableTask):
     VERSION = 1
