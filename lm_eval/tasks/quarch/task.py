@@ -102,13 +102,18 @@ def preprocess_data(path):
     with open(file_path, 'w') as f:
         f.write(test_json)
 
+    return file_path
     
 
 class SQuAD2(ConfigurableTask):
     VERSION = 1
     DATASET_PATH = "json"
     DATASET_NAME = None
-    DATA_FILES = {"validation": "./test.json"}
+
+    current_directory = os.getcwd()
+    file_path = os.path.join(current_directory, 'data.json')
+    test_path = preprocess_data(file_path)
+    DATA_FILES = {"validation": test_path}
     # "train": "./train.json",
     
     def __init__(self):
@@ -143,7 +148,7 @@ class SQuAD2(ConfigurableTask):
         return False 
 
     def has_validation_docs(self):
-        preprocess_data('data.json')
+        # preprocess_data('data.json')
         return True
 
     def has_test_docs(self):
