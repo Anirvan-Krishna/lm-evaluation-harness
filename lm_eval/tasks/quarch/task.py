@@ -50,23 +50,49 @@ def _squad_agg(key, items):
 
 
 def json_to_dataframe(json_data):
-    records = []
+    test_records = []
+    train_records = []
+    val_records = []
+
     for entry in json_data:
         title = entry["title"]
         for paragraph in entry["paragraphs"]:
             context = paragraph["context"]
             for qa in paragraph["qas"]:
-              if qa["split"] == "TEST":
-                record = {
-                    "id": qa["id"],
-                    "title": title,
-                    "context": context,
-                    "question": qa["question"],
-                    "answers": {'text': [qa['answers'][0]['text']], 'answer_start': [qa['answers'][0]['answer_start']]}
-                }
-                records.append(record)
-    df = pd.DataFrame(records)
-    return df
+                if qa["split"] == "TEST":
+                    record = {
+                        "id": qa["id"],
+                        "title": title,
+                        "context": context,
+                        "question": qa["question"],
+                        "answers": {'text': [qa['answers'][0]['text']], 'answer_start': [qa['answers'][0]['answer_start']]}
+                    }
+                    test_records.append(record)
+                elif qa['split'] == "VAL":
+                    record = {
+                        "id": qa["id"],
+                        "title": title,
+                        "context": context,
+                        "question": qa["question"],
+                        "answers": {'text': [qa['answers'][0]['text']], 'answer_start': [qa['answers'][0]['answer_start']]}
+                    }
+                    val_records.append(record)
+
+                else:
+                    record = {
+                        "id": qa["id"],
+                        "title": title,
+                        "context": context,
+                        "question": qa["question"],
+                        "answers": {'text': [qa['answers'][0]['text']], 'answer_start': [qa['answers'][0]['answer_start']]}
+                    }
+                    train_records.append(record)
+
+
+    df_test = pd.DataFrame(test_records)
+    df_train = pd.DataFrame(train_records)
+    df_val = pd.DataFrame(val_records)
+    return df_train, df_val, df_test
 
 
 def df_to_json(df):
@@ -89,20 +115,33 @@ def df_to_json(df):
   return json_object
 
 
-def preprocess_data(path):
+def preprocess_data(path, out_path = {"train": "train.json", 
+                                      "validation": "val.json",
+                                      "test": "test.json"}):
     data = pd.read_json(path)
     json_data = data['data']
     # Convert the JSON structure to a DataFrame
-    df = json_to_dataframe(json_data)
-    test_json = df_to_json(df)
+    train_df, val_df, test_df = json_to_dataframe(json_data)
+    
+    train_json = df_to_json(train_df)
+    val_json = df_to_json(val_df)
+    test_json = df_to_json(test_df)
 
     current_directory = os.getcwd()
-    file_path = os.path.join(current_directory, 'test.json')
+    train_path = os.path.join(current_directory, out_path["train"])
+    val_path = os.path.join(current_directory, out_path["val"])
+    test_path = os.path.join(current_directory, out_path["test"])
 
-    with open(file_path, 'w') as f:
+    with open(train_path, 'w') as f:
+        f.write(train_json)
+
+    with open(val_path, 'w') as f:
+        f.write(val_json)
+    
+    with open(test_path, 'w') as f:
         f.write(test_json)
 
-    return file_path
+    return train_path, val_path, test_path
     
 
 class SQuAD2(ConfigurableTask):
@@ -112,8 +151,8 @@ class SQuAD2(ConfigurableTask):
 
     current_directory = os.getcwd()
     file_path = os.path.join(current_directory, 'data.json')
-    test_path = preprocess_data(file_path)
-    DATA_FILES = {"validation": test_path}
+    train_path, val_path, test_path = preprocess_data(file_path)
+    DATA_FILES = {"train": train_path, "validation": val_path, "test": test_path}
     # "train": "./train.json",
     
     def __init__(self):
@@ -145,20 +184,23 @@ class SQuAD2(ConfigurableTask):
 
 
     def has_training_docs(self):
-        return False 
+        return True
 
     def has_validation_docs(self):
         # preprocess_data('data.json')
         return True
 
     def has_test_docs(self):
-        return False
+        return True
 
-    # def training_docs(self):
-    #     return self.dataset["train"]
+    def training_docs(self):
+        return self.dataset["train"]
 
     def validation_docs(self):
         return self.dataset["validation"]
+    
+    def test_docs(self):
+        return self.dataset["test"]
 
     def doc_to_text(self, doc):
         return (
