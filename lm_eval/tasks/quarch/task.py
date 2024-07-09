@@ -129,7 +129,7 @@ def preprocess_data(path, out_path = {"train": "train.json",
 
     current_directory = os.getcwd()
     train_path = os.path.join(current_directory, out_path["train"])
-    val_path = os.path.join(current_directory, out_path["val"])
+    val_path = os.path.join(current_directory, out_path["validation"])
     test_path = os.path.join(current_directory, out_path["test"])
 
     with open(train_path, 'w') as f:
