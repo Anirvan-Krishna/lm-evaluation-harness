@@ -5,6 +5,7 @@ import os
 import sys
 from functools import partial
 from typing import Union
+import yaml
 
 from lm_eval import evaluator, utils
 from lm_eval.evaluator import request_caching_arg_to_dict
@@ -65,7 +66,13 @@ def check_argument_types(parser: argparse.ArgumentParser):
 def setup_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument(
-        "--model", "-m", type=str, default="hf", help="Name of model e.g. `hf`"
+        "--config",
+        type=str,
+        default=None,
+        help="path to the parameters.yaml"
+    )
+    parser.add_argument(
+        "--model", "-m", type=str, default="hf", help="Name of model e.g. hf"
     )
     parser.add_argument(
         "--tasks",
@@ -80,7 +87,7 @@ def setup_parser() -> argparse.ArgumentParser:
         "-a",
         default="",
         type=str,
-        help="Comma separated string arguments for model, e.g. `pretrained=EleutherAI/pythia-160m,dtype=float32`",
+        help="Comma separated string arguments for model, e.g. pretrained=EleutherAI/pythia-160m,dtype=float32",
     )
     parser.add_argument(
         "--num_fewshot",
@@ -134,14 +141,14 @@ def setup_parser() -> argparse.ArgumentParser:
         type=str,
         default=None,
         metavar="DIR",
-        help="A path to a sqlite db file for caching model responses. `None` if not caching.",
+        help="A path to a sqlite db file for caching model responses. None if not caching.",
     )
     parser.add_argument(
         "--cache_requests",
         type=str,
         default=None,
         choices=["true", "refresh", "delete"],
-        help="Speed up evaluation by caching the building of dataset requests. `None` if not caching.",
+        help="Speed up evaluation by caching the building of dataset requests. None if not caching.",
     )
     parser.add_argument(
         "--check_integrity",
@@ -181,7 +188,7 @@ def setup_parser() -> argparse.ArgumentParser:
         default=None,
         help=(
             "String arguments for model generation on greedy_until tasks,"
-            " e.g. `temperature=0,top_k=0,top_p=0`."
+            " e.g. temperature=0,top_k=0,top_p=0."
         ),
     )
     parser.add_argument(
@@ -202,7 +209,7 @@ def setup_parser() -> argparse.ArgumentParser:
         "--hf_hub_log_args",
         type=str,
         default="",
-        help="Comma separated string arguments passed to Hugging Face Hub's log function, e.g. `hub_results_org=EleutherAI,hub_repo_name=lm-eval-results`",
+        help="Comma separated string arguments passed to Hugging Face Hub's log function, e.g. hub_results_org=EleutherAI,hub_repo_name=lm-eval-results",
     )
     parser.add_argument(
         "--predict_only",
@@ -220,11 +227,11 @@ def setup_parser() -> argparse.ArgumentParser:
             "Set seed for python's random, numpy, torch, and fewshot sampling.\n"
             "Accepts a comma-separated list of 4 values for python's random, numpy, torch, and fewshot sampling seeds, "
             "respectively, or a single integer to set the same seed for all three.\n"
-            f"The values are either an integer or 'None' to not set the seed. Default is `{default_seed_string}` "
+            f"The values are either an integer or 'None' to not set the seed. Default is {default_seed_string} "
             "(for backward compatibility).\n"
-            "E.g. `--seed 0,None,8,52` sets `random.seed(0)`, `torch.manual_seed(8)`, and fewshot sampling seed to 52. "
-            "Here numpy's seed is not set since the second value is `None`.\n"
-            "E.g, `--seed 42` sets all four seeds to 42."
+            "E.g. --seed 0,None,8,52 sets random.seed(0), torch.manual_seed(8), and fewshot sampling seed to 52. "
+            "Here numpy's seed is not set since the second value is None.\n"
+            "E.g, --seed 42 sets all four seeds to 42."
         ),
     )
     parser.add_argument(
@@ -253,6 +260,21 @@ def cli_evaluate(args: Union[argparse.Namespace, None] = None) -> None:
     eval_logger.setLevel(getattr(logging, f"{args.verbosity}"))
     eval_logger.info(f"Verbosity set to {args.verbosity}")
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
+    
+    # adding the hyperparameters
+    if args.config:
+        with open(args.config, 'r') as config_file:
+            config_params = yaml.safe_load(config_file)
+            for key, value in config_params.items():
+                setattr(args, key, value)
+
+    # Example of using hyperparameters
+    learning_rate = args.learning_rate
+    batch_size = args.batch_size
+    num_epochs = args.num_epochs
+
+    print(f"Using hyperparameters: Learning Rate={learning_rate}, Batch Size={batch_size}, Num Epochs={num_epochs}")
+
 
     # update the evaluation tracker args with the output path and the HF token
     if args.output_path:
@@ -327,10 +349,10 @@ def cli_evaluate(args: Union[argparse.Namespace, None] = None) -> None:
                 missing = ", ".join(task_missing)
                 eval_logger.error(
                     f"Tasks were not found: {missing}\n"
-                    f"{utils.SPACING}Try `lm-eval --tasks list` for list of available tasks",
+                    f"{utils.SPACING}Try lm-eval --tasks list for list of available tasks",
                 )
                 raise ValueError(
-                    f"Tasks not found: {missing}. Try `lm-eval --tasks list` for list of available tasks, or '--verbosity DEBUG' to troubleshoot task registration issues."
+                    f"Tasks not found: {missing}. Try lm-eval --tasks list for list of available tasks, or '--verbosity DEBUG' to troubleshoot task registration issues."
                 )
 
     # Respect user's value passed in via CLI, otherwise default to True and add to comma-separated model args
@@ -415,5 +437,5 @@ def cli_evaluate(args: Union[argparse.Namespace, None] = None) -> None:
             wandb_logger.run.finish()
 
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     cli_evaluate()
