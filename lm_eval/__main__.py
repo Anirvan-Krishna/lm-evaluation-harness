@@ -233,13 +233,6 @@ def setup_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Sets trust_remote_code to True to execute code to create HF Datasets from the Hub",
     )
-    parser.add_argument(
-        "--custom_hyperparameters",
-        type=str,
-        default="",
-        help="Comma separated string arguments for custom hyperparameters of the llm model to be evaluated.",
-    )
-    return parser
 
 
 def parse_eval_args(parser: argparse.ArgumentParser) -> argparse.Namespace:
