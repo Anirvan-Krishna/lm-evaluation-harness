@@ -66,12 +66,6 @@ def check_argument_types(parser: argparse.ArgumentParser):
 def setup_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument(
-        "--config",
-        type=str,
-        default=None,
-        help="path to the parameters.yaml"
-    )
-    parser.add_argument(
         "--model", "-m", type=str, default="hf", help="Name of model e.g. hf"
     )
     parser.add_argument(
@@ -261,21 +255,6 @@ def cli_evaluate(args: Union[argparse.Namespace, None] = None) -> None:
     eval_logger.info(f"Verbosity set to {args.verbosity}")
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
     
-    # adding the hyperparameters
-    if args.config:
-        with open(args.config, 'r') as config_file:
-            config_params = yaml.safe_load(config_file)
-            for key, value in config_params.items():
-                setattr(args, key, value)
-
-    # Example of using hyperparameters
-    learning_rate = args.learning_rate
-    batch_size = args.batch_size
-    num_epochs = args.num_epochs
-
-    print(f"Using hyperparameters: Learning Rate={learning_rate}, Batch Size={batch_size}, Num Epochs={num_epochs}")
-
-
     # update the evaluation tracker args with the output path and the HF token
     if args.output_path:
         args.hf_hub_log_args += f",output_path={args.output_path}"
