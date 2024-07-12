@@ -204,8 +204,8 @@ class SQuAD2(ConfigurableTask):
 
     def doc_to_text(self, doc):
         return (
-            "Below is an instruction that describes a task. Write a response that appropriately completes the request." + 
-            "Title: "
+            "Below is an instruction that describes a task. Write a response that appropriately completes the request." 
+            + "Title: "
             + doc["title"]
             + "\n\n"
             + "Background: "
