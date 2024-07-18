@@ -188,10 +188,10 @@ class SQuAD2(ConfigurableTask):
 
     def has_validation_docs(self):
         # preprocess_data('data.json')
-        return True
+        return False
 
     def has_test_docs(self):
-        return False
+        return True
 
     def training_docs(self):
         return self.dataset["train"]
