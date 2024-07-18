@@ -184,14 +184,14 @@ class SQuAD2(ConfigurableTask):
 
 
     def has_training_docs(self):
-        return True
+        return False
 
     def has_validation_docs(self):
         # preprocess_data('data.json')
         return True
 
     def has_test_docs(self):
-        return True
+        return False
 
     def training_docs(self):
         return self.dataset["train"]
